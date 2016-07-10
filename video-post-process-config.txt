@@ -1,0 +1,18 @@
+#configuration file for THM video post-processing
+#save as video-post-process-config.txt in the same dir as the script
+
+[global]
+scriptRepo: /path/to/where/scripts/live
+
+[transcode]
+watermark: /path/to/watermark.png
+rawCaptureDir: /path/to/rawCapture/Dir/
+
+[fileMaker]
+location:
+login:
+password:
+
+[fileDestinations]
+sunnas:
+xendata:
