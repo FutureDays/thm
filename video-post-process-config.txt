@@ -2,17 +2,13 @@
 #save as video-post-process-config.txt in the same dir as the script
 
 [global]
-scriptRepo: /path/to/where/scripts/live
+scriptRepo: C:/dev/thm/thm
+email:
 
 [transcode]
 watermark: /path/to/watermark.png
-rawCaptureDir: /path/to/rawCapture/Dir/
-
-[fileMaker]
-location:
-login:
-password:
+rawCaptureDir: C:/dev/thm/mytests/starts
 
 [fileDestinations]
-sunnas:
-xendata:
+sunnas: C:/dev/thm/mytests/sunnas
+xendata: C:/dev/thm/mytests/xendata
