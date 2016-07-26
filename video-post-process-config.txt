@@ -7,7 +7,8 @@ email:
 
 [transcode]
 watermark: /path/to/watermark.png
-rawCaptureDir: C:/dev/thm/mytests/starts
+hardDrivePath: C:/dev/thm/mytests/starts
+rawCaptureDir: C:/dev/thm/mytests/HM
 
 [fileDestinations]
 sunnas: C:/dev/thm/mytests/sunnas
