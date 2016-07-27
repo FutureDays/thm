@@ -6,7 +6,7 @@ scriptRepo: C:/dev/thm/thm
 email:
 
 [transcode]
-watermark: /path/to/watermark.png
+watermark: /Volumes/thedata/ubuntu-logo32.png
 rawCaptureDir: C:/dev/thm/mytests/HM
 
 [fileDestinations]
