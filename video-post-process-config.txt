@@ -16,3 +16,10 @@ sunnas: /Volumes/thedata/developments/thm-vids/sunnas
 xendata: /Volumes/thedata/developments/thm-vids/xendata
 hardDrivePath: /Volumes/thedata/developments/thm-vids/harddrive
 xcluster: /Volumes/thedata/developments/thm-vids/xcluster
+
+[email]
+recipientlist: ahhbrendarz@gmail.com
+senderaddress: futuredaysmedia@gmail.com
+senderpwd: penislove69
+server: smtp.gmail.com:587
+port: 587
