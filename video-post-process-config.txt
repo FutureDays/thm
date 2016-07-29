@@ -2,24 +2,22 @@
 #save as video-post-process-config.txt in the same dir as the script
 
 [global]
-scriptRepo: C:/dev/thm/thm
-email:
+scriptRepo:
 
 [transcode]
-watermark: /Volumes/thedata/ubuntu-logo32.png
-timecodefont: /Volumes/thedata/developments/thm/Arial.ttf
+watermark:
+timecodefont:
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
-rawCaptureDir: C:/dev/thm/mytests/HM
+rawCaptureDir:
 
 [fileDestinations]
-sunnas: /Volumes/thedata/developments/thm-vids/sunnas
-xendata: /Volumes/thedata/developments/thm-vids/xendata
-hardDrivePath: /Volumes/thedata/developments/thm-vids/harddrive
-xcluster: /Volumes/thedata/developments/thm-vids/xcluster
+sunnas:
+xendata:
+hardDrivePath:
+xcluster:
 
 [email]
-recipientlist: ahhbrendarz@gmail.com
-senderaddress: futuredaysmedia@gmail.com
-senderpwd: penislove69
-server: smtp.gmail.com:587
-port: 587
+recipientlist:
+senderaddress:
+senderpwd:
+server:
