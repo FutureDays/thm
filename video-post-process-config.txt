@@ -2,17 +2,17 @@
 #save as video-post-process-config.txt in the same dir as the script
 
 [global]
-scriptRepo: C:/dev/thm/thm
-email:
+scriptRepo:
 
 [transcode]
-/Volumes/GPEED -Q/Titand-HD/HM/watermark
+#/Volumes/GPEED -Q/Titand-HD/HM/watermark
 watermark: /Volumes/thedata/ubuntu-logo32.png
 timecodefont: /Volumes/thedata/developments/thm/Arial.ttf
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
-rawCaptureDir: C:/dev/thm/mytests/HM
+rawCaptureDir:
 
 [fileDestinations]
+
 #"/SUNNAS/proxy holding"
 #can be loose files
 sunnas: /Volumes/thedata/developments/thm-vids/sunnas
@@ -21,3 +21,11 @@ sunnas: /Volumes/thedata/developments/thm-vids/sunnas
 xendata: /Volumes/thedata/developments/thm-vids/xendata
 hardDrivePath: /Volumes/thedata/developments/thm-vids/harddrive
 xcluster: /Volumes/thedata/developments/thm-vids/xcluster
+
+
+[email]
+recipientlist:
+senderaddress:
+senderpwd:
+server:
+
