@@ -9,7 +9,7 @@ scriptRepo:
 watermark: /Volumes/thedata/ubuntu-logo32.png
 timecodefont: /Volumes/thedata/developments/thm/Arial.ttf
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
-rawCaptureDir:
+rawCaptureDir: /Volumes/thedata/developments/thm-vids/xcluster/IncomingQT
 
 [fileDestinations]
 
