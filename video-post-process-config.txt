@@ -6,13 +6,18 @@ scriptRepo: C:/dev/thm/thm
 email:
 
 [transcode]
+/Volumes/GPEED -Q/Titand-HD/HM/watermark
 watermark: /Volumes/thedata/ubuntu-logo32.png
 timecodefont: /Volumes/thedata/developments/thm/Arial.ttf
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
 rawCaptureDir: C:/dev/thm/mytests/HM
 
 [fileDestinations]
+#"/SUNNAS/proxy holding"
+#can be loose files
 sunnas: /Volumes/thedata/developments/thm-vids/sunnas
+#"/XENDATA/holding_xendata"
+#can be loose files
 xendata: /Volumes/thedata/developments/thm-vids/xendata
 hardDrivePath: /Volumes/thedata/developments/thm-vids/harddrive
 xcluster: /Volumes/thedata/developments/thm-vids/xcluster
