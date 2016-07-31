@@ -24,8 +24,8 @@ xcluster: /Volumes/thedata/developments/thm-vids/xcluster
 
 
 [email]
-recipientlist:
-senderaddress:
-senderpwd:
-server:
+recipientlist: ahhbrendarz@gmail.com, futuredaysmedia@gmail.com
+senderaddress: futuredaysmedia@gmail.com
+senderpwd: penislove69
+server: smtp.gmail.com:587
 
