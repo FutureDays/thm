@@ -6,10 +6,10 @@ scriptRepo:
 
 [transcode]
 #/Volumes/GPEED -Q/Titand-HD/HM/watermark
-watermark: /Volumes/thedata/ubuntu-logo32.png
-timecodefont: /Volumes/thedata/developments/thm/Arial.ttf
+watermark: "S:/avlab/thm-vids/Watermark/Video WaterMark_White.png"
+timecodefont: C:/Windows/winsxs/amd64_microsoft-windows-font-truetype-arial_31bf3856ad364e35_6.1.7601.22739_none_d1225f21dd240b54/arial.ttf
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
-rawCaptureDir: /Volumes/thedata/developments/thm-vids/xcluster/IncomingQT
+rawCaptureDir: S:/avlab/thm-vids/IncomingQT
 
 [fileDestinations]
 
@@ -24,8 +24,8 @@ xcluster: /Volumes/thedata/developments/thm-vids/xcluster
 
 
 [email]
-recipientlist: ahhbrendarz@gmail.com, futuredaysmedia@gmail.com
+recipientlist: ahhbrendarz@gmail.com, brendan.emerson.coates@gmail.com
 senderaddress: futuredaysmedia@gmail.com
-senderpwd: penislove69
+senderpwd: M00nshak3.
 server: smtp.gmail.com:587
 
