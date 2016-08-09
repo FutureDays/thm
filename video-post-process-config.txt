@@ -6,10 +6,10 @@ scriptRepo:
 
 [transcode]
 #/Volumes/GPEED -Q/Titand-HD/HM/watermark
-watermark: "S:/avlab/thm-vids/Watermark/Video WaterMark_White.png"
-timecodefont: C:/Windows/winsxs/amd64_microsoft-windows-font-truetype-arial_31bf3856ad364e35_6.1.7601.22739_none_d1225f21dd240b54/arial.ttf
+watermark: /Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png
+timecodefont: /Library/Fonts/Arial.ttf
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
-rawCaptureDir: S:/avlab/thm-vids/IncomingQT
+rawCaptureDir: “/Volumes/G-SPEED Q/Titan-HD/HM/Queue”
 
 [fileDestinations]
 
