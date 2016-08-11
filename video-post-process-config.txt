@@ -6,26 +6,26 @@ scriptRepo:
 
 [transcode]
 #/Volumes/GPEED -Q/Titand-HD/HM/watermark
-watermark: /Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png
-timecodefont: /Library/Fonts/Arial.ttf
+watermark:
+timecodefont:
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
-rawCaptureDir: “/Volumes/G-SPEED Q/Titan-HD/HM/Queue”
+rawCaptureDir:
 
 [fileDestinations]
 
 #"/SUNNAS/proxy holding"
 #can be loose files
-sunnas: /Volumes/thedata/developments/thm-vids/sunnas
+sunnas:
 #"/XENDATA/holding_xendata"
 #can be loose files
-xendata: /Volumes/thedata/developments/thm-vids/xendata
-hardDrivePath: /Volumes/thedata/developments/thm-vids/harddrive
-xcluster: /Volumes/thedata/developments/thm-vids/xcluster
+xendata:
+hardDrivePath:
+xcluster:
 
 
 [email]
-recipientlist: ahhbrendarz@gmail.com, brendan.emerson.coates@gmail.com
-senderaddress: futuredaysmedia@gmail.com
-senderpwd: M00nshak3.
-server: smtp.gmail.com:587
+recipientlist:
+senderaddress:
+senderpwd:
+server:
 
