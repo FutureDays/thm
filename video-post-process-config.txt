@@ -6,7 +6,8 @@ scriptRepo:
 
 [transcode]
 #/Volumes/GPEED -Q/Titand-HD/HM/watermark
-watermark:
+whitewatermark:
+blackwatermark:
 timecodefont:
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
 rawCaptureDir:
