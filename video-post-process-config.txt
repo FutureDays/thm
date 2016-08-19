@@ -30,3 +30,9 @@ senderaddress:
 senderpwd:
 server:
 
+[filemaker]
+ip:
+port:
+db:
+uid:
+pwd:
