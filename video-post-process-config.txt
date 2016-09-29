@@ -5,21 +5,16 @@
 scriptRepo:
 
 [transcode]
-#/Volumes/GPEED -Q/Titand-HD/HM/watermark
 whitewatermark:
 blackwatermark:
 timecodefont:
-#this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
 rawCaptureDir:
 
 [fileDestinations]
-
-#"/SUNNAS/proxy holding"
-#can be loose files
 sunnas:
-#"/XENDATA/holding_xendata"
-#can be loose files
+sunnascopyto:
 xendata:
+xendatacopyto:
 hardDrivePath:
 xcluster:
 
