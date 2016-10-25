@@ -23,7 +23,7 @@ xendatacopyto: /Volumes/Holding_Xendata/copyto
 xcluster: "/Volumes/G-Speed Q/Titan-HD/HM/"
 
 [email]
-recipientlist: ahhbrendarz@gmail.com,dhjohnson1@gmail.com
+recipientlist: ahhbrendarz@gmail.com,dhjohnson1@gmail.com,mackeypaul1@gmail.com
 senderaddress: futuredaysmedia@gmail.com
 senderpwd: M00nshak3.
 server: smtp.gmail.com:587
