@@ -216,7 +216,7 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 		#transcode endfiles
 		#endfile.flv + HistoryMakers watermark
 		try:
-			flvstr = 'ffmpeg -i concat.mov -i ' + watermark + ' -filter_complex "scale=320:180,overlay=0:0,[0:a:0][0:a1] amerge=inputs=2 [a]" -c:v libx264 -preset fast -b:v 700k -r 29.97 -pix_fmt yuv420p -c:a aac -ac 2 -map 0:v -map "[a]" -timecode ' + segment[-2:] + ':00:00:00 -threads 0 ' + flv
+			flvstr = 'ffmpeg -i concat.mov -i ' + watermark + ' -filter_complex "scale=320:180,overlay=0:0,[0:a:0][0:a:1] amerge=inputs=2 [a]" -c:v libx264 -preset fast -b:v 700k -r 29.97 -pix_fmt yuv420p -c:a aac -ac 2 -map 0:v -map "[a]" -timecode ' + segment[-2:] + ':00:00:00 -threads 0 ' + flv
 			output = subprocess.check_output(flvstr, stderr=open(logfile,"a+"), shell=True)
 			returncode = 0
 			log(logfile, "transcode to flv successful")
@@ -234,7 +234,7 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 		#easier to init this var here rather than include it in the ffmpeg call
 		drawtext = '"drawtext=fontfile=' + "'" + fontfile + "'" + ": timecode='" + segment[-2:] + "\:00\:00\:00'" + ': r=29.97: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=72: box=1: boxcolor=0x00000099'
 		try:
-			mpegstr = 'ffmpeg -i concat.mov -target ntsc-dvd -filter_complex "[0:a:0][0:a1] amerge=inputs=2 [a]" -b:v 5000k -vtag xvid -vf ' + drawtext + ',scale=720:480" -map 0:v -map "[a]" -ac 2 -threads 0 ' + mpeg
+			mpegstr = 'ffmpeg -i concat.mov -target ntsc-dvd -filter_complex "[0:a:0][0:a:1] amerge=inputs=2 [a]" -b:v 5000k -vtag xvid -vf ' + drawtext + ',scale=720:480" -map 0:v -map "[a]" -ac 2 -threads 0 ' + mpeg
 			subprocess.check_output(mpegstr,stderr=open(logfile,"a+"), shell=True)
 			returncode = 0
 			log(logfile, "transcode to mpeg successful")
@@ -250,7 +250,7 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 
 		#endfile.mp4 + timecode
 		try:
-			mp4str = 'ffmpeg -i concat.mov -c:v mpeg4 -b:v 372k -pix_fmt yuv420p -r 29.97 -vf ' + drawtext + ',scale=420:270" -filter_complex "[0:a:0][0:a1] amerge=inputs=2 [a]" -c:a aac -ar 44100 -ac 2 -map 0:v -map "[a]" -threads 0 ' + mp4
+			mp4str = 'ffmpeg -i concat.mov -c:v mpeg4 -b:v 372k -pix_fmt yuv420p -r 29.97 -vf ' + drawtext + ',scale=420:270" -filter_complex "[0:a:0][0:a:1] amerge=inputs=2 [a]" -c:a aac -ar 44100 -ac 2 -map 0:v -map "[a]" -threads 0 ' + mp4
 			subprocess.check_output(mp4str,stderr=open(logfile,"a+"), shell=True)
 			returncode = 0
 		except subprocess.CalledProcessError,e:
