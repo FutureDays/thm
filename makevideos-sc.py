@@ -196,8 +196,8 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 		if len(concatlist) > 1:
 			txtfile = open("concat.txt","w")
 			for f in concatlist:
-				txtfile.write("file " + f + "\n")
-			ffconcatstring = 'ffmpeg -f concat -i concat.txt -c copy -ignore_unknown -map 0 ' + mov
+				txtfile.write("file '" + f + "'\n")
+			ffconcatstring = 'ffmpeg -f concat -safe 0 -i concat.txt -c copy -ignore_unknown -map 0 ' + mov
 			txtfile.close()			
 			try:
 				output = subprocess.check_output(ffconcatstring,stderr=open(logfile,"a+"),shell=True) #concatenate them
@@ -217,13 +217,12 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 				if os.path.exists(rawmov + ".md5"): #if they have any associated files get rid of them
 					os.remove(rawmov + ".md5")
 				if os.path.exists("concat.txt"):
-					os.remove("concat.txt")	
-		foo = raw_input("eh")		
+					os.remove("concat.txt")			
 			
 		#transcode endfiles
 		#endfile.flv + HistoryMakers watermark
 		try:
-			flvstr = 'ffmpeg -i ' + mov + ' -i ' + watermark + ' -filter_complex "scale=320:180,overlay=0:0" -c:v libx264 -preset fast -b:v 700k -r 29.97 -pix_fmt yuv420p -c:a aac -ac 2 -map 0 -map -0:d -timecode ' + segment[-2:] + ':00:00:00 -threads 0 ' + flv
+			flvstr = 'ffmpeg -i ' + mov + ' -i ' + watermark + ' -filter_complex "scale=320:180,overlay=0:0" -c:v libx264 -preset fast -b:v 700k -r 29.97 -pix_fmt yuv420p -c:a aac -ac 2 -map -0:d? -timecode ' + segment[-2:] + ':00:00:00 -threads 0 ' + flv
 			output = subprocess.check_output(flvstr, stderr=open(logfile,"a+"), shell=True)
 			returncode = 0
 			log(logfile, "transcode to flv successful")
