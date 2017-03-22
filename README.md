@@ -55,26 +55,26 @@ these aren't implemented quite as they are written here, everything in brackets 
 
 **concatenate**
 
-ffmpeg -f concat -i concat.txt -map 0:v -map 0:a -c:v copy -c:a copy -timecode 00:00:00:00 rawconcat.mov
+`ffmpeg -f concat -i concat.txt -map 0:v -map 0:a -c:v copy -c:a copy -timecode 00:00:00:00 rawconcat.mov`
 
 **route channel 2 audio out and re-wrap**
 
-ffmpeg -i rawconcat.mov -map 0:a:1 -map -0:d -map -0:v -c:a copy rawconcat-as2.mov
+`ffmpeg -i rawconcat.mov -map 0:a:1 -map -0:d -map -0:v -c:a copy rawconcat-as2.mov`
 
-ffmpeg -i rawconcat.mov -i concat-as2.mov -map 0:v -map 0:a:0 -map 1:a:0 -map 0:d -c copy concat.mov
+`ffmpeg -i rawconcat.mov -i concat-as2.mov -map 0:v -map 0:a:0 -map 1:a:0 -map 0:d -c copy concat.mov`
 
 
 **flv**
 
-ffmpeg -i concat.mov -i [/path/to/watermark.png] -filter_complex "scale=320:180,overlay=0:0;[0\:a\:0][0\:a\:1]amerge=inputs=2[a]" -c:v libx264 -preset fast -b:v 700k -r 29.97 -pix_fmt yuv420p -c:a aac -ac 2 -map 0:v -map "[a]" -timecode 00:00:00:00 -threads 0 [accessionNumber.flv]
+`ffmpeg -i concat.mov -i [/path/to/watermark.png] -filter_complex "scale=320:180,overlay=0:0;[0:a:0][0:a:1]amerge=inputs=2[a]" -c:v libx264 -preset fast -b:v 700k -r 29.97 -pix_fmt yuv420p -c:a aac -ac 2 -map 0:v -map "[a]" -timecode 00:00:00:00 -threads 0 [accessionNumber.flv]`
 
 **mpeg**
 
-ffmpeg -i concat.mov -target ntsc-dvd -filter_complex "[0\:a\:0][0\:a\:1]amerge=inputs=2[a]" -b:v 5000k -vtag xvid -vf "drawtext=fontfile='[/path/to/fontfile.ttf]': timecode='00\:00\:00\:00': r=29.97: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=72: box=1: boxcolor=0x00000099,scale=720:480" -map 0:v -map "[a]" -ac 2 -threads 0 [accessionNumber.mpeg]
+`ffmpeg -i concat.mov -target ntsc-dvd -filter_complex "[0:a:0][0:a:1]amerge=inputs=2[a]" -b:v 5000k -vtag xvid -vf "drawtext=fontfile='[/path/to/fontfile.ttf]': timecode='00\:00\:00\:00': r=29.97: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=72: box=1: boxcolor=0x00000099,scale=720:480" -map 0:v -map "[a]" -ac 2 -threads 0 [accessionNumber.mpeg]`
 
 **mp4**
 
-ffmpeg -i concat.mov -c:v mpeg4 -b:v 372k -pix_fmt yuv420p -r 29.97 -vf "drawtext=fontfile='[/path/to/fontfile.ttf]': timecode='00\:00\:00\:00': r=29.97: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=72: box=1: boxcolor=0x00000099,scale=420:270" -filter_complex "[0\:a\:0][0\:a\:1]amerge=inputs=2[a]" -c:a aac -ar 44100 -ac 2 -map 0:v -map "[a]" -threads 0 [accessionNumber.mp4]
+`ffmpeg -i concat.mov -c:v mpeg4 -b:v 372k -pix_fmt yuv420p -r 29.97 -vf "drawtext=fontfile='[/path/to/fontfile.ttf]': timecode='00\:00\:00\:00': r=29.97: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=72: box=1: boxcolor=0x00000099,scale=420:270" -filter_complex "[0:a:0][0:a:1]amerge=inputs=2[a]" -c:a aac -ar 44100 -ac 2 -map 0:v -map "[a]" -threads 0 [accessionNumber.mp4]`
 
 **test input*
 
