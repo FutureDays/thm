@@ -61,7 +61,7 @@ these aren't implemented quite as they are written here, everything in brackets 
 
 `ffmpeg -i rawconcat.mov -map 0:a:1 -map -0:d -map -0:v -c:a copy rawconcat-as2.mov`
 
-`ffmpeg -i rawconcat.mov -i concat-as2.mov -map 0:v -map 0:a:0 -map 1:a:0 -map 0:d -c copy concat.mov`
+`ffmpeg -i rawconcat.mov -i rawconcat-as2.mov -map 0:v -map 0:a:0 -map 1:a:0 -map 0:d -c copy concat.mov`
 
 
 **flv**
