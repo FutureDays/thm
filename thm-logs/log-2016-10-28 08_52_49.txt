@@ -1,0 +1,59 @@
+2016-10-28 08:52:49
+running
+2016-10-28 08:55:01
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_007_002_006': ['019620011.MOV', '019620021.MOV', '019620031.MOV', '019620041.MOV']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+[concat @ 0x7fb873800400] Could not find codec parameters for stream 3 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, concat, from 'concat.txt':
+  Duration: N/A, start: 0.000000, bitrate: 52307 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 50003 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 11988 tbc
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 06:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3: Unknown: none
+[mov @ 0x7fb87281fa00] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 2 times
+Output #0, mov, to 'concat.mov':
+  Metadata:
+    timecode        : 06:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg2video (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 50003 kb/s, 0.03 fps, 29.97 tbr, 11988 tbn, 11988 tbc
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 06:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, mono (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, mono (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+  Stream #0:2 -> #0:2 (copy)
+Press [q] to stop, [?] for help
+frame=  148 fps=0.0 q=-1.0 size=   31454kB time=00:00:05.41 bitrate=47626.1kbits/s speed=9.77x    frame=  249 fps=229 q=-1.0 size=   53170kB time=00:00:08.76 bitrate=49696.9kbits/s speed=8.08x    frame=  403 fps=254 q=-1.0 size=   85780kB time=00:00:13.91 bitrate=50486.4kbits/s speed=8.78x    frame=  552 fps=257 q=-1.0 size=  117593kB time=00:00:18.88 bitrate=51020.3kbits/s speed=8.79x    frame=  754 fps=284 q=-1.0 size=  160554kB time=00:00:25.63 bitrate=51312.9kbits/s speed=9.67x    frame=  889 fps=282 q=-1.0 size=  189316kB time=00:00:30.13 bitrate=51461.4kbits/s speed=9.55x    frame= 1057 fps=282 q=-1.0 size=  225106kB time=00:00:35.72 bitrate=51614.9kbits/s speed=9.55x    frame= 1244 fps=290 q=-1.0 size=  265069kB time=00:00:41.96 bitrate=51740.3kbits/s speed=9.79x    frame= 1273 fps=293 q=-1.0 Lsize=  271522kB time=00:00:42.92 bitrate=51816.7kbits/s speed=9.89x    
+video:259410kB audio:12073kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.014553%
+Exiting normally, received signal 2.

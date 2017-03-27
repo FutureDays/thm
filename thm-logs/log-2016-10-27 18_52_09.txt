@@ -1,0 +1,9 @@
+2016-10-27 18:52:09
+running
+2016-10-27 18:52:31
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_007_002_006': ['01962001.MOV', '01962002.MOV', '01962003.MOV', '01962004.MOV']}
+2016-10-27 18:52:32
+The script crashed due to an internal error
+[Errno 2] No such file or directory
+2016-10-27 18:52:32
+[Errno 2] No such file or directory

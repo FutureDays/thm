@@ -1,0 +1,103 @@
+2016-10-31 16:00:00
+running
+2016-10-31 16:02:10
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_007_002_006': ['A2016_007_002_006.mov']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+[concat @ 0x7fc1da002800] Could not find codec parameters for stream 3 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, concat, from 'concat.txt':
+  Duration: N/A, start: 0.000000, bitrate: 52303 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 49999 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 11988 tbc
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 06:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3: Unknown: none
+[mov @ 0x7fc1da804200] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 2 times
+Output #0, mov, to 'concat.mov':
+  Metadata:
+    timecode        : 06:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg2video (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 49999 kb/s, 0.03 fps, 29.97 tbr, 11988 tbn, 11988 tbc
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 06:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, mono (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, mono (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+  Stream #0:2 -> #0:2 (copy)
+Press [q] to stop, [?] for help
+frame=  562 fps=0.0 q=-1.0 size=  119871kB time=00:00:18.73 bitrate=52423.3kbits/s speed=32.7x    frame=  929 fps=864 q=-1.0 size=  197849kB time=00:00:30.93 bitrate=52391.8kbits/s speed=28.8x    frame= 1462 fps=927 q=-1.0 size=  311605kB time=00:00:48.76 bitrate=52349.7kbits/s speed=30.9x    frame= 2024 fps=974 q=-1.0 size=  431115kB time=00:01:07.47 bitrate=52342.9kbits/s speed=32.5x    frame= 2548 fps=988 q=-1.0 size=  542607kB time=00:01:24.98 bitrate=52300.8kbits/s speed=  33x    frame= 3072 fps=997 q=-1.0 size=  654440kB time=00:01:42.48 bitrate=52311.3kbits/s speed=33.3x    frame= 3601 fps=1005 q=-1.0 size=  767283kB time=00:02:00.12 bitrate=52327.5kbits/s speed=33.5x    frame= 4130 fps=1011 q=-1.0 size=  879795kB time=00:02:17.74 bitrate=52323.7kbits/s speed=33.7x    frame= 4668 fps=1011 q=-1.0 size=  994314kB time=00:02:35.71 bitrate=52308.3kbits/s speed=33.7x    frame= 5255 fps=1027 q=-1.0 size= 1119456kB time=00:02:55.28 bitrate=52319.1kbits/s speed=34.3x    frame= 5817 fps=1036 q=-1.0 size= 1239095kB time=00:03:14.03 bitrate=52313.6kbits/s speed=34.5x    frame= 6346 fps=1037 q=-1.0 size= 1351720kB time=00:03:31.68 bitrate=52311.4kbits/s speed=34.6x    frame= 6864 fps=1037 q=-1.0 size= 1462280kB time=00:03:49.00 bitrate=52308.7kbits/s speed=34.6x    frame= 7412 fps=1041 q=-1.0 size= 1579095kB time=00:04:07.28 bitrate=52310.9kbits/s speed=34.7x    frame= 7917 fps=1039 q=-1.0 size= 1686611kB time=00:04:24.14 bitrate=52306.8kbits/s speed=34.7x    frame= 8431 fps=1037 q=-1.0 size= 1796259kB time=00:04:41.28 bitrate=52314.1kbits/s speed=34.6x    frame= 8896 fps=1031 q=-1.0 size= 1895322kB time=00:04:56.79 bitrate=52313.5kbits/s speed=34.4x    frame= 9425 fps=1033 q=-1.0 size= 2007821kB time=00:05:14.44 bitrate=52308.8kbits/s speed=34.5x    frame= 9984 fps=1037 q=-1.0 size= 2126960kB time=00:05:33.10 bitrate=52307.2kbits/s speed=34.6x    frame=10507 fps=1037 q=-1.0 size= 2238527kB time=00:05:50.56 bitrate=52310.1kbits/s speed=34.6x    frame=11022 fps=1037 q=-1.0 size= 2348095kB time=00:06:07.75 bitrate=52306.0kbits/s speed=34.6x    frame=11570 fps=1039 q=-1.0 size= 2464792kB time=00:06:25.99 bitrate=52310.8kbits/s speed=34.7x    frame=12089 fps=1039 q=-1.0 size= 2575489kB time=00:06:43.30 bitrate=52313.4kbits/s speed=34.7x    frame=12642 fps=1042 q=-1.0 size= 2693217kB time=00:07:01.80 bitrate=52305.8kbits/s speed=34.8x    frame=13171 fps=1042 q=-1.0 size= 2806066kB time=00:07:19.43 bitrate=52310.5kbits/s speed=34.8x    frame=13732 fps=1045 q=-1.0 size= 2925583kB time=00:07:38.17 bitrate=52308.8kbits/s speed=34.9x    frame=14255 fps=1045 q=-1.0 size= 3036930kB time=00:07:55.62 bitrate=52307.1kbits/s speed=34.9x    frame=14772 fps=1044 q=-1.0 size= 3146853kB time=00:08:12.83 bitrate=52307.8kbits/s speed=34.8x    frame=15320 fps=1046 q=-1.0 size= 3263690kB time=00:08:31.11 bitrate=52309.2kbits/s speed=34.9x    frame=15834 fps=1045 q=-1.0 size= 3373102kB time=00:08:48.26 bitrate=52308.2kbits/s speed=34.9x    frame=16357 fps=1044 q=-1.0 size= 3484812kB time=00:09:05.75 bitrate=52308.1kbits/s speed=34.8x    frame=16944 fps=1047 q=-1.0 size= 3609706kB time=00:09:25.34 bitrate=52305.9kbits/s speed=34.9x    frame=17506 fps=1050 q=-1.0 size= 3729581kB time=00:09:44.08 bitrate=52308.8kbits/s speed=  35x    frame=18025 fps=1049 q=-1.0 size= 3840152kB time=00:10:01.42 bitrate=52307.0kbits/s speed=  35x    frame=18556 fps=1050 q=-1.0 size= 3953268kB time=00:10:19.11 bitrate=52308.5kbits/s speed=  35x    frame=19117 fps=1052 q=-1.0 size= 4072784kB time=00:10:37.85 bitrate=52307.3kbits/s speed=35.1x    frame=19645 fps=1052 q=-1.0 size= 4185259kB time=00:10:55.47 bitrate=52306.6kbits/s speed=35.1x    frame=20174 fps=1052 q=-1.0 size= 4297765kB time=00:11:13.07 bitrate=52307.9kbits/s speed=35.1x    frame=20737 fps=1054 q=-1.0 size= 4417554kB time=00:11:31.86 bitrate=52306.1kbits/s speed=35.1x    frame=21280 fps=1052 q=-1.0 size= 4533592kB time=00:11:50.02 bitrate=52306.6kbits/s speed=35.1x    frame=21865 fps=1055 q=-1.0 size= 4658217kB time=00:12:09.54 bitrate=52306.5kbits/s speed=35.2x    frame=22394 fps=1055 q=-1.0 size= 4770835kB time=00:12:27.19 bitrate=52305.9kbits/s speed=35.2x    frame=22957 fps=1056 q=-1.0 size= 4890853kB time=00:12:45.97 bitrate=52306.8kbits/s speed=35.2x    frame=23485 fps=1056 q=-1.0 size= 5003328kB time=00:13:03.60 bitrate=52306.2kbits/s speed=35.2x    frame=24020 fps=1056 q=-1.0 size= 5117162kB time=00:13:21.40 bitrate=52307.7kbits/s speed=35.2x    frame=24582 fps=1058 q=-1.0 size= 5236758kB time=00:13:40.16 bitrate=52306.3kbits/s speed=35.3x    frame=25092 fps=1057 q=-1.0 size= 5345399kB time=00:13:57.17 bitrate=52306.1kbits/s speed=35.3x    frame=25587 fps=1055 q=-1.0 size= 5450859kB time=00:14:13.69 bitrate=52306.1kbits/s speed=35.2x    frame=26174 fps=1058 q=-1.0 size= 5575992kB time=00:14:33.27 bitrate=52307.0kbits/s speed=35.3x    frame=26735 fps=1059 q=-1.0 size= 5695517kB time=00:14:51.99 bitrate=52306.9kbits/s speed=35.3x    frame=27264 fps=1059 q=-1.0 size= 5808262kB time=00:15:09.68 bitrate=52305.2kbits/s speed=35.3x    frame=27798 fps=1059 q=-1.0 size= 5921900kB time=00:15:27.46 bitrate=52306.0kbits/s speed=35.3x    frame=28360 fps=1060 q=-1.0 size= 6041898kB time=00:15:46.26 bitrate=52305.9kbits/s speed=35.4x    frame=28889 fps=1060 q=-1.0 size= 6154387kB time=00:16:03.86 bitrate=52306.7kbits/s speed=35.4x    frame=29417 fps=1060 q=-1.0 size= 6267010kB time=00:16:21.52 bitrate=52305.8kbits/s speed=35.4x    frame=29980 fps=1061 q=-1.0 size= 6387021kB time=00:16:40.31 bitrate=52305.8kbits/s speed=35.4x    frame=30100 fps=1031 q=-1.0 size= 6412591kB time=00:16:44.32 bitrate=52305.8kbits/s speed=34.4x    frame=30672 fps=1033 q=-1.0 size= 6534157kB time=00:17:03.36 bitrate=52305.8kbits/s speed=34.5x    frame=31124 fps=1031 q=-1.0 size= 6630517kB time=00:17:18.44 bitrate=52306.4kbits/s speed=34.4x    frame=31711 fps=1033 q=-1.0 size= 6755435kB time=00:17:38.02 bitrate=52305.5kbits/s speed=34.5x    frame=32234 fps=1033 q=-1.0 size= 6866994kB time=00:17:55.47 bitrate=52306.4kbits/s speed=34.5x    frame=32797 fps=1034 q=-1.0 size= 6986800kB time=00:18:14.26 bitrate=52305.4kbits/s speed=34.5x    frame=33315 fps=1034 q=-1.0 size= 7097223kB time=00:18:31.57 bitrate=52304.4kbits/s speed=34.5x    frame=33830 fps=1034 q=-1.0 size= 7207017kB time=00:18:48.73 bitrate=52306.3kbits/s speed=34.5x    frame=34379 fps=1035 q=-1.0 size= 7323970kB time=00:19:07.05 bitrate=52306.3kbits/s speed=34.5x    frame=34887 fps=1035 q=-1.0 size= 7432254kB time=00:19:24.04 bitrate=52304.6kbits/s speed=34.5x    frame=35431 fps=1035 q=-1.0 size= 7547938kB time=00:19:42.14 bitrate=52305.3kbits/s speed=34.5x    frame=35761 fps=1029 q=-1.0 size= 7618597kB time=00:19:53.19 bitrate=52306.4kbits/s speed=34.3x    frame=36324 fps=1031 q=-1.0 size= 7738389kB time=00:20:11.98 bitrate=52304.9kbits/s speed=34.4x    frame=36839 fps=1031 q=-1.0 size= 7848038kB time=00:20:29.13 bitrate=52306.1kbits/s speed=34.4x    frame=37367 fps=1031 q=-1.0 size= 7960555kB time=00:20:46.78 bitrate=52304.7kbits/s speed=34.4x    frame=37927 fps=1032 q=-1.0 size= 8079690kB time=00:21:05.45 bitrate=52304.3kbits/s speed=34.4x    frame=38487 fps=1033 q=-1.0 size= 8199192kB time=00:21:24.16 bitrate=52304.6kbits/s speed=34.5x    frame=39014 fps=1034 q=-1.0 size= 8311395kB time=00:21:41.70 bitrate=52306.0kbits/s speed=34.5x    frame=39541 fps=1034 q=-1.0 size= 8423532kB time=00:21:59.28 bitrate=52305.2kbits/s speed=34.5x    frame=40102 fps=1035 q=-1.0 size= 8543393kB time=00:22:18.04 bitrate=52305.6kbits/s speed=34.5x    frame=40630 fps=1035 q=-1.0 size= 8655874kB time=00:22:35.67 bitrate=52305.3kbits/s speed=34.5x    frame=41161 fps=1035 q=-1.0 size= 8768648kB time=00:22:53.34 bitrate=52305.1kbits/s speed=34.5x    frame=41707 fps=1036 q=-1.0 size= 8885331kB time=00:23:11.60 bitrate=52305.6kbits/s speed=34.6x    frame=42201 fps=1036 q=-1.0 size= 8990295kB time=00:23:28.07 bitrate=52304.3kbits/s speed=34.6x    frame=42770 fps=1037 q=-1.0 size= 9111677kB time=00:23:47.03 bitrate=52306.4kbits/s speed=34.6x    frame=43295 fps=1037 q=-1.0 size= 9223425kB time=00:24:04.54 bitrate=52305.8kbits/s speed=34.6x    frame=43857 fps=1038 q=-1.0 size= 9343073kB time=00:24:23.30 bitrate=52305.3kbits/s speed=34.6x    frame=44390 fps=1038 q=-1.0 size= 9456704kB time=00:24:41.08 bitrate=52305.7kbits/s speed=34.6x    frame=44917 fps=1038 q=-1.0 size= 9568825kB time=00:24:58.68 bitrate=52304.3kbits/s speed=34.6x    frame=45477 fps=1039 q=-1.0 size= 9688193kB time=00:25:17.35 bitrate=52305.2kbits/s speed=34.7x    frame=46006 fps=1039 q=-1.0 size= 9800817kB time=00:25:35.00 bitrate=52305.0kbits/s speed=34.7x    frame=46531 fps=1040 q=-1.0 size= 9913032kB time=00:25:52.55 bitrate=52305.9kbits/s speed=34.7x    frame=47101 fps=1041 q=-1.0 size=10034442kB time=00:26:11.57 bitrate=52305.8kbits/s speed=34.7x    frame=47664 fps=1042 q=-1.0 size=10154109kB time=00:26:30.32 bitrate=52305.4kbits/s speed=34.8x    frame=48164 fps=1041 q=-1.0 size=10260691kB time=00:26:47.01 bitrate=52305.6kbits/s speed=34.7x    frame=48674 fps=1041 q=-1.0 size=10369343kB time=00:27:04.02 bitrate=52305.6kbits/s speed=34.7x    frame=49235 fps=1042 q=-1.0 size=10488871kB time=00:27:22.74 bitrate=52305.6kbits/s speed=34.8x    frame=49769 fps=1042 q=-1.0 size=10602621kB time=00:27:40.56 bitrate=52305.5kbits/s speed=34.8x    frame=50290 fps=1042 q=-1.0 size=10713480kB time=00:27:57.97 bitrate=52304.0kbits/s speed=34.8x    frame=50812 fps=1042 q=-1.0 size=10825031kB time=00:28:15.40 bitrate=52305.2kbits/s speed=34.8x    frame=51384 fps=1043 q=-1.0 size=10946614kB time=00:28:34.46 bitrate=52304.6kbits/s speed=34.8x    frame=51750 fps=1041 q=-1.0 Lsize=11027083kB time=00:28:46.72 bitrate=52315.1kbits/s speed=34.7x    
+video:10539094kB audio:485641kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.021292%
+2016-10-31 16:03:00
+concatenation of raw MOVs successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'concat.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+  Duration: 00:28:46.73, start: 0.000000, bitrate: 52315 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 49999 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 59.94 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 06:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3(eng): Data: none (tmcd / 0x64636D74)
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 06:00:00:00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+File 'A2016_007_002_006.flv' already exists. Overwrite ? [y/N] Not overwriting - exiting
+2016-10-31 16:03:03
+The transcode to A2016_007_002_006.flv was unsuccessful
+

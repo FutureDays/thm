@@ -1,0 +1,9 @@
+2017-02-24 12:04:42
+running
+2017-02-24 12:04:51
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_002': ['0123456.mov', '0123457.mov', '0123458.mov']}
+2017-02-24 12:04:53
+The script crashed due to an internal error
+global name 'ffconcatstr' is not defined
+2017-02-24 12:04:53
+global name 'ffconcatstr' is not defined

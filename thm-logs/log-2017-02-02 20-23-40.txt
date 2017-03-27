@@ -1,0 +1,20 @@
+2017-02-02 20:23:40
+running
+2017-02-02 20:27:48
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_008': ['01460001.MOV', '01460002.MOV', '01461001.MOV']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+S2016_001_AEWVJA_006_STO_008.mov: No such file or directory
+2017-02-02 20:27:51
+The transcode to S2016_001_AEWVJA_006_STO_008.flv was unsuccessful
+

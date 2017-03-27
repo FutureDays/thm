@@ -1,0 +1,47 @@
+2017-02-09 14:03:46
+running
+2017-02-09 14:08:12
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_019': ['S2016_001_AEWVJA_006_STO_019.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_029': ['S2016_001_AEWVJA_006_STO_029.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_028': ['S2016_001_AEWVJA_006_STO_028.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_021': ['S2016_001_AEWVJA_006_STO_021.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_020': ['S2016_001_AEWVJA_006_STO_020.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_023': ['S2016_001_AEWVJA_006_STO_023.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_022': ['S2016_001_AEWVJA_006_STO_022.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_025': ['S2016_001_AEWVJA_006_STO_025.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_024': ['S2016_001_AEWVJA_006_STO_024.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_027': ['S2016_001_AEWVJA_006_STO_027.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_026': ['S2016_001_AEWVJA_006_STO_026.mov']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_006_STO_019.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2017-02-02 18:01:46
+  Duration: 00:24:17.89, start: 0.000000, bitrate: 43019 kb/s
+    Stream #0:0(eng): Video: prores (apch / 0x68637061), yuv422p10le(bt470bg/smpte240m/bt709), 352x480, 42848 kb/s, SAR 20:11 DAR 4:3, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2017-02-02 18:01:46
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422 (HQ)
+      timecode        : 00:00:00:00
+    Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      creation_time   : 2017-02-02 18:01:46
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:00:00:00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2017-02-02 18:07:22
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:00:00:00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+Stream map '0:d' matches no streams.
+To ignore this, add a trailing '?' to the map.
+2017-02-09 14:08:15
+The transcode to S2016_001_AEWVJA_006_STO_019.flv was unsuccessful
+

@@ -1,0 +1,10 @@
+2016-11-01 14:30:01
+running
+2016-11-01 14:58:04
+The script crashed due to an internal error
+[Errno 2] No such file or directory: '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_007_002_006/concat.mov'
+2016-11-01 14:30:01
+running
+
+2016-11-01 14:58:04
+[Errno 2] No such file or directory: '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_007_002_006/concat.mov'

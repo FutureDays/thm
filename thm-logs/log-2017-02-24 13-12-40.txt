@@ -1,0 +1,21 @@
+2017-02-24 13:12:40
+running
+2017-02-24 13:16:13
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_008_MISC_001': ['Applause 1.mov', 'Applause 3.mov', 'Applause WS.mov', 'Arne Duncan 1.mov', 'Arne Duncan 2.mov', 'Babara Centered 2.mov', 'Barbara 1.mov', 'Barbara Centered 3.mov', 'Barbara Centered.mov', 'Crowd 1.mov', 'Crowd 10.mov', 'Crowd 11.mov', 'Crowd 12.mov', 'Crowd 13.mov', 'Crowd 14.mov', 'Crowd 15.mov', 'Crowd 16.mov', 'Crowd 17.mov', 'Crowd 18.mov', 'Crowd 2.mov', 'Crowd 20.mov', 'Crowd 21.mov', 'Crowd 22.mov', 'Crowd 23.mov', 'Crowd 24.mov', 'Crowd 25.mov', 'Crowd 26.mov', 'Crowd 3.mov', 'Crowd 4.mov', 'Crowd 5.mov', 'Crowd 6.mov', 'Crowd 7.mov', 'Crowd 8.mov', 'Crowd Laughs 1.mov', 'Crowd Laughs 2.mov', 'Crowd Laughs 2_1.mov', 'Crowd Laughs 3.mov', 'Crowd Laughs 4.mov', 'Crowd Smiles 2.mov', 'Crowd Smiles.mov', 'Crowd Woman 2.mov', 'Crowd Women.mov', 'Daley CU 2.mov', 'Daley CU 3.mov', 'Daley CU 4.mov', 'Daley CU 5.mov', 'Daley CU.mov', 'Daley Clap.mov', 'Daley Cu 6.mov', 'Daley Smile.mov', 'Dan Levin 1.mov', 'Elvin Charity CU 2.mov', 'Elvin Charity CU 3.mov', 'Elvin Charity CU 4.mov', 'Elvin Charity CU.mov', 'Family Intro Clap 2.mov', 'Family Intro Clap.mov', 'Family Intro Standing Clap.mov', 'John Rogers Dan Levin.mov', 'John Rogers and Marion Brooks.mov', 'John Rogers.mov', 'Kelly 1.mov', 'Laughing 1.mov', 'Laughing Small.mov', 'Laughing in a Row.mov', 'Laura Barbara Michelle Clap.mov', 'Laura Barbara Michelle Clap_1.mov', 'Laura CU Serious 2.mov', 'Laura CU Serious.mov', 'Laura Smiling 2.mov', 'Laura Smiling.mov', 'Laura and Barbara Serious 2.mov', 'Laura and Barbara.mov', 'Lucille 2.mov', 'Lucille 3.mov', 'Man Laughing.mov', 'Michelle 1.mov', 'Michelle 2.mov', 'Michelle 3.mov', 'Michelle 4.mov', 'Michelle 5.mov', 'Michelle 5_1.mov', 'Michelle 6.mov', 'Michelle CU.mov', 'Production 1.mov', 'Smiling Redhead 1.mov', 'Susan Sher 1.mov', 'Susan Sher 2.mov', 'Susan Sher 3.mov', 'Susan Sher 5.mov', 'Susan Sher Serious 2.mov', 'Susan Sher Smiling 3.mov', 'Susan Smiling 1.mov', 'Susan Smiling 2.mov', 'Tina 1.mov', 'Toni CU 2.mov', 'Toni CU.mov', 'Vernon Jordan 1.mov', 'Vernon Jordan 2.mov', 'WS Clap Goodyear.mov', 'WS Crowd 1.mov', 'WS Crowd 2.mov', 'WS Crowd 3.mov', 'Woman Says Wow.mov']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+[concat @ 0x7f952c806a00] Unsafe file name 'Applause 1.mov'
+concat.txt: Operation not permitted
+2017-02-24 13:16:16
+The concatenation of  S2016_001_AEWVJA_008_MISC_001 was unsuccessful
+

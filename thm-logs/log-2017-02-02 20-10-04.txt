@@ -1,0 +1,84 @@
+2017-02-02 20:10:04
+running
+2017-02-02 20:14:21
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_001': ['S2016_001_AEWVJA_006_STO_001.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_017': ['S2016_001_AEWVJA_006_STO_017.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_006': ['S2016_001_AEWVJA_006_STO_006.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_012': ['S2016_001_AEWVJA_006_STO_012.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_013': ['S2016_001_AEWVJA_006_STO_013.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_004': ['S2016_001_AEWVJA_006_STO_004.MOV']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_006_STO_001.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537331968
+    compatible_brands: qt  CDes
+    creation_time   : 2008-06-06 20:25:39
+    timecode        : 04:00:00:00
+  Duration: 00:04:33.27, start: 0.000000, bitrate: 52376 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 50000 kb/s, 29.97 fps, 29.97 tbr, 2997 tbn, 59.94 tbc (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+    Stream #0:1(eng): Audio: pcm_s24be (lpcm / 0x6D63706C), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+    Stream #0:2(eng): Audio: pcm_s24be (lpcm / 0x6D63706C), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+    Stream #0:3(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      reel_name       : Flash XDR
+      timecode        : 04:00:00:00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+[libx264 @ 0x7fa4c5801200] using SAR=1/1
+[libx264 @ 0x7fa4c5801200] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x7fa4c5801200] profile High, level 2.0
+[libx264 @ 0x7fa4c5801200] 264 - core 148 r2668 fd2c324 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=abr mbtree=1 bitrate=700 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[flv @ 0x7fa4c5800000] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 2 times
+[flv @ 0x7fa4c5800000] at most one audio stream is supported in flv
+Output #0, flv, to 'S2016_001_AEWVJA_006_STO_001.flv':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537331968
+    compatible_brands: qt  CDes
+    timecode        : 01:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0: Video: h264 (libx264) ([7][0][0][0] / 0x0007), yuv420p, 320x180 [SAR 1:1 DAR 16:9], q=-1--1, 700 kb/s, 29.97 fps, 1k tbn, 29.97 tbc (default)
+    Metadata:
+      encoder         : Lavc57.48.101 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/700000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([10][0][0][0] / 0x000A), 48000 Hz, mono, fltp (24 bit), 69 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      encoder         : Lavc57.48.101 aac
+    Stream #0:2(eng): Audio: aac (LC) ([10][0][0][0] / 0x000A), 48000 Hz, mono, fltp (24 bit), 69 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 (mpeg2video) -> scale (graph 0)
+  Stream #1:0 (png) -> overlay:overlay (graph 0)
+  overlay (graph 0) -> Stream #0:0 (libx264)
+  Stream #0:1 -> #0:1 (pcm_s24be (native) -> aac (native))
+  Stream #0:2 -> #0:2 (pcm_s24be (native) -> aac (native))
+Could not write header for output file #0 (incorrect codec parameters ?): Invalid argument
+[libx264 @ 0x7fa4c5801200] final ratefactor: 21.30
+[aac @ 0x7fa4c5802a00] Qavg: nan
+[aac @ 0x7fa4c5803c00] Qavg: nan
+2017-02-02 20:14:23
+The transcode to S2016_001_AEWVJA_006_STO_001.flv was unsuccessful
+

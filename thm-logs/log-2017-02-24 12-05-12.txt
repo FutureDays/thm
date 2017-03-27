@@ -1,0 +1,65 @@
+2017-02-24 12:05:12
+running
+2017-02-24 12:05:20
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_002': ['0123456.mov', '0123457.mov', '0123458.mov']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fce91800800] Found duplicated MOOV Atom. Skipped it
+    Last message repeated 1 times
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'concat:0123456.mov|0123457.mov|0123458.mov':
+  Metadata:
+    encoder         : Lavf57.41.100
+    minor_version   : 512
+    major_brand     : qt  
+    compatible_brands: qt  
+  Duration: 00:00:10.01, start: 0.000000, bitrate: 1628 kb/s
+    Stream #0:0(eng): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 420x270 [SAR 8:7 DAR 16:9], 607 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 2997 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 00:59:50;00
+    Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 10 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74), 0 kb/s
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 00:59:50;00
+[mov @ 0x7fce91008000] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 2 times
+[mov @ 0x7fce91008000] You requested a copy of the original timecode track so timecode metadata are now ignored
+Output #0, mov, to 'S2016_001_AEWVJA_001_MAS_002.mov':
+  Metadata:
+    compatible_brands: qt  
+    minor_version   : 512
+    major_brand     : qt  
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg4 (mp4v / 0x7634706D), yuv420p, 420x270 [SAR 8:7 DAR 16:9], q=2-31, 607 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 11988 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 00:59:50;00
+    Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, 10 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74), 0 kb/s
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 00:59:50;00
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+  Stream #0:2 -> #0:2 (copy)
+Press [q] to stop, [?] for help
+frame=  300 fps=0.0 q=-1.0 Lsize=     766kB time=00:00:10.00 bitrate= 626.8kbits/s speed=1.55e+03x    
+video:742kB audio:13kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.380675%
+2017-02-24 12:05:20
+concatenation of raw MOVs successful

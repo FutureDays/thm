@@ -1,0 +1,636 @@
+2017-02-02 19:56:45
+running
+2017-02-02 20:01:05
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_001': ['S2016_001_AEWVJA_006_STO_001.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_017': ['S2016_001_AEWVJA_006_STO_017.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_006': ['S2016_001_AEWVJA_006_STO_006.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_012': ['S2016_001_AEWVJA_006_STO_012.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_004': ['S2016_001_AEWVJA_006_STO_004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_006_STO_013': ['S2016_001_AEWVJA_006_STO_013.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_003': ['S2016_001_AEWVJA_001_MAS_003.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_002': ['S2016_001_AEWVJA_001_MAS_002.mov']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_001_MAS_002.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2016-07-15 00:32:36
+  Duration: 00:01:10.07, start: 0.000000, bitrate: 142236 kb/s
+    Stream #0:0(eng): Video: prores (apcn / 0x6E637061), yuv422p10le(bt709), 1920x1080, 139813 kb/s, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422
+      timecode        : 00:59:50:00
+    Stream #0:1(eng): Audio: pcm_s24le (in24 / 0x34326E69), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+[libx264 @ 0x7f80ca000600] using SAR=1/1
+[libx264 @ 0x7f80ca000600] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x7f80ca000600] profile High, level 2.0
+[libx264 @ 0x7f80ca000600] 264 - core 148 r2668 fd2c324 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=abr mbtree=1 bitrate=700 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[flv @ 0x7f80ca00a200] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, flv, to 'S2016_001_AEWVJA_001_MAS_002.flv':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    timecode        : 02:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0: Video: h264 (libx264) ([7][0][0][0] / 0x0007), yuv420p, 320x180 [SAR 1:1 DAR 16:9], q=-1--1, 700 kb/s, 29.97 fps, 1k tbn, 29.97 tbc (default)
+    Metadata:
+      encoder         : Lavc57.48.101 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/700000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([10][0][0][0] / 0x000A), 48000 Hz, stereo, fltp (24 bit), 128 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 (prores) -> scale (graph 0)
+  Stream #1:0 (png) -> overlay:overlay (graph 0)
+  overlay (graph 0) -> Stream #0:0 (libx264)
+  Stream #0:1 -> #0:1 (pcm_s24le (native) -> aac (native))
+Press [q] to stop, [?] for help
+[png @ 0x7f80c980c800] Invalid PNG signature 0x323031362D31302D.
+Error while decoding stream #1:0: Invalid data found when processing input
+frame=   51 fps=0.0 q=24.0 size=      13kB time=00:00:00.93 bitrate= 113.5kbits/s speed=1.87x    frame=  103 fps=102 q=4.0 size=      54kB time=00:00:02.94 bitrate= 150.7kbits/s speed=2.92x    frame=  153 fps=101 q=0.0 size=      61kB time=00:00:04.95 bitrate= 100.5kbits/s speed=3.26x    frame=  205 fps=101 q=0.0 size=      69kB time=00:00:05.95 bitrate=  94.5kbits/s speed=2.94x    frame=  264 fps=104 q=0.0 size=      78kB time=00:00:07.95 bitrate=  79.9kbits/s speed=3.15x    frame=  329 fps=109 q=0.0 size=     111kB time=00:00:09.96 bitrate=  91.5kbits/s speed=3.29x    frame=  362 fps=103 q=0.0 size=     606kB time=00:00:11.96 bitrate= 415.0kbits/s speed=3.39x    frame=  404 fps=100 q=10.0 size=    1362kB time=00:00:12.95 bitrate= 861.8kbits/s speed=3.21x    frame=  444 fps= 98 q=13.0 size=    1665kB time=00:00:13.95 bitrate= 977.6kbits/s speed=3.07x    frame=  483 fps= 96 q=16.0 size=    1969kB time=00:00:15.95 bitrate=1010.6kbits/s speed=3.16x    frame=  519 fps= 91 q=17.0 size=    2111kB time=00:00:16.96 bitrate=1019.6kbits/s speed=2.99x    frame=  551 fps= 89 q=18.0 size=    2271kB time=00:00:17.96 bitrate=1035.5kbits/s speed= 2.9x    frame=  595 fps= 89 q=19.0 size=    2452kB time=00:00:18.96 bitrate=1059.0kbits/s speed=2.83x    frame=  637 fps= 88 q=20.0 size=    2626kB time=00:00:20.97 bitrate=1025.9kbits/s speed=2.91x    frame=  686 fps= 89 q=20.0 size=    2723kB time=00:00:21.97 bitrate=1015.1kbits/s speed=2.85x    frame=  727 fps= 89 q=19.0 size=    2844kB time=00:00:23.97 bitrate= 971.7kbits/s speed=2.92x    frame=  776 fps= 89 q=19.0 size=    2962kB time=00:00:24.98 bitrate= 971.3kbits/s speed=2.87x    frame=  822 fps= 89 q=19.0 size=    3062kB time=00:00:26.96 bitrate= 930.1kbits/s speed=2.93x    frame=  869 fps= 89 q=18.0 size=    3170kB time=00:00:28.63 bitrate= 907.2kbits/s speed=2.95x    frame=  919 fps= 90 q=17.0 size=    3251kB time=00:00:29.97 bitrate= 888.5kbits/s speed=2.93x    frame=  962 fps= 90 q=17.0 size=    3351kB time=00:00:31.97 bitrate= 858.5kbits/s speed=2.98x    frame= 1001 fps= 89 q=17.0 size=    3498kB time=00:00:32.98 bitrate= 868.9kbits/s speed=2.94x    frame= 1046 fps= 89 q=17.0 size=    3659kB time=00:00:33.98 bitrate= 882.1kbits/s speed=2.89x    frame= 1092 fps= 89 q=17.0 size=    3830kB time=00:00:35.99 bitrate= 871.8kbits/s speed=2.94x    frame= 1139 fps= 89 q=17.0 size=    3942kB time=00:00:37.52 bitrate= 860.6kbits/s speed=2.94x    frame= 1189 fps= 90 q=16.0 size=    4069kB time=00:00:38.97 bitrate= 855.1kbits/s speed=2.94x    frame= 1233 fps= 90 q=17.0 size=    4219kB time=00:00:40.98 bitrate= 843.3kbits/s speed=2.98x    frame= 1273 fps= 89 q=17.0 size=    4372kB time=00:00:41.98 bitrate= 853.0kbits/s speed=2.94x    frame= 1315 fps= 89 q=16.0 size=    4451kB time=00:00:42.98 bitrate= 848.3kbits/s speed=2.91x    frame= 1359 fps= 89 q=16.0 size=    4597kB time=00:00:44.99 bitrate= 836.9kbits/s speed=2.94x    frame= 1404 fps= 89 q=16.0 size=    4795kB time=00:00:45.99 bitrate= 854.0kbits/s speed=2.91x    frame= 1445 fps= 89 q=16.0 size=    4915kB time=00:00:48.00 bitrate= 838.8kbits/s speed=2.95x    frame= 1494 fps= 89 q=16.0 size=    5074kB time=00:00:49.00 bitrate= 848.2kbits/s speed=2.92x    frame= 1541 fps= 89 q=16.0 size=    5182kB time=00:00:51.00 bitrate= 832.2kbits/s speed=2.95x    frame= 1588 fps= 89 q=16.0 size=    5398kB time=00:00:51.99 bitrate= 850.5kbits/s speed=2.92x    frame= 1636 fps= 89 q=16.0 size=    5576kB time=00:00:53.99 bitrate= 846.0kbits/s speed=2.95x    frame= 1679 fps= 89 q=16.0 size=    5697kB time=00:00:55.59 bitrate= 839.4kbits/s speed=2.96x    frame= 1716 fps= 89 q=16.0 size=    5836kB time=00:00:57.00 bitrate= 838.7kbits/s speed=2.95x    frame= 1756 fps= 89 q=16.0 size=    5970kB time=00:00:58.00 bitrate= 843.1kbits/s speed=2.92x    frame= 1803 fps= 89 q=16.0 size=    6135kB time=00:01:00.01 bitrate= 837.5kbits/s speed=2.95x    frame= 1850 fps= 89 q=17.0 size=    6328kB time=00:01:01.01 bitrate= 849.6kbits/s speed=2.93x    frame= 1891 fps= 89 q=18.0 size=    6656kB time=00:01:03.01 bitrate= 865.2kbits/s speed=2.95x    frame= 1935 fps= 88 q=19.0 size=    6940kB time=00:01:04.02 bitrate= 888.0kbits/s speed=2.93x    frame= 1979 fps= 88 q=19.0 size=    7150kB time=00:01:05.68 bitrate= 891.8kbits/s speed=2.94x    frame= 2025 fps= 89 q=20.0 size=    7326kB time=00:01:07.00 bitrate= 895.7kbits/s speed=2.93x    frame= 2072 fps= 89 q=20.0 size=    7460kB time=00:01:09.01 bitrate= 885.5kbits/s speed=2.95x    frame= 2100 fps= 88 q=-1.0 Lsize=    7619kB time=00:01:10.08 bitrate= 890.6kbits/s speed=2.95x    
+video:6553kB audio:970kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.277197%
+[libx264 @ 0x7f80ca000600] frame I:20    Avg QP: 9.04  size: 26642
+[libx264 @ 0x7f80ca000600] frame P:794   Avg QP:11.62  size:  6354
+[libx264 @ 0x7f80ca000600] frame B:1286  Avg QP:14.11  size:   880
+[libx264 @ 0x7f80ca000600] consecutive B-frames: 12.1% 13.8% 14.9% 59.2%
+[libx264 @ 0x7f80ca000600] mb I  I16..4:  2.7% 37.9% 59.4%
+[libx264 @ 0x7f80ca000600] mb P  I16..4:  2.1%  6.2%  4.6%  P16..4: 38.2% 17.9% 16.7%  0.0%  0.0%    skip:14.2%
+[libx264 @ 0x7f80ca000600] mb B  I16..4:  0.1%  0.9%  0.2%  B16..8: 10.5%  5.2%  0.9%  direct:17.5%  skip:64.7%  L0:36.4% L1:34.1% BI:29.5%
+[libx264 @ 0x7f80ca000600] final ratefactor: 10.21
+[libx264 @ 0x7f80ca000600] 8x8 transform intra:49.6% inter:50.5%
+[libx264 @ 0x7f80ca000600] coded y,uvDC,uvAC intra: 78.6% 94.1% 82.5% inter: 30.4% 35.0% 18.1%
+[libx264 @ 0x7f80ca000600] i16 v,h,dc,p: 22% 14%  7% 57%
+[libx264 @ 0x7f80ca000600] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 26% 17%  4%  6%  5%  7%  4%  6%
+[libx264 @ 0x7f80ca000600] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 36% 14%  8%  5%  9%  7%  8%  6%  6%
+[libx264 @ 0x7f80ca000600] i8c dc,h,v,p: 36% 22% 22% 20%
+[libx264 @ 0x7f80ca000600] Weighted P-Frames: Y:17.1% UV:11.5%
+[libx264 @ 0x7f80ca000600] ref P L0: 77.5% 22.5%
+[libx264 @ 0x7f80ca000600] ref B L0: 80.8% 19.2%
+[libx264 @ 0x7f80ca000600] ref B L1: 96.7%  3.3%
+[libx264 @ 0x7f80ca000600] kb/s:766.02
+[aac @ 0x7f80ca001e00] Qavg: 9719.147
+2017-02-02 20:01:29
+transcode to flv successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_001_MAS_002.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2016-07-15 00:32:36
+  Duration: 00:01:10.07, start: 0.000000, bitrate: 142236 kb/s
+    Stream #0:0(eng): Video: prores (apcn / 0x6E637061), yuv422p10le(bt709), 1920x1080, 139813 kb/s, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422
+      timecode        : 00:59:50:00
+    Stream #0:1(eng): Audio: pcm_s24le (in24 / 0x34326E69), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+[dvd @ 0x7fee93813e00] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, dvd, to 'S2016_001_AEWVJA_001_MAS_002.mpeg':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg2video (Main) (xvid / 0x64697678), yuv420p, 720x480 [SAR 32:27 DAR 16:9], q=2-31, 5000 kb/s, 29.97 fps, 90k tbn, 29.97 tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 mpeg2video
+    Side data:
+      cpb: bitrate max/min/avg: 9000000/0/5000000 buffer size: 1835008 vbv_delay: -1
+    Stream #0:1(eng): Audio: ac3, 48000 Hz, stereo, fltp (24 bit), 448 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 ac3
+Stream mapping:
+  Stream #0:0 -> #0:0 (prores (native) -> mpeg2video (native))
+  Stream #0:1 -> #0:1 (pcm_s24le (native) -> ac3 (native))
+Press [q] to stop, [?] for help
+frame=   41 fps=0.0 q=2.0 size=     152kB time=00:00:01.26 bitrate= 982.0kbits/s speed=2.52x    frame=   83 fps= 83 q=2.0 size=     350kB time=00:00:02.66 bitrate=1074.1kbits/s speed=2.66x    frame=  124 fps= 82 q=2.0 size=     690kB time=00:00:04.03 bitrate=1400.0kbits/s speed=2.67x    frame=  161 fps= 80 q=2.0 size=     890kB time=00:00:05.27 bitrate=1383.0kbits/s speed=2.62x    frame=  197 fps= 78 q=2.0 size=    1028kB time=00:00:06.47 bitrate=1301.0kbits/s speed=2.56x    frame=  241 fps= 79 q=2.0 size=    1426kB time=00:00:07.99 bitrate=1461.2kbits/s speed=2.63x    frame=  293 fps= 83 q=2.0 size=    1526kB time=00:00:09.67 bitrate=1291.9kbits/s speed=2.73x    frame=  335 fps= 83 q=2.0 size=    2044kB time=00:00:11.07 bitrate=1511.5kbits/s speed=2.73x    frame=  375 fps= 82 q=2.0 size=    2482kB time=00:00:12.41 bitrate=1638.1kbits/s speed=2.72x    frame=  415 fps= 82 q=2.0 size=    3088kB time=00:00:13.74 bitrate=1840.2kbits/s speed=2.71x    frame=  453 fps= 81 q=2.0 size=    4782kB time=00:00:15.01 bitrate=2609.0kbits/s speed=2.69x    frame=  494 fps= 81 q=2.0 size=    5408kB time=00:00:16.38 bitrate=2704.2kbits/s speed= 2.7x    frame=  535 fps= 81 q=2.0 size=    6046kB time=00:00:17.75 bitrate=2790.2kbits/s speed= 2.7x    frame=  569 fps= 80 q=2.0 size=    7590kB time=00:00:18.88 bitrate=3292.3kbits/s speed=2.67x    frame=  610 fps= 80 q=2.0 size=    8968kB time=00:00:20.25 bitrate=3627.3kbits/s speed=2.67x    frame=  647 fps= 80 q=2.0 size=    9732kB time=00:00:21.48 bitrate=3710.2kbits/s speed=2.66x    frame=  682 fps= 79 q=3.8 size=   10632kB time=00:00:22.65 bitrate=3844.3kbits/s speed=2.64x    frame=  715 fps= 78 q=2.0 size=   11680kB time=00:00:23.75 bitrate=4027.5kbits/s speed=2.61x    frame=  754 fps= 78 q=2.0 size=   13818kB time=00:00:25.05 bitrate=4517.3kbits/s speed=2.61x    frame=  794 fps= 78 q=2.0 size=   14322kB time=00:00:26.39 bitrate=4445.3kbits/s speed=2.61x    frame=  833 fps= 78 q=2.0 size=   15096kB time=00:00:27.69 bitrate=4465.4kbits/s speed=2.61x    frame=  871 fps= 78 q=2.0 size=   16604kB time=00:00:29.01 bitrate=4687.3kbits/s speed=2.61x    frame=  910 fps= 78 q=2.0 size=   17394kB time=00:00:30.26 bitrate=4708.4kbits/s speed= 2.6x    frame=  948 fps= 78 q=2.0 size=   18290kB time=00:00:31.53 bitrate=4751.8kbits/s speed=2.59x    frame=  988 fps= 78 q=2.0 size=   19444kB time=00:00:32.86 bitrate=4846.5kbits/s speed= 2.6x    frame= 1028 fps= 78 q=2.0 size=   21082kB time=00:00:34.20 bitrate=5049.7kbits/s speed= 2.6x    frame= 1063 fps= 78 q=15.7 size=   22306kB time=00:00:35.36 bitrate=5166.5kbits/s speed=2.59x    frame= 1100 fps= 78 q=2.0 size=   23104kB time=00:00:36.60 bitrate=5170.8kbits/s speed=2.58x    frame= 1139 fps= 78 q=1.6 size=   23710kB time=00:00:37.90 bitrate=5124.2kbits/s speed=2.58x    frame= 1178 fps= 77 q=2.0 size=   25302kB time=00:00:39.20 bitrate=5286.8kbits/s speed=2.58x    frame= 1217 fps= 77 q=2.0 size=   26202kB time=00:00:40.50 bitrate=5299.0kbits/s speed=2.58x    frame= 1257 fps= 78 q=2.0 size=   26928kB time=00:00:41.84 bitrate=5272.1kbits/s speed=2.58x    frame= 1296 fps= 77 q=2.0 size=   28312kB time=00:00:43.14 bitrate=5375.9kbits/s speed=2.58x    frame= 1334 fps= 77 q=2.3 size=   29308kB time=00:00:44.41 bitrate=5406.1kbits/s speed=2.58x    frame= 1374 fps= 77 q=1.6 size=   30436kB time=00:00:45.74 bitrate=5450.4kbits/s speed=2.58x    frame= 1409 fps= 77 q=2.8 size=   31260kB time=00:00:46.91 bitrate=5458.6kbits/s speed=2.57x    frame= 1448 fps= 77 q=2.6 size=   32704kB time=00:00:48.21 bitrate=5556.6kbits/s speed=2.57x    frame= 1486 fps= 77 q=2.4 size=   33388kB time=00:00:49.48 bitrate=5527.5kbits/s speed=2.57x    frame= 1524 fps= 77 q=2.5 size=   34088kB time=00:00:50.75 bitrate=5502.4kbits/s speed=2.57x    frame= 1565 fps= 77 q=2.3 size=   35418kB time=00:00:52.11 bitrate=5567.0kbits/s speed=2.57x    frame= 1606 fps= 77 q=2.8 size=   36126kB time=00:00:53.48 bitrate=5533.0kbits/s speed=2.57x    frame= 1647 fps= 77 q=2.5 size=   36752kB time=00:00:54.85 bitrate=5488.5kbits/s speed=2.57x    frame= 1685 fps= 77 q=2.6 size=   38172kB time=00:00:56.12 bitrate=5571.8kbits/s speed=2.57x    frame= 1721 fps= 77 q=2.6 size=   38804kB time=00:00:57.32 bitrate=5545.4kbits/s speed=2.57x    frame= 1758 fps= 77 q=2.2 size=   39490kB time=00:00:58.55 bitrate=5524.4kbits/s speed=2.57x    frame= 1797 fps= 77 q=2.3 size=   40162kB time=00:00:59.85 bitrate=5496.3kbits/s speed=2.56x    frame= 1836 fps= 77 q=5.0 size=   41622kB time=00:01:01.16 bitrate=5574.9kbits/s speed=2.56x    frame= 1874 fps= 77 q=5.5 size=   42298kB time=00:01:02.42 bitrate=5550.4kbits/s speed=2.56x    frame= 1913 fps= 77 q=5.4 size=   42984kB time=00:01:03.73 bitrate=5525.2kbits/s speed=2.56x    frame= 1953 fps= 77 q=2.4 size=   44198kB time=00:01:05.06 bitrate=5564.7kbits/s speed=2.56x    frame= 1993 fps= 77 q=2.0 size=   44880kB time=00:01:06.39 bitrate=5537.0kbits/s speed=2.56x    frame= 2032 fps= 77 q=2.0 size=   45508kB time=00:01:07.70 bitrate=5506.6kbits/s speed=2.56x    frame= 2069 fps= 77 q=2.0 size=   46376kB time=00:01:08.93 bitrate=5511.1kbits/s speed=2.56x    frame= 2100 fps= 77 q=2.0 Lsize=   47278kB time=00:01:10.07 bitrate=5527.0kbits/s speed=2.57x    
+video:42506kB audio:3832kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.027820%
+2017-02-02 20:01:56
+transcode to mpeg successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_001_MAS_002.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2016-07-15 00:32:36
+  Duration: 00:01:10.07, start: 0.000000, bitrate: 142236 kb/s
+    Stream #0:0(eng): Video: prores (apcn / 0x6E637061), yuv422p10le(bt709), 1920x1080, 139813 kb/s, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422
+      timecode        : 00:59:50:00
+    Stream #0:1(eng): Audio: pcm_s24le (in24 / 0x34326E69), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+[mp4 @ 0x7fa602801e00] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, mp4, to 'S2016_001_AEWVJA_001_MAS_002.mp4':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg4 ( [0][0][0] / 0x0020), yuv420p, 420x270 [SAR 8:7 DAR 16:9], q=2-31, 372 kb/s, 0.03 fps, 11988 tbn, 29.97 tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/372000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([64][0][0][0] / 0x0040), 44100 Hz, stereo, fltp (24 bit), 128 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:32:36
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 -> #0:0 (prores (native) -> mpeg4 (native))
+  Stream #0:1 -> #0:1 (pcm_s24le (native) -> aac (native))
+Press [q] to stop, [?] for help
+frame=   47 fps=0.0 q=2.0 size=      79kB time=00:00:01.53 bitrate= 419.3kbits/s speed=3.05x    frame=   96 fps= 95 q=2.0 size=     223kB time=00:00:03.16 bitrate= 576.6kbits/s speed=3.13x    frame=  139 fps= 92 q=2.0 size=     284kB time=00:00:04.60 bitrate= 505.4kbits/s speed=3.04x    frame=  187 fps= 93 q=2.0 size=     427kB time=00:00:06.20 bitrate= 563.6kbits/s speed=3.08x    frame=  236 fps= 94 q=2.0 size=     508kB time=00:00:07.84 bitrate= 530.8kbits/s speed=3.11x    frame=  291 fps= 96 q=2.0 size=     615kB time=00:00:09.67 bitrate= 520.3kbits/s speed= 3.2x    frame=  338 fps= 96 q=3.9 size=     730kB time=00:00:11.24 bitrate= 532.0kbits/s speed=3.19x    frame=  381 fps= 94 q=5.0 size=     813kB time=00:00:12.67 bitrate= 525.0kbits/s speed=3.14x    frame=  419 fps= 92 q=11.5 size=     905kB time=00:00:13.94 bitrate= 531.4kbits/s speed=3.07x    frame=  461 fps= 91 q=7.3 size=    1062kB time=00:00:15.34 bitrate= 567.1kbits/s speed=3.04x    frame=  506 fps= 91 q=12.4 size=    1124kB time=00:00:16.85 bitrate= 546.5kbits/s speed=3.03x    frame=  549 fps= 91 q=12.5 size=    1245kB time=00:00:18.28 bitrate= 557.8kbits/s speed=3.02x    frame=  588 fps= 90 q=14.1 size=    1307kB time=00:00:19.58 bitrate= 546.8kbits/s speed=2.98x    frame=  636 fps= 90 q=7.2 size=    1438kB time=00:00:21.18 bitrate= 555.8kbits/s speed=   3x    frame=  687 fps= 91 q=10.1 size=    1513kB time=00:00:22.88 bitrate= 541.4kbits/s speed=3.02x    frame=  729 fps= 90 q=9.7 size=    1641kB time=00:00:24.29 bitrate= 553.4kbits/s speed=3.01x    frame=  776 fps= 90 q=8.0 size=    1706kB time=00:00:25.85 bitrate= 540.4kbits/s speed=3.01x    frame=  815 fps= 90 q=7.8 size=    1814kB time=00:00:27.16 bitrate= 547.1kbits/s speed=2.99x    frame=  850 fps= 89 q=6.3 size=    1877kB time=00:00:28.32 bitrate= 542.8kbits/s speed=2.95x    frame=  896 fps= 89 q=6.6 size=    1935kB time=00:00:29.86 bitrate= 530.9kbits/s speed=2.96x    frame=  939 fps= 89 q=10.1 size=    2056kB time=00:00:31.29 bitrate= 538.1kbits/s speed=2.95x    frame=  983 fps= 88 q=9.1 size=    2111kB time=00:00:32.76 bitrate= 527.8kbits/s speed=2.95x    frame= 1027 fps= 88 q=11.3 size=    2234kB time=00:00:34.23 bitrate= 534.6kbits/s speed=2.95x    frame= 1073 fps= 89 q=7.3 size=    2292kB time=00:00:35.76 bitrate= 524.8kbits/s speed=2.95x    frame= 1116 fps= 88 q=6.0 size=    2413kB time=00:00:37.20 bitrate= 531.2kbits/s speed=2.95x    frame= 1164 fps= 89 q=9.8 size=    2481kB time=00:00:38.80 bitrate= 523.8kbits/s speed=2.96x    frame= 1209 fps= 89 q=9.8 size=    2600kB time=00:00:40.30 bitrate= 528.3kbits/s speed=2.96x    frame= 1258 fps= 89 q=5.9 size=    2654kB time=00:00:41.94 bitrate= 518.4kbits/s speed=2.97x    frame= 1297 fps= 89 q=6.6 size=    2778kB time=00:00:43.24 bitrate= 526.3kbits/s speed=2.95x    frame= 1335 fps= 88 q=8.4 size=    2857kB time=00:00:44.51 bitrate= 525.8kbits/s speed=2.94x    frame= 1379 fps= 88 q=9.5 size=    2928kB time=00:00:45.97 bitrate= 521.7kbits/s speed=2.94x    frame= 1423 fps= 88 q=8.9 size=    3040kB time=00:00:47.44 bitrate= 524.9kbits/s speed=2.94x    frame= 1469 fps= 88 q=8.8 size=    3112kB time=00:00:48.98 bitrate= 520.4kbits/s speed=2.94x    frame= 1513 fps= 88 q=7.9 size=    3212kB time=00:00:50.45 bitrate= 521.6kbits/s speed=2.94x    frame= 1559 fps= 88 q=9.0 size=    3272kB time=00:00:51.98 bitrate= 515.7kbits/s speed=2.94x    frame= 1604 fps= 88 q=8.9 size=    3387kB time=00:00:53.48 bitrate= 518.8kbits/s speed=2.94x    frame= 1649 fps= 88 q=8.9 size=    3493kB time=00:00:54.98 bitrate= 520.4kbits/s speed=2.95x    frame= 1698 fps= 89 q=10.2 size=    3566kB time=00:00:56.62 bitrate= 515.9kbits/s speed=2.95x    frame= 1744 fps= 89 q=8.1 size=    3688kB time=00:00:58.15 bitrate= 519.4kbits/s speed=2.96x    frame= 1794 fps= 89 q=9.2 size=    3745kB time=00:00:59.82 bitrate= 512.8kbits/s speed=2.96x    frame= 1840 fps= 89 q=12.6 size=    3873kB time=00:01:01.36 bitrate= 517.0kbits/s speed=2.97x    frame= 1879 fps= 89 q=14.2 size=    3933kB time=00:01:02.66 bitrate= 514.1kbits/s speed=2.96x    frame= 1919 fps= 88 q=24.6 size=    4000kB time=00:01:03.99 bitrate= 512.0kbits/s speed=2.95x    frame= 1966 fps= 89 q=19.7 size=    4120kB time=00:01:05.56 bitrate= 514.7kbits/s speed=2.95x    frame= 2011 fps= 89 q=11.3 size=    4248kB time=00:01:07.06 bitrate= 518.8kbits/s speed=2.95x    frame= 2060 fps= 89 q=9.6 size=    4308kB time=00:01:08.70 bitrate= 513.7kbits/s speed=2.96x    frame= 2100 fps= 89 q=14.7 Lsize=    4500kB time=00:01:10.07 bitrate= 526.0kbits/s speed=2.96x    
+video:3472kB audio:968kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.362812%
+[aac @ 0x7fa60202c600] Qavg: 9798.427
+2017-02-02 20:02:20
+copying archival master to lc folder
+
+2017-02-02 20:04:59
+
+copying S2016_001_AEWVJA_001_MAS_002.mov from source to destination...
+srce S2016_001_AEWVJA_001_MAS_002.mov ee5cf80ed2da1f9a6e6e5444de45cf6a3434d951
+dest S2016_001_AEWVJA_001_MAS_002.mov ee5cf80ed2da1f9a6e6e5444de45cf6a3434d951
+
+2017-02-02 20:05:01
+
+copying S2016_001_AEWVJA_001_MAS_002.flv from source to destination...
+srce S2016_001_AEWVJA_001_MAS_002.flv fb9a250e31574bb0ad24d56b6fe07bc406cafffb
+dest S2016_001_AEWVJA_001_MAS_002.flv fb9a250e31574bb0ad24d56b6fe07bc406cafffb
+
+2017-02-02 20:05:02
+
+copying S2016_001_AEWVJA_001_MAS_002.mp4 from source to destination...
+srce S2016_001_AEWVJA_001_MAS_002.mp4 d20028bbef865579a63073d2b6d8ac623a1fe238
+dest S2016_001_AEWVJA_001_MAS_002.mp4 d20028bbef865579a63073d2b6d8ac623a1fe238
+
+2017-02-02 20:05:09
+
+copying S2016_001_AEWVJA_001_MAS_002.mpeg from source to destination...
+srce S2016_001_AEWVJA_001_MAS_002.mpeg 574bb7c134102db8e3fe1d1094e80ab36dd0ca76
+dest S2016_001_AEWVJA_001_MAS_002.mpeg 574bb7c134102db8e3fe1d1094e80ab36dd0ca76
+
+2017-02-02 20:05:09
+sending hashes to filemaker
+2017-02-02 20:05:14
+verifying hashes in filemaker
+2017-02-02 20:05:14
+hash of S2016_001_AEWVJA_001_MAS_002.flv verified correctly as: ("('fb9a250e31574bb0ad24d56b6fe07bc406cafffb', )\n", '')
+2017-02-02 20:05:14
+hash of S2016_001_AEWVJA_001_MAS_002.mpeg verified correctly as: ("('574bb7c134102db8e3fe1d1094e80ab36dd0ca76', )\n", '')
+2017-02-02 20:05:15
+hash of S2016_001_AEWVJA_001_MAS_002.mov verified correctly as: ("('ee5cf80ed2da1f9a6e6e5444de45cf6a3434d951', )\n", '')
+2017-02-02 20:05:15
+hash of S2016_001_AEWVJA_001_MAS_002.mp4 verified correctly as: ("('d20028bbef865579a63073d2b6d8ac623a1fe238', )\n", '')
+2017-02-02 20:05:15
+moving archival master from copyto
+2017-02-02 20:05:15
+moving mpeg from copyto
+2017-02-02 20:05:15
+moving flv from copyto
+2017-02-02 20:05:15
+moving mp4 from copyto
+2017-02-02 20:05:20
+removing /Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_002/.DS_Store
+2017-02-02 20:05:20
+removing accession dir /Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_002 from IncomingQT
+2017-02-02 20:05:26
+makevideos processed accession /Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_002 successfully
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_001_MAS_003.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2016-07-15 00:31:40
+  Duration: 00:00:40.37, start: 0.000000, bitrate: 134457 kb/s
+    Stream #0:0(eng): Video: prores (apcn / 0x6E637061), yuv422p10le(bt709), 1920x1080, 131945 kb/s, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422
+      timecode        : 00:59:50:00
+    Stream #0:1(eng): Audio: pcm_s24le (in24 / 0x34326E69), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+[libx264 @ 0x7ff3a9801e00] using SAR=1/1
+[libx264 @ 0x7ff3a9801e00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x7ff3a9801e00] profile High, level 2.0
+[libx264 @ 0x7ff3a9801e00] 264 - core 148 r2668 fd2c324 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=abr mbtree=1 bitrate=700 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[flv @ 0x7ff3a9805600] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, flv, to 'S2016_001_AEWVJA_001_MAS_003.flv':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    timecode        : 03:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0: Video: h264 (libx264) ([7][0][0][0] / 0x0007), yuv420p, 320x180 [SAR 1:1 DAR 16:9], q=-1--1, 700 kb/s, 29.97 fps, 1k tbn, 29.97 tbc (default)
+    Metadata:
+      encoder         : Lavc57.48.101 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/700000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([10][0][0][0] / 0x000A), 48000 Hz, stereo, fltp (24 bit), 128 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 (prores) -> scale (graph 0)
+  Stream #1:0 (png) -> overlay:overlay (graph 0)
+  overlay (graph 0) -> Stream #0:0 (libx264)
+  Stream #0:1 -> #0:1 (pcm_s24le (native) -> aac (native))
+Press [q] to stop, [?] for help
+[png @ 0x7ff3aa001000] Invalid PNG signature 0x323031362D31302D.
+Error while decoding stream #1:0: Invalid data found when processing input
+frame=   59 fps=0.0 q=16.0 size=      29kB time=00:00:00.93 bitrate= 250.4kbits/s speed=1.86x    frame=  103 fps=102 q=5.0 size=      58kB time=00:00:02.94 bitrate= 160.9kbits/s speed=2.92x    frame=  158 fps=104 q=0.0 size=      80kB time=00:00:04.95 bitrate= 131.7kbits/s speed=3.26x    frame=  209 fps=103 q=0.0 size=      91kB time=00:00:06.01 bitrate= 124.2kbits/s speed=2.98x    frame=  275 fps=109 q=0.0 size=     105kB time=00:00:08.96 bitrate=  95.6kbits/s speed=3.55x    frame=  335 fps=111 q=0.0 size=     139kB time=00:00:10.96 bitrate= 104.0kbits/s speed=3.63x    frame=  377 fps=107 q=3.0 size=     934kB time=00:00:11.96 bitrate= 639.4kbits/s speed=3.39x    frame=  419 fps=104 q=11.0 size=    1502kB time=00:00:13.09 bitrate= 939.3kbits/s speed=3.25x    frame=  461 fps=102 q=14.0 size=    1795kB time=00:00:14.95 bitrate= 983.3kbits/s speed=3.29x    frame=  508 fps=101 q=17.0 size=    2053kB time=00:00:15.95 bitrate=1054.0kbits/s speed=3.16x    frame=  549 fps= 99 q=18.0 size=    2242kB time=00:00:17.96 bitrate=1022.6kbits/s speed=3.24x    frame=  598 fps= 99 q=19.0 size=    2465kB time=00:00:18.96 bitrate=1064.7kbits/s speed=3.13x    frame=  648 fps= 99 q=19.0 size=    2568kB time=00:00:20.97 bitrate=1003.2kbits/s speed= 3.2x    frame=  695 fps= 98 q=19.0 size=    2722kB time=00:00:22.97 bitrate= 970.4kbits/s speed=3.25x    frame=  734 fps= 96 q=19.0 size=    2816kB time=00:00:23.97 bitrate= 962.0kbits/s speed=3.13x    frame=  779 fps= 95 q=19.0 size=    2964kB time=00:00:25.96 bitrate= 935.4kbits/s speed=3.18x    frame=  833 fps= 96 q=18.0 size=    3067kB time=00:00:26.96 bitrate= 931.7kbits/s speed=3.11x    frame=  885 fps= 97 q=18.0 size=    3194kB time=00:00:28.97 bitrate= 903.3kbits/s speed=3.16x    frame=  936 fps= 97 q=17.0 size=    3351kB time=00:00:30.97 bitrate= 886.2kbits/s speed= 3.2x    frame=  980 fps= 96 q=19.0 size=    3586kB time=00:00:31.97 bitrate= 918.6kbits/s speed=3.14x    frame= 1021 fps= 96 q=20.0 size=    3842kB time=00:00:33.98 bitrate= 926.1kbits/s speed=3.18x    frame= 1067 fps= 95 q=21.0 size=    4060kB time=00:00:34.98 bitrate= 950.7kbits/s speed=3.13x    frame= 1113 fps= 95 q=21.0 size=    4238kB time=00:00:36.99 bitrate= 938.6kbits/s speed=3.17x    frame= 1163 fps= 95 q=21.0 size=    4367kB time=00:00:37.99 bitrate= 941.6kbits/s speed=3.12x    frame= 1210 fps= 95 q=-1.0 Lsize=    4557kB time=00:00:40.38 bitrate= 924.4kbits/s speed=3.17x    
+video:4006kB audio:495kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.234846%
+[libx264 @ 0x7ff3a9801e00] frame I:9     Avg QP: 9.48  size: 23364
+[libx264 @ 0x7ff3a9801e00] frame P:513   Avg QP:11.48  size:  6289
+[libx264 @ 0x7ff3a9801e00] frame B:688   Avg QP:12.32  size:   966
+[libx264 @ 0x7ff3a9801e00] consecutive B-frames: 15.7% 21.3% 12.4% 50.6%
+[libx264 @ 0x7ff3a9801e00] mb I  I16..4:  2.7% 42.4% 54.9%
+[libx264 @ 0x7ff3a9801e00] mb P  I16..4:  2.5%  7.2%  5.3%  P16..4: 37.8% 16.5% 13.9%  0.0%  0.0%    skip:16.9%
+[libx264 @ 0x7ff3a9801e00] mb B  I16..4:  0.1%  1.3%  0.2%  B16..8:  9.5%  4.4%  0.7%  direct:18.6%  skip:65.2%  L0:36.3% L1:33.1% BI:30.6%
+[libx264 @ 0x7ff3a9801e00] final ratefactor: 10.51
+[libx264 @ 0x7ff3a9801e00] 8x8 transform intra:50.8% inter:53.6%
+[libx264 @ 0x7ff3a9801e00] coded y,uvDC,uvAC intra: 75.6% 87.7% 72.4% inter: 32.4% 36.8% 18.9%
+[libx264 @ 0x7ff3a9801e00] i16 v,h,dc,p: 16% 17%  5% 63%
+[libx264 @ 0x7ff3a9801e00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 26% 22%  4%  6%  4%  7%  4%  6%
+[libx264 @ 0x7ff3a9801e00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 15%  9%  5% 10%  6%  7%  5%  5%
+[libx264 @ 0x7ff3a9801e00] i8c dc,h,v,p: 38% 21% 19% 21%
+[libx264 @ 0x7ff3a9801e00] Weighted P-Frames: Y:19.7% UV:13.8%
+[libx264 @ 0x7ff3a9801e00] ref P L0: 82.6% 17.4%
+[libx264 @ 0x7ff3a9801e00] ref B L0: 79.6% 20.4%
+[libx264 @ 0x7ff3a9801e00] ref B L1: 97.0%  3.0%
+[libx264 @ 0x7ff3a9801e00] kb/s:812.70
+[aac @ 0x7ff3a9807800] Qavg: 16831.795
+2017-02-02 20:05:39
+transcode to flv successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_001_MAS_003.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2016-07-15 00:31:40
+  Duration: 00:00:40.37, start: 0.000000, bitrate: 134457 kb/s
+    Stream #0:0(eng): Video: prores (apcn / 0x6E637061), yuv422p10le(bt709), 1920x1080, 131945 kb/s, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422
+      timecode        : 00:59:50:00
+    Stream #0:1(eng): Audio: pcm_s24le (in24 / 0x34326E69), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+[dvd @ 0x7fde41818e00] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, dvd, to 'S2016_001_AEWVJA_001_MAS_003.mpeg':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg2video (Main) (xvid / 0x64697678), yuv420p, 720x480 [SAR 32:27 DAR 16:9], q=2-31, 5000 kb/s, 29.97 fps, 90k tbn, 29.97 tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 mpeg2video
+    Side data:
+      cpb: bitrate max/min/avg: 9000000/0/5000000 buffer size: 1835008 vbv_delay: -1
+    Stream #0:1(eng): Audio: ac3, 48000 Hz, stereo, fltp (24 bit), 448 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 ac3
+Stream mapping:
+  Stream #0:0 -> #0:0 (prores (native) -> mpeg2video (native))
+  Stream #0:1 -> #0:1 (pcm_s24le (native) -> ac3 (native))
+Press [q] to stop, [?] for help
+frame=   45 fps=0.0 q=2.0 size=     148kB time=00:00:01.40 bitrate= 865.1kbits/s speed=2.79x    frame=   89 fps= 88 q=2.0 size=     366kB time=00:00:02.86 bitrate=1044.9kbits/s speed=2.84x    frame=  131 fps= 86 q=2.0 size=     694kB time=00:00:04.27 bitrate=1331.1kbits/s speed=2.81x    frame=  169 fps= 83 q=2.0 size=     904kB time=00:00:05.53 bitrate=1337.0kbits/s speed=2.73x    frame=  211 fps= 83 q=2.0 size=    1240kB time=00:00:06.97 bitrate=1457.3kbits/s speed=2.75x    frame=  259 fps= 85 q=2.0 size=    1452kB time=00:00:08.54 bitrate=1392.5kbits/s speed=2.82x    frame=  312 fps= 88 q=2.0 size=    1652kB time=00:00:10.31 bitrate=1312.6kbits/s speed=2.91x    frame=  353 fps= 87 q=2.0 size=    2070kB time=00:00:11.67 bitrate=1452.0kbits/s speed=2.89x    frame=  394 fps= 87 q=2.0 size=    3124kB time=00:00:13.04 bitrate=1961.6kbits/s speed=2.87x    frame=  431 fps= 85 q=2.0 size=    3866kB time=00:00:14.28 bitrate=2217.7kbits/s speed=2.82x    frame=  471 fps= 85 q=2.0 size=    4478kB time=00:00:15.61 bitrate=2349.2kbits/s speed=2.81x    frame=  511 fps= 84 q=2.0 size=    5946kB time=00:00:16.98 bitrate=2867.5kbits/s speed= 2.8x    frame=  550 fps= 84 q=2.0 size=    6950kB time=00:00:18.25 bitrate=3119.4kbits/s speed=2.78x    frame=  592 fps= 84 q=2.0 size=    7884kB time=00:00:19.65 bitrate=3286.3kbits/s speed=2.77x    frame=  631 fps= 83 q=2.0 size=    9598kB time=00:00:20.98 bitrate=3746.5kbits/s speed=2.76x    frame=  670 fps= 83 q=2.0 size=   10642kB time=00:00:22.25 bitrate=3917.2kbits/s speed=2.75x    frame=  711 fps= 83 q=2.0 size=   11444kB time=00:00:23.62 bitrate=3968.5kbits/s speed=2.74x    frame=  747 fps= 82 q=2.0 size=   12444kB time=00:00:24.82 bitrate=4106.4kbits/s speed=2.72x    frame=  786 fps= 82 q=2.0 size=   14300kB time=00:00:26.12 bitrate=4483.9kbits/s speed=2.71x    frame=  825 fps= 81 q=2.0 size=   14900kB time=00:00:27.42 bitrate=4450.3kbits/s speed=2.71x    frame=  866 fps= 81 q=2.0 size=   15640kB time=00:00:28.79 bitrate=4449.4kbits/s speed=2.71x    frame=  905 fps= 81 q=2.0 size=   17416kB time=00:00:30.09 bitrate=4740.4kbits/s speed= 2.7x    frame=  945 fps= 81 q=3.6 size=   18306kB time=00:00:31.43 bitrate=4771.1kbits/s speed= 2.7x    frame=  983 fps= 81 q=2.5 size=   19478kB time=00:00:32.69 bitrate=4879.7kbits/s speed=2.69x    frame= 1021 fps= 81 q=2.9 size=   21818kB time=00:00:34.01 bitrate=5255.2kbits/s speed=2.69x    frame= 1059 fps= 80 q=1.7 size=   22570kB time=00:00:35.23 bitrate=5247.4kbits/s speed=2.68x    frame= 1101 fps= 81 q=2.0 size=   23418kB time=00:00:36.63 bitrate=5236.3kbits/s speed=2.68x    frame= 1141 fps= 80 q=2.0 size=   24566kB time=00:00:38.01 bitrate=5294.4kbits/s speed=2.68x    frame= 1182 fps= 81 q=2.0 size=   25136kB time=00:00:39.33 bitrate=5234.3kbits/s speed=2.68x    frame= 1210 fps= 81 q=2.0 Lsize=   26022kB time=00:00:40.37 bitrate=5279.3kbits/s speed=2.69x    
+video:23280kB audio:2208kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.091227%
+2017-02-02 20:05:54
+transcode to mpeg successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_001_MAS_003.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2016-07-15 00:31:40
+  Duration: 00:00:40.37, start: 0.000000, bitrate: 134457 kb/s
+    Stream #0:0(eng): Video: prores (apcn / 0x6E637061), yuv422p10le(bt709), 1920x1080, 131945 kb/s, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422
+      timecode        : 00:59:50:00
+    Stream #0:1(eng): Audio: pcm_s24le (in24 / 0x34326E69), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+[mp4 @ 0x7fcc2a004400] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, mp4, to 'S2016_001_AEWVJA_001_MAS_003.mp4':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg4 ( [0][0][0] / 0x0020), yuv420p, 420x270 [SAR 8:7 DAR 16:9], q=2-31, 372 kb/s, 0.03 fps, 11988 tbn, 29.97 tbc (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/372000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([64][0][0][0] / 0x0040), 44100 Hz, stereo, fltp (24 bit), 128 kb/s (default)
+    Metadata:
+      creation_time   : 2016-07-15 00:31:40
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:50:00
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 -> #0:0 (prores (native) -> mpeg4 (native))
+  Stream #0:1 -> #0:1 (pcm_s24le (native) -> aac (native))
+Press [q] to stop, [?] for help
+frame=   52 fps=0.0 q=2.0 size=      81kB time=00:00:01.70 bitrate= 391.2kbits/s speed=3.39x    frame=  101 fps=101 q=2.0 size=     230kB time=00:00:03.33 bitrate= 565.9kbits/s speed=3.32x    frame=  137 fps= 91 q=2.0 size=     293kB time=00:00:04.53 bitrate= 529.5kbits/s speed=3.01x    frame=  182 fps= 90 q=2.0 size=     441kB time=00:00:06.03 bitrate= 597.9kbits/s speed=   3x    frame=  234 fps= 93 q=2.0 size=     525kB time=00:00:07.77 bitrate= 552.9kbits/s speed=3.09x    frame=  301 fps=100 q=1.6 size=     654kB time=00:00:10.01 bitrate= 535.4kbits/s speed=3.31x    frame=  347 fps= 98 q=4.2 size=     746kB time=00:00:11.54 bitrate= 529.6kbits/s speed=3.27x    frame=  389 fps= 97 q=6.9 size=     833kB time=00:00:12.94 bitrate= 527.3kbits/s speed=3.21x    frame=  431 fps= 95 q=11.9 size=     996kB time=00:00:14.34 bitrate= 568.9kbits/s speed=3.16x    frame=  478 fps= 95 q=7.9 size=    1071kB time=00:00:15.91 bitrate= 551.1kbits/s speed=3.16x    frame=  520 fps= 94 q=11.2 size=    1194kB time=00:00:17.31 bitrate= 564.9kbits/s speed=3.12x    frame=  566 fps= 94 q=11.7 size=    1259kB time=00:00:18.85 bitrate= 547.2kbits/s speed=3.12x    frame=  612 fps= 93 q=7.2 size=    1388kB time=00:00:20.38 bitrate= 557.8kbits/s speed=3.11x    frame=  659 fps= 93 q=9.7 size=    1453kB time=00:00:21.95 bitrate= 542.3kbits/s speed=3.11x    frame=  706 fps= 93 q=9.8 size=    1556kB time=00:00:23.52 bitrate= 541.9kbits/s speed=3.11x    frame=  749 fps= 93 q=10.4 size=    1672kB time=00:00:24.95 bitrate= 548.7kbits/s speed=3.09x    frame=  796 fps= 93 q=5.7 size=    1759kB time=00:00:26.52 bitrate= 543.2kbits/s speed=3.09x    frame=  843 fps= 93 q=9.8 size=    1890kB time=00:00:28.09 bitrate= 551.1kbits/s speed=3.09x    frame=  889 fps= 93 q=9.6 size=    1941kB time=00:00:29.62 bitrate= 536.8kbits/s speed=3.09x    frame=  937 fps= 93 q=16.1 size=    2063kB time=00:00:31.23 bitrate= 541.0kbits/s speed=3.09x    frame=  983 fps= 93 q=15.2 size=    2124kB time=00:00:32.76 bitrate= 531.1kbits/s speed=3.09x    frame= 1027 fps= 92 q=25.5 size=    2242kB time=00:00:34.23 bitrate= 536.6kbits/s speed=3.08x    frame= 1077 fps= 93 q=21.3 size=    2296kB time=00:00:35.90 bitrate= 523.9kbits/s speed=3.09x    frame= 1124 fps= 93 q=10.2 size=    2412kB time=00:00:37.47 bitrate= 527.2kbits/s speed=3.09x    frame= 1169 fps= 93 q=11.3 size=    2511kB time=00:00:38.97 bitrate= 527.8kbits/s speed=3.09x    frame= 1210 fps= 93 q=13.3 Lsize=    2660kB time=00:00:40.37 bitrate= 539.7kbits/s speed=3.09x    
+video:2132kB audio:493kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.358233%
+[aac @ 0x7fcc2a001e00] Qavg: 16920.836
+2017-02-02 20:06:07
+copying archival master to lc folder
+
+2017-02-02 20:07:28
+
+copying S2016_001_AEWVJA_001_MAS_003.mov from source to destination...
+srce S2016_001_AEWVJA_001_MAS_003.mov b51d93390f28a5cde9905a13381190fb748335ad
+dest S2016_001_AEWVJA_001_MAS_003.mov b51d93390f28a5cde9905a13381190fb748335ad
+
+2017-02-02 20:07:30
+
+copying S2016_001_AEWVJA_001_MAS_003.flv from source to destination...
+srce S2016_001_AEWVJA_001_MAS_003.flv 1313ac732f5fee418477950d6c7c265b66a15a32
+dest S2016_001_AEWVJA_001_MAS_003.flv 1313ac732f5fee418477950d6c7c265b66a15a32
+
+2017-02-02 20:07:31
+
+copying S2016_001_AEWVJA_001_MAS_003.mp4 from source to destination...
+srce S2016_001_AEWVJA_001_MAS_003.mp4 7ba883c81f368919f61c3e68ae212a14b187722b
+dest S2016_001_AEWVJA_001_MAS_003.mp4 7ba883c81f368919f61c3e68ae212a14b187722b
+
+2017-02-02 20:07:35
+
+copying S2016_001_AEWVJA_001_MAS_003.mpeg from source to destination...
+srce S2016_001_AEWVJA_001_MAS_003.mpeg 31931883ead679eed3166f8d1f9e9242a04468ec
+dest S2016_001_AEWVJA_001_MAS_003.mpeg 31931883ead679eed3166f8d1f9e9242a04468ec
+
+2017-02-02 20:07:35
+sending hashes to filemaker
+2017-02-02 20:07:40
+verifying hashes in filemaker
+2017-02-02 20:07:40
+hash of S2016_001_AEWVJA_001_MAS_003.mp4 verified correctly as: ("('7ba883c81f368919f61c3e68ae212a14b187722b', )\n", '')
+2017-02-02 20:07:41
+hash of S2016_001_AEWVJA_001_MAS_003.mpeg verified correctly as: ("('31931883ead679eed3166f8d1f9e9242a04468ec', )\n", '')
+2017-02-02 20:07:41
+hash of S2016_001_AEWVJA_001_MAS_003.flv verified correctly as: ("('1313ac732f5fee418477950d6c7c265b66a15a32', )\n", '')
+2017-02-02 20:07:41
+hash of S2016_001_AEWVJA_001_MAS_003.mov verified correctly as: ("('b51d93390f28a5cde9905a13381190fb748335ad', )\n", '')
+2017-02-02 20:07:41
+moving archival master from copyto
+2017-02-02 20:07:41
+moving mpeg from copyto
+2017-02-02 20:07:41
+moving flv from copyto
+2017-02-02 20:07:41
+moving mp4 from copyto
+2017-02-02 20:07:46
+removing /Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_003/.DS_Store
+2017-02-02 20:07:46
+removing accession dir /Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_003 from IncomingQT
+2017-02-02 20:07:49
+makevideos processed accession /Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_003 successfully
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2016_001_AEWVJA_006_STO_001.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537331968
+    compatible_brands: qt  CDes
+    creation_time   : 2008-06-06 20:25:39
+    timecode        : 04:00:00:00
+  Duration: 00:04:33.27, start: 0.000000, bitrate: 52376 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 50000 kb/s, 29.97 fps, 29.97 tbr, 2997 tbn, 59.94 tbc (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+    Stream #0:1(eng): Audio: pcm_s24be (lpcm / 0x6D63706C), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+    Stream #0:2(eng): Audio: pcm_s24be (lpcm / 0x6D63706C), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+    Stream #0:3(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      reel_name       : Flash XDR
+      timecode        : 04:00:00:00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+[libx264 @ 0x7f81e184ae00] using SAR=1/1
+[libx264 @ 0x7f81e184ae00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x7f81e184ae00] profile High, level 2.0
+[libx264 @ 0x7f81e184ae00] 264 - core 148 r2668 fd2c324 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=abr mbtree=1 bitrate=700 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[flv @ 0x7f81e180c800] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 2 times
+[flv @ 0x7f81e180c800] at most one audio stream is supported in flv
+Output #0, flv, to 'S2016_001_AEWVJA_006_STO_001.flv':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537331968
+    compatible_brands: qt  CDes
+    timecode        : 01:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0: Video: h264 (libx264) ([7][0][0][0] / 0x0007), yuv420p, 320x180 [SAR 1:1 DAR 16:9], q=-1--1, 700 kb/s, 29.97 fps, 1k tbn, 29.97 tbc (default)
+    Metadata:
+      encoder         : Lavc57.48.101 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/700000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([10][0][0][0] / 0x000A), 48000 Hz, mono, fltp (24 bit), 69 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      encoder         : Lavc57.48.101 aac
+    Stream #0:2(eng): Audio: aac (LC) ([10][0][0][0] / 0x000A), 48000 Hz, mono, fltp (24 bit), 69 kb/s (default)
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 (mpeg2video) -> scale (graph 0)
+  Stream #1:0 (png) -> overlay:overlay (graph 0)
+  overlay (graph 0) -> Stream #0:0 (libx264)
+  Stream #0:1 -> #0:1 (pcm_s24be (native) -> aac (native))
+  Stream #0:2 -> #0:2 (pcm_s24be (native) -> aac (native))
+Could not write header for output file #0 (incorrect codec parameters ?): Invalid argument
+[libx264 @ 0x7f81e184ae00] final ratefactor: 21.30
+[aac @ 0x7f81e184c600] Qavg: nan
+[aac @ 0x7f81e184d800] Qavg: nan
+2017-02-02 20:07:50
+The transcode to S2016_001_AEWVJA_006_STO_001.flv was unsuccessful
+

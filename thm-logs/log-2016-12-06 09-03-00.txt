@@ -1,0 +1,35 @@
+2016-12-06 09:03:00
+running
+2016-12-06 09:09:37
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_079_002_010': ['01691001.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_127_001_001': ['01711001.MOV', '01711002.MOV', '01711003.MOV', '01711004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_127_001_002': ['01712001.MOV', '01713001.MOV', '01713002.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_081_001_001': ['01692001.MOV', '01692002.MOV', '01692003.MOV', '01692004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_081_001_002': ['01693001.MOV', '01693002.MOV', '01693003.MOV', '01693004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_081_001_003': ['01694001.MOV', '01694002.MOV', '01694003.MOV', '01694004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_081_001_004': ['01695001.MOV', '01695002.MOV', '01695003.MOV', '01695004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_081_001_005': ['01696001.MOV', '01696002.MOV', '01696003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_081_001_006': ['01697001.MOV', '01697002.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_094_001_002': ['01701001.MOV', '01701002.MOV', '01701003.MOV', '01701004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_094_001_001': ['01699001.MOV', '01700001.MOV', '01700002.MOV', '01700003.MOV', '01700004.MOV', '01700005.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_108_001_001': ['01702001.MOV', '01702002.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_108_001_002': ['01703001.MOV', '01703002.MOV', '01703003.MOV', '01703004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_108_001_003': ['01704001.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_079_002_008': ['01689001.MOV', '01689002.MOV', '01689003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_079_002_009': ['01690001.MOV', '01690002.MOV', '01690003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_079_002_006': ['concat.mov'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_079_002_007': ['01688001.MOV', '01688002.MOV', '01688003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_110_001_004': ['01722001.MOV', '01722002.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_110_001_003': ['01721001.MOV', '01721002.MOV', '01721003.MOV', '01721004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_110_001_002': ['01720001.MOV', '01720002.MOV', '01720003.MOV', '01720004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_110_001_001': ['01718001.MOV', '01718002.MOV', '01719001.MOV', '01719002.MOV']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+[concat @ 0x7ff450808000] Could not find codec parameters for stream 3 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, concat, from 'concat.txt':
+  Duration: N/A, start: 0.000000, bitrate: 52303 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 49999 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 11988 tbc
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 06:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3: Unknown: none
+File 'concat.mov' already exists. Overwrite ? [y/N] Not overwriting - exiting

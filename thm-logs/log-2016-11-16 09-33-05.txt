@@ -1,0 +1,4 @@
+2016-11-16 09:33:05
+running
+2016-11-16 09:33:08
+The video script is unable to run because Xendata is not mounted as expected. Please mount Xendata on XCluster at /Volumes/Holding_Xendata

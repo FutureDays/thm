@@ -1,0 +1,39 @@
+2017-01-24 09:23:38
+running
+2017-01-24 09:33:02
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_005_001_005': ['01902001.MOV', '01902002.MOV', '01902003.MOV', '01902004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_007_001_005': ['01910001.MOV', '01910002.MOV', '01910003.MOV', '01910004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_007_001_004': ['01909001.MOV', '01909002.MOV', '01909003.MOV', '01909004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_007_001_003': ['01908001.MOV', '01908002.MOV', '01908003.MOV', '01908004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_007_001_002': ['01906001.MOV', '01907001.MOV', '01907002.MOV', '01907003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_007_001_001': ['01905001.MOV', '01905002.MOV', '01905003.MOV', '01905004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_005_001_004': ['01901001.MOV', '01901002.MOV', '01901003.MOV', '01901004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_088_002_011': ['01876001.MOV', '01876002.MOV', '01876003.MOV', '01877001.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_088_002_010': ['01875001.MOV', '01875002.MOV', '01875003.MOV', '01875004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_088_002_012': ['01878001.MOV', '01878002.MOV', '01878003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_005_001_003': ['01899001.MOV', '01899002.MOV', '01899003.MOV', '01899004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_005_001_006': ['01903001.MOV', '01903002.MOV', '01903003.MOV', '01903004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_002_001_005': ['01870001.MOV', '01870002.MOV', '01870003.MOV', '01870004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_007_001_006': ['01911001.MOV', '01911002.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_002_001_002': ['01865001.MOV', '01865002.MOV', '01865003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_002_001_003': ['01866001.MOV', '01867001.MOV', '01867002.MOV', '01868001.MOV', '01868002.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_005_001_007': ['01904001.MOV', '01904002.MOV', '01904003.MOV', '01904004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_002_001_001': ['01864001.MOV', '01864002.MOV', '01864003.MOV', '01864004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_005_001_001': ['01897001.MOV', '01897002.MOV', '01897003.MOV', '01897004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_002_001_004': ['01869001.MOV', '01869002.MOV', '01869003.MOV', '01869004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_005_001_002': ['01898001.MOV', '01898002.MOV', '01898003.MOV', '01898004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_088_002_007': ['01871001.MOV', '01871002.MOV', '01871003.MOV', '01871004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_088_002_008': ['01872001.MOV', '01872002.MOV', '01872003.MOV', '01872004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_088_002_009': ['01873001.MOV', '01874001.MOV', '01874002.MOV', '01874003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_004_001_004': ['01893001.MOV', '01893002.MOV', '01893003.MOV', '01894001.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_004_001_005': ['01895001.MOV', '01895002.MOV', '01895003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_004_001_006': ['01896001.MOV', '01896002.MOV', '01896003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_004_001_001': ['01889001.MOV', '01889002.MOV', '01889003.MOV', '01890001.MOV', '01890002.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_004_001_002': ['01891001.MOV', '01891002.MOV', '01891003.MOV', '01891004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_004_001_003': ['01892001.MOV', '01892002.MOV', '01892003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_001': ['01880001.MOV', '01880002.MOV', '01880003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_002': ['01881001.MOV', '01881002.MOV', '01881003.MOV', '01881004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_003': ['01882001.MOV', '01883001.MOV', '01883002.MOV', '01883003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_004': ['01884001.MOV', '01884002.MOV', '01884003.MOV', '01884004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_005': ['01885001.MOV', '01885002.MOV', '01885003.MOV', '01885004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_006': ['01886001.MOV', '01886002.MOV', '01886003.MOV', '01886004.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_007': ['01887001.MOV', '01887002.MOV', '01887003.MOV'], '/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2017_008_001_008': ['01888001.MOV', '01888002.MOV', '01888003.MOV', '01888004.MOV', '01888005.MOV']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+[concat @ 0x7fcb7a808800] Could not find codec parameters for stream 3 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, concat, from 'concat.txt':
+  Duration: N/A, start: 0.000000, bitrate: 52303 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 49999 kb/s, 29.97 fps, 29.97 tbr, 2997 tbn, 2997 tbc
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+    Stream #0:1(eng): Audio: pcm_s24be (lpcm / 0x6D63706C), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+    Stream #0:2(eng): Audio: pcm_s24be (lpcm / 0x6D63706C), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      creation_time   : 2008-06-06 20:25:39
+    Stream #0:3: Unknown: none
+Cannot map stream #0:3 - unsupported type.
+If you want unsupported types ignored instead of failing, please use the -ignore_unknown option
+If you want them copied, please use -copy_unknown
+2017-01-24 09:33:05
+The concatenation of  A2016_088_002_007 was unsuccessful
+

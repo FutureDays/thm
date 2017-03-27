@@ -1,0 +1,4 @@
+2016-11-01 14:56:01
+running
+2016-11-01 14:56:01
+quit, process already running

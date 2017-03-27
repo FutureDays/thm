@@ -1,0 +1,9 @@
+2017-02-24 12:19:12
+running
+2017-02-24 12:19:18
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2016_001_AEWVJA_001_MAS_001': ['S2016_001_AEWVJA_001_MAS_001.mov']}
+2017-02-24 12:19:20
+The script crashed due to an internal error
+local variable 'ffconcatstring' referenced before assignment
+2017-02-24 12:19:20
+local variable 'ffconcatstring' referenced before assignment

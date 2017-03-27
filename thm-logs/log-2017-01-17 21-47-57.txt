@@ -1,0 +1,46 @@
+2017-01-17 21:47:57
+running
+2017-01-17 21:52:04
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingSC/S2015_001_AEWSJ_001_MAS_001': ['S2015_001_AEWSJ_001_MAS_001.mov']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S2015_001_AEWSJ_001_MAS_001.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2015-12-09 00:47:18
+  Duration: 00:57:20.97, start: 0.000000, bitrate: 227431 kb/s
+    Stream #0:0(eng): Video: prores (apch / 0x68637061), yuv422p10le(bt709), 1920x1080, 225870 kb/s, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 30k tbn, 30k tbc (default)
+    Metadata:
+      creation_time   : 2015-12-09 00:47:18
+      handler_name    : Apple Alias Data Handler
+      encoder         : Apple ProRes 422 (HQ)
+      timecode        : 00:59:40;00
+    Stream #0:1(eng): Audio: pcm_s16le (sowt / 0x74776F73), 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      creation_time   : 2015-12-09 00:47:18
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:40;00
+    Stream #0:2(eng): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2015-12-09 00:47:18
+      handler_name    : Apple Alias Data Handler
+      timecode        : 00:59:40;00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+Data stream encoding not supported yet (only streamcopy)
+2017-01-17 21:52:06
+The transcode to S2015_001_AEWSJ_001_MAS_001.flv was unsuccessful
+

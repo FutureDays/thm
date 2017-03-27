@@ -1,0 +1,6 @@
+2016-10-27 17:07:20
+The script crashed due to an internal error (Traceback, AttributeError, etc.)
+Please check logs at /Volumes/G-SPEED Q/Titan-HD/HM/thm/logs/log-2016-10-27 17:07:18.txt and adjust as necessary
+
+2016-10-27 17:07:20
+[Errno 20] Not a directory: '/Library/Fonts/Arial.ttf'

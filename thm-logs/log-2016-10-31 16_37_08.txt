@@ -1,0 +1,352 @@
+2016-10-31 16:37:08
+running
+2016-10-31 16:37:28
+{'/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_998_TEST_001': ['01837001.MOV', '01837002.MOV', '01837003.MOV']}
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+[concat @ 0x7fa462001800] Could not find codec parameters for stream 3 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, concat, from 'concat.txt':
+  Duration: N/A, start: 0.000000, bitrate: 52418 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 50114 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 11988 tbc
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 04:00:00;00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3: Unknown: none
+[mov @ 0x7fa462070600] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 2 times
+Output #0, mov, to 'concat.mov':
+  Metadata:
+    timecode        : 01:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg2video (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 50114 kb/s, 0.03 fps, 29.97 tbr, 11988 tbn, 11988 tbc
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 04:00:00;00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, mono (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, mono (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+  Stream #0:2 -> #0:2 (copy)
+Press [q] to stop, [?] for help
+frame=   93 fps=0.0 q=-1.0 size=   19805kB time=00:00:03.56 bitrate=45479.0kbits/s speed=6.57x    frame=  179 fps=169 q=-1.0 size=   38186kB time=00:00:06.43 bitrate=48629.4kbits/s speed=6.08x    frame=  324 fps=203 q=-1.0 size=   69343kB time=00:00:11.74 bitrate=48357.8kbits/s speed=7.36x    frame=  468 fps=223 q=-1.0 size=  100158kB time=00:00:16.56 bitrate=49546.8kbits/s speed=7.89x    frame=  610 fps=234 q=-1.0 size=  130556kB time=00:00:21.76 bitrate=49134.9kbits/s speed=8.35x    frame=  740 fps=230 q=-1.0 size=  158164kB time=00:00:26.10 bitrate=49641.3kbits/s speed=8.12x    frame=  858 fps=246 q=-1.0 Lsize=  183603kB time=00:00:30.03 bitrate=50084.2kbits/s speed=8.62x    
+video:175132kB audio:8443kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.015238%
+2016-10-31 16:37:32
+concatenation of raw MOVs successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'concat.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+  Duration: 00:00:30.02, start: 0.000000, bitrate: 50100 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 48511 kb/s, 29.01 fps, 29.97 tbr, 11988 tbn, 59.94 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 01:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3(eng): Data: none (tmcd / 0x64636D74), 0 kb/s
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 01:00:00:00
+Input #1, png_pipe, from '/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0: Video: png, rgba(pc), 319x180 [SAR 2835:2835 DAR 319:180], 25 tbr, 25 tbn, 25 tbc
+-map_channel is forwarded to lavfi similarly to -af pan=0x4|c0=c0.
+[pan @ 0x7f8170701ce0] Pure channel mapping detected: 0
+[libx264 @ 0x7f8171801200] using SAR=1/1
+[libx264 @ 0x7f8171801200] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x7f8171801200] profile High, level 2.0
+[libx264 @ 0x7f8171801200] 264 - core 148 r2668 fd2c324 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=abr mbtree=1 bitrate=700 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[flv @ 0x7f8171800000] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, flv, to 'A2016_998_TEST_001.flv':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    timecode        : 01:00:00:00
+    encoder         : Lavf57.41.100
+    Stream #0:0: Video: h264 (libx264) ([7][0][0][0] / 0x0007), yuv420p, 320x180 [SAR 1:1 DAR 16:9], q=-1--1, 700 kb/s, 29.97 fps, 1k tbn, 29.97 tbc (default)
+    Metadata:
+      encoder         : Lavc57.48.101 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/700000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([10][0][0][0] / 0x000A), 48000 Hz, mono, fltp (24 bit), 69 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 (mpeg2video) -> scale (graph 0)
+  Stream #1:0 (png) -> overlay:overlay (graph 0)
+  overlay (graph 0) -> Stream #0:0 (libx264)
+  Stream #0:1 -> #0:1 (pcm_s24be (native) -> aac (native))
+Press [q] to stop, [?] for help
+[png @ 0x7f8170859800] Invalid PNG signature 0x323031362D31302D.
+Error while decoding stream #1:0: Invalid data found when processing input
+frame=   68 fps=0.0 q=20.0 size=      73kB time=00:00:02.71 bitrate= 220.9kbits/s speed=5.37x    frame=  135 fps=134 q=18.0 size=     278kB time=00:00:04.95 bitrate= 459.8kbits/s speed=4.91x    frame=  200 fps=132 q=17.0 size=     477kB time=00:00:07.12 bitrate= 548.0kbits/s speed=4.72x    frame=  272 fps=135 q=15.0 size=     658kB time=00:00:09.51 bitrate= 566.5kbits/s speed=4.71x    frame=  346 fps=137 q=14.0 size=     900kB time=00:00:12.45 bitrate= 591.8kbits/s speed=4.93x    frame=  419 fps=138 q=13.0 size=    1117kB time=00:00:14.89 bitrate= 614.7kbits/s speed=4.91x    frame=  492 fps=139 q=13.0 size=    1344kB time=00:00:17.32 bitrate= 635.4kbits/s speed= 4.9x    frame=  564 fps=140 q=14.0 size=    1611kB time=00:00:19.71 bitrate= 669.5kbits/s speed=4.88x    frame=  635 fps=140 q=14.0 size=    1918kB time=00:00:22.57 bitrate= 696.3kbits/s speed=4.97x    frame=  707 fps=140 q=15.0 size=    2174kB time=00:00:24.96 bitrate= 713.5kbits/s speed=4.95x    frame=  776 fps=140 q=15.0 size=    2401kB time=00:00:27.26 bitrate= 721.5kbits/s speed=4.92x    frame=  846 fps=140 q=15.0 size=    2672kB time=00:00:29.61 bitrate= 739.3kbits/s speed=4.89x    frame=  858 fps=139 q=-1.0 Lsize=    2828kB time=00:00:30.03 bitrate= 771.3kbits/s speed=4.86x    
+video:2530kB audio:257kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.458420%
+[libx264 @ 0x7f8171801200] frame I:4     Avg QP: 9.37  size: 25798
+[libx264 @ 0x7f8171801200] frame P:345   Avg QP: 9.00  size:  6390
+[libx264 @ 0x7f8171801200] frame B:509   Avg QP:16.18  size:   555
+[libx264 @ 0x7f8171801200] consecutive B-frames: 15.2%  9.1% 24.5% 51.3%
+[libx264 @ 0x7f8171801200] mb I  I16..4:  2.2% 35.1% 62.7%
+[libx264 @ 0x7f8171801200] mb P  I16..4:  0.0%  0.1%  0.4%  P16..4: 38.0% 13.9% 18.4%  0.0%  0.0%    skip:29.2%
+[libx264 @ 0x7f8171801200] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  6.6%  3.9%  1.6%  direct:10.7%  skip:77.2%  L0:22.9% L1:25.5% BI:51.6%
+[libx264 @ 0x7f8171801200] final ratefactor: 9.08
+[libx264 @ 0x7f8171801200] 8x8 transform intra:29.3% inter:32.0%
+[libx264 @ 0x7f8171801200] coded y,uvDC,uvAC intra: 88.1% 96.2% 91.4% inter: 25.3% 24.8% 20.4%
+[libx264 @ 0x7f8171801200] i16 v,h,dc,p: 34% 16% 44%  6%
+[libx264 @ 0x7f8171801200] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 15% 10%  5%  7%  7%  6%  6%  9%
+[libx264 @ 0x7f8171801200] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 12%  5%  5%  8% 10%  7%  7%  7%
+[libx264 @ 0x7f8171801200] i8c dc,h,v,p: 42% 15% 29% 14%
+[libx264 @ 0x7f8171801200] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7f8171801200] ref P L0: 84.4% 15.6%
+[libx264 @ 0x7f8171801200] ref B L0: 90.4%  9.6%
+[libx264 @ 0x7f8171801200] ref B L1: 98.4%  1.6%
+[libx264 @ 0x7f8171801200] kb/s:697.80
+[aac @ 0x7f8171802a00] Qavg: 233.775
+2016-10-31 16:37:38
+transcode to flv successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'concat.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+  Duration: 00:00:30.02, start: 0.000000, bitrate: 50100 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 48511 kb/s, 29.01 fps, 29.97 tbr, 11988 tbn, 59.94 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 01:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3(eng): Data: none (tmcd / 0x64636D74), 0 kb/s
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 01:00:00:00
+[mpeg @ 0x7ff69b01d600] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+[mpeg @ 0x7ff69b01d600] VBV buffer size not set, using default size of 130KB
+If you want the mpeg file to be compliant to some specification
+Like DVD, VCD or others, make sure you set the correct buffer size
+Output #0, mpeg, to 'A2016_998_TEST_001.mpeg':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg2video (Main) (xvid / 0x64697678), yuv420p, 720x480 [SAR 32:27 DAR 16:9], q=2-31, 5000 kb/s, 29.97 fps, 90k tbn, 29.97 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 01:00:00:00
+      encoder         : Lavc57.48.101 mpeg2video
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/5000000 buffer size: 0 vbv_delay: -1
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg2video (native) -> mpeg2video (native))
+Press [q] to stop, [?] for help
+frame=   65 fps=0.0 q=2.0 size=     976kB time=00:00:02.06 bitrate=3864.9kbits/s dup=15 drop=0 speed=4.11x    frame=  117 fps=116 q=2.0 size=    1862kB time=00:00:03.80 bitrate=4010.1kbits/s dup=15 drop=0 speed=3.78x    frame=  166 fps=110 q=2.0 size=    2784kB time=00:00:05.43 bitrate=4193.3kbits/s dup=15 drop=0 speed=3.59x    frame=  217 fps=107 q=2.0 size=    3680kB time=00:00:07.14 bitrate=4221.9kbits/s dup=15 drop=0 speed=3.53x    frame=  269 fps=106 q=2.0 size=    4590kB time=00:00:08.87 bitrate=4236.5kbits/s dup=15 drop=0 speed=3.51x    frame=  332 fps=110 q=2.0 size=    5452kB time=00:00:10.97 bitrate=4068.5kbits/s dup=29 drop=0 speed=3.62x    frame=  385 fps=109 q=2.0 size=    6178kB time=00:00:12.74 bitrate=3970.6kbits/s dup=29 drop=0 speed= 3.6x    frame=  438 fps=108 q=2.0 size=    7122kB time=00:00:14.51 bitrate=4019.7kbits/s dup=29 drop=0 speed=3.59x    frame=  490 fps=108 q=2.0 size=    7876kB time=00:00:16.24 bitrate=3970.6kbits/s dup=29 drop=0 speed=3.57x    frame=  542 fps=107 q=1.6 size=    8786kB time=00:00:17.98 bitrate=4002.0kbits/s dup=29 drop=0 speed=3.55x    frame=  593 fps=107 q=2.0 size=    9564kB time=00:00:19.68 bitrate=3979.8kbits/s dup=29 drop=0 speed=3.54x    frame=  657 fps=108 q=2.0 size=   10568kB time=00:00:21.82 bitrate=3967.3kbits/s dup=43 drop=0 speed= 3.6x    frame=  707 fps=108 q=2.0 size=   11454kB time=00:00:23.49 bitrate=3994.5kbits/s dup=43 drop=0 speed=3.58x    frame=  760 fps=107 q=2.0 size=   12408kB time=00:00:25.25 bitrate=4024.2kbits/s dup=43 drop=0 speed=3.57x    frame=  812 fps=107 q=2.0 size=   13268kB time=00:00:26.99 bitrate=4026.6kbits/s dup=43 drop=0 speed=3.56x    frame=  862 fps=107 q=2.0 size=   14128kB time=00:00:28.66 bitrate=4038.0kbits/s dup=43 drop=0 speed=3.54x    frame=  903 fps=106 q=2.0 Lsize=   14898kB time=00:00:30.06 bitrate=4059.6kbits/s dup=45 drop=0 speed=3.54x    
+video:14828kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.472331%
+2016-10-31 16:37:46
+transcode to mpeg successful
+ffmpeg version 3.1.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.3.0 (clang-703.0.31)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.1.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libfreetype --enable-libvorbis --enable-libvpx --enable-libass --enable-ffplay --enable-libfdk-aac --enable-libopus --enable-libx265 --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 28.100 / 55. 28.100
+  libavcodec     57. 48.101 / 57. 48.101
+  libavformat    57. 41.100 / 57. 41.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 47.100 /  6. 47.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  1.100 /  2.  1.100
+  libpostproc    54.  0.100 / 54.  0.100
+Guessed Channel Layout for Input Stream #0.1 : mono
+Guessed Channel Layout for Input Stream #0.2 : mono
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'concat.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+  Duration: 00:00:30.02, start: 0.000000, bitrate: 50100 kb/s
+    Stream #0:0(eng): Video: mpeg2video (4:2:2) (xd5b / 0x62356478), yuv422p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 48511 kb/s, 29.01 fps, 29.97 tbr, 11988 tbn, 59.94 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : 1080i5994 50 Mbit 4:2:2 LG
+      timecode        : 01:00:00:00
+    Stream #0:1(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:2(eng): Audio: pcm_s24be (in24 / 0x34326E69), 48000 Hz, 1 channels, s32 (24 bit), 1152 kb/s
+    Metadata:
+      handler_name    : DataHandler
+    Stream #0:3(eng): Data: none (tmcd / 0x64636D74), 0 kb/s
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 01:00:00:00
+-map_channel is forwarded to lavfi similarly to -af pan=0x4|c0=c0.
+[pan @ 0x7fb8c8602b60] Pure channel mapping detected: 0
+[mp4 @ 0x7fb8c9004200] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, mp4, to 'A2016_998_TEST_001.mp4':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf57.41.100
+    Stream #0:0(eng): Video: mpeg4 ( [0][0][0] / 0x0020), yuv420p, 420x270 [SAR 8:7 DAR 16:9], q=2-31, 372 kb/s, 0.03 fps, 11988 tbn, 29.97 tbc (default)
+    Metadata:
+      handler_name    : DataHandler
+      timecode        : 01:00:00:00
+      encoder         : Lavc57.48.101 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/372000 buffer size: 0 vbv_delay: -1
+    Stream #0:1(eng): Audio: aac (LC) ([64][0][0][0] / 0x0040), 44100 Hz, mono, fltp (24 bit), 69 kb/s (default)
+    Metadata:
+      handler_name    : DataHandler
+      encoder         : Lavc57.48.101 aac
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg2video (native) -> mpeg4 (native))
+  Stream #0:1 -> #0:1 (pcm_s24be (native) -> aac (native))
+Press [q] to stop, [?] for help
+frame=   65 fps=0.0 q=5.2 size=     239kB time=00:00:02.13 bitrate= 916.1kbits/s dup=15 drop=0 speed=4.27x    frame=  119 fps=119 q=7.2 size=     359kB time=00:00:03.93 bitrate= 746.8kbits/s dup=15 drop=0 speed=3.93x    frame=  174 fps=116 q=7.9 size=     478kB time=00:00:05.77 bitrate= 678.0kbits/s dup=15 drop=0 speed=3.84x    frame=  231 fps=115 q=6.0 size=     594kB time=00:00:07.67 bitrate= 634.2kbits/s dup=15 drop=0 speed=3.82x    frame=  290 fps=115 q=6.6 size=     700kB time=00:00:09.64 bitrate= 594.9kbits/s dup=15 drop=0 speed=3.84x    frame=  360 fps=119 q=5.4 size=     842kB time=00:00:11.97 bitrate= 575.7kbits/s dup=29 drop=0 speed=3.97x    frame=  417 fps=119 q=6.7 size=     957kB time=00:00:13.88 bitrate= 564.9kbits/s dup=29 drop=0 speed=3.95x    frame=  474 fps=118 q=6.0 size=    1069kB time=00:00:15.78 bitrate= 554.9kbits/s dup=29 drop=0 speed=3.93x    frame=  531 fps=117 q=7.0 size=    1177kB time=00:00:17.68 bitrate= 545.0kbits/s dup=29 drop=0 speed=3.91x    frame=  588 fps=117 q=7.1 size=    1276kB time=00:00:19.58 bitrate= 533.7kbits/s dup=29 drop=0 speed= 3.9x    frame=  657 fps=119 q=8.4 size=    1416kB time=00:00:21.88 bitrate= 529.8kbits/s dup=43 drop=0 speed=3.96x    frame=  713 fps=118 q=7.9 size=    1517kB time=00:00:23.75 bitrate= 523.2kbits/s dup=43 drop=0 speed=3.93x    frame=  767 fps=117 q=7.0 size=    1606kB time=00:00:25.55 bitrate= 514.9kbits/s dup=43 drop=0 speed=3.91x    frame=  823 fps=117 q=8.3 size=    1710kB time=00:00:27.42 bitrate= 510.9kbits/s dup=43 drop=0 speed=3.89x    frame=  880 fps=117 q=7.8 size=    1813kB time=00:00:29.32 bitrate= 506.5kbits/s dup=43 drop=0 speed=3.88x    frame=  903 fps=117 q=7.9 Lsize=    1885kB time=00:00:30.09 bitrate= 513.2kbits/s dup=45 drop=0 speed=3.89x    
+video:1600kB audio:259kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.448315%
+[aac @ 0x7fb8c9009000] Qavg: 263.480
+2016-10-31 16:37:54
+copying archival master to lc folder
+
+2016-10-31 16:38:16
+
+copying A2016_998_TEST_001.mov from source to destination...
+srce A2016_998_TEST_001.mov 391128fa84ceef8cfddb887e544ef1ce5cd90e52
+dest A2016_998_TEST_001.mov 391128fa84ceef8cfddb887e544ef1ce5cd90e52
+in delfiles
+
+2016-10-31 16:38:18
+
+copying A2016_998_TEST_001.flv from source to destination...
+srce A2016_998_TEST_001.flv 225ee56b8918370f18ad79ba109077898dfabfc3
+dest A2016_998_TEST_001.flv 225ee56b8918370f18ad79ba109077898dfabfc3
+in delfiles
+
+2016-10-31 16:38:20
+
+copying A2016_998_TEST_001.mp4 from source to destination...
+srce A2016_998_TEST_001.mp4 8d39575a2c95242e8d00c7c0f21d9fcd5c5b7cb8
+dest A2016_998_TEST_001.mp4 8d39575a2c95242e8d00c7c0f21d9fcd5c5b7cb8
+in delfiles
+
+2016-10-31 16:38:23
+
+copying A2016_998_TEST_001.mpeg from source to destination...
+srce A2016_998_TEST_001.mpeg 599d12bc43dc9d985b0d980344f47ce083c0a459
+dest A2016_998_TEST_001.mpeg 599d12bc43dc9d985b0d980344f47ce083c0a459
+in delfiles
+
+2016-10-31 16:38:23
+sending hashes to filemaker
+2016-10-31 16:38:23
+verifying hashes in filemaker
+2016-10-31 16:38:23
+hash of A2016_998_TEST_001.mp4verified incorrectly
+2016-10-31 16:38:23
+makevideos calculated hash of: 8d39575a2c95242e8d00c7c0f21d9fcd5c5b7cb8
+2016-10-31 16:38:23
+filemaker hash stored is: <subprocess.Popen object at 0x10d5d2a90>
+2016-10-31 16:38:23
+hash of A2016_998_TEST_001.movverified incorrectly
+2016-10-31 16:38:23
+makevideos calculated hash of: 391128fa84ceef8cfddb887e544ef1ce5cd90e52
+2016-10-31 16:38:23
+filemaker hash stored is: <subprocess.Popen object at 0x10d5d2ad0>
+2016-10-31 16:38:23
+hash of A2016_998_TEST_001.flvverified incorrectly
+2016-10-31 16:38:23
+makevideos calculated hash of: 225ee56b8918370f18ad79ba109077898dfabfc3
+2016-10-31 16:38:23
+filemaker hash stored is: <subprocess.Popen object at 0x10d5d2b10>
+2016-10-31 16:38:23
+hash of A2016_998_TEST_001.mpegverified incorrectly
+2016-10-31 16:38:23
+makevideos calculated hash of: 599d12bc43dc9d985b0d980344f47ce083c0a459
+2016-10-31 16:38:23
+filemaker hash stored is: <subprocess.Popen object at 0x10d5d2b50>
+2016-10-31 16:38:23
+moving archival master from copyto
+2016-10-31 16:38:23
+moving mpeg from copyto
+2016-10-31 16:38:23
+moving flv from copyto
+2016-10-31 16:38:23
+moving mp4 from copyto
+2016-10-31 16:38:28
+removing /Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_998_TEST_001/.DS_Store
+2016-10-31 16:38:28
+removing accession dir /Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT/A2016_998_TEST_001 from IncomingQT
+2016-10-31 16:38:31
+makevideos completed successfully
