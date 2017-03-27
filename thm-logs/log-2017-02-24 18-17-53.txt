@@ -1,4 +1,0 @@
-2017-02-24 18:17:53
-running
-2017-02-24 18:27:29
-The video script is unable to run because there is not an accession record for .uploads in FileMaker

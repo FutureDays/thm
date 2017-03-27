@@ -1,5 +1,0 @@
-2016-10-27 17:37:15
-The script crashed due to an internal error (Traceback, AttributeError, etc. Please check logs at /Volumes/G-SPEED Q/Titan-HD/HM/thm/logs/log-2016-10-27 17:37:13.txt and adjust as necessary
-
-2016-10-27 17:37:15
-[Errno 2] No such file or directory: '"/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png"'

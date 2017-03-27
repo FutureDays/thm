@@ -1,4 +1,0 @@
-2016-11-01 17:44:20
-running
-2016-11-01 17:44:20
-quit, process already running

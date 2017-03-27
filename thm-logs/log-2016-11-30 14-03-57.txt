@@ -1,4 +1,0 @@
-2016-11-30 14:03:57
-running
-2016-11-30 14:03:59
-The video script is unable to run because SUNNAS is not mounted as expected. Please mount SUNNAS on XCluster at /Volumes/ProxyHolding

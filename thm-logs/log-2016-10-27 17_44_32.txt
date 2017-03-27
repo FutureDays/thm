@@ -1,4 +1,0 @@
-2016-10-27 17:44:32
-running
-2016-10-27 17:44:33
-The white-watermark file cannot be found. Please put the white watermark file at "/Volumes/G-SPEED Q/Titan-HD/HM/Watermark/Video WaterMark_White.png"

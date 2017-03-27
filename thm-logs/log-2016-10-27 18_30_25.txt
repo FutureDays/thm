@@ -1,8 +1,0 @@
-2016-10-27 18:30:25
-running
-2016-10-27 18:32:35
-2016-10-27 18:32:37
-The script crashed due to an internal error
-must be string or buffer, not dict
-2016-10-27 18:32:37
-must be string or buffer, not dict

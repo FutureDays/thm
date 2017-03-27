@@ -1,4 +1,0 @@
-2017-03-01 15:25:23
-running
-2017-03-01 15:33:54
-The video script is unable to run because there is not an accession record for A2017_056_001_001 in FileMaker
