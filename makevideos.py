@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#! /usr/bin/python
 #the history makers makevideos.py
 #concatenates, transcodes, moves videos for The History Makers
 
@@ -464,14 +464,14 @@ def main():
 		
 		#makes a list of files for ffmpeg to transcode
 		fflist = makefflist(rawCaptures,logfile)
-		
+		print sorted(fflist)
 		
 		for acc in sorted(fflist):
 			#actually transcode the files
 			ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile)
-
+			
 			#hashmove
-			#movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile)
+			movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile)
 			
 			#notify that it worked for single accession
 			msg = "makevideos processed accession " + str(acc) + " successfully"
