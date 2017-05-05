@@ -253,7 +253,8 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 		
 			#delete intermediate files
 			os.remove("rawconcat.mov")
-			os.remove("rawconcat-as2.mov")					
+			os.remove("rawconcat-as2.mov")
+			os.rename("concat.mov",os.path.join(acc,mov))					
 			
 		#transcode endfiles
 		#endfile.flv + HistoryMakers watermark
@@ -305,6 +306,20 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
 			log(logfile,msg)
 			sys.exit()
+		
+		#make qctools report for mov
+		try:
+			subprocess.check_output(['qcli','-i',mov,'-o','/Volumes/G-SPEED Q/Titan-HD/HM/thm/qctools-reports/' + mov + '.qctools.xml.gz'])
+			returncode = 0
+			log(logfile, "generated QCTools report")
+		except subprocess.CalledProcessError,e:
+			output = e.output
+			returncode = e.returncode
+		if returncode > 0:
+			#send email to staff
+			msg = "makevideos could not generate a QCTools report for " + mov + "\n"
+			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+			log(logfile,msg)
 	return	
 
 def movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile):

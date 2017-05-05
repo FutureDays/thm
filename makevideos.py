@@ -289,10 +289,10 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 			mp4str = 'ffmpeg -i concat.mov -c:v mpeg4 -b:v 372k -pix_fmt yuv420p -r 29.97 -vf ' + drawtext + ',scale=420:270" -filter_complex "[0:a:0][0:a:1]amerge=inputs=2[a]" -c:a aac -ar 44100 -ac 2 -map 0:v -map "[a]" -threads 0 ' + mp4
 			subprocess.check_output(mp4str,stderr=open(logfile,"a+"), shell=True)
 			returncode = 0
+			log(logfile,"transcode to mp4 successful")
 		except subprocess.CalledProcessError,e:
 			output = e.output
 			returncode = e.returncode
-			log(logfile,"transcode to mp4 successful")
 		if returncode > 0:
 			#send email to staff
 			msg = 'The transcode to ' + mp4 + ' was unsuccessful\n'
@@ -301,6 +301,20 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 			sys.exit()
 		if os.path.exists("concat.mov"):
 			os.rename("concat.mov",mov)
+		
+		#make qctools report for mov
+		try:
+			subprocess.check_output(['qcli','-i',mov,'-o','/Volumes/G-SPEED Q/Titan-HD/HM/thm/qctools-reports/' + mov + '.qctools.xml.gz'])
+			returncode = 0
+			log(logfile, "generated QCTools report")
+		except subprocess.CalledProcessError,e:
+			output = e.output
+			returncode = e.returncode
+		if returncode > 0:
+			#send email to staff
+			msg = "makevideos could not generate a QCTools report for " + mov + "\n"
+			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+			log(logfile,msg)	
 	return	
 
 def movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile):
