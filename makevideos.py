@@ -468,7 +468,7 @@ def main():
 	xendata = config.get('fileDestinations','xendata')
 	xendatacopyto = config.get('fileDestinations','xendatacopyto')
 	xcluster = config.get('fileDestinations','xcluster')
-	logfile = os.path.join(scriptRepo,"logs","log-" + time.strftime("%Y-%m-%d %H-%M-%S", time.localtime()) + ".txt")
+	logfile = os.path.join(scriptRepo,"logs","log-" + time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime()) + ".txt")
 	
 	rawCaptures = rawCaptures.strip('"')
 	xcluster = xcluster.strip('"')

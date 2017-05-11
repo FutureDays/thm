@@ -14,6 +14,12 @@ timecodefont: /Library/Fonts/Arial.ttf
 #this is "/Volumes/G-SPEED Q/Titan-HD/HM/Queue"
 rawCaptureDir: "/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT"
 
+[formatPolicy]
+#mediainfo xml documents
+mov_format_policy:"S:/avlab/thm/format_policies/mov_format_policy.txt"
+flv_format_policy:
+mpeg_format_policy:
+mp4_format_policy:
 
 [fileDestinations]
 sunnas: /Volumes/ProxyHolding
