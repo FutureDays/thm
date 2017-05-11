@@ -16,10 +16,10 @@ rawCaptureDir: "/Volumes/G-SPEED Q/Titan-HD/HM/IncomingQT"
 
 [formatPolicy]
 #mediainfo xml documents
-mov_format_policy:"S:/avlab/thm/format_policies/mov_format_policy.txt"
-flv_format_policy:
-mpeg_format_policy:
-mp4_format_policy:
+mov_format_policy:"/Volumes/G-SPEED Q/Titan-HD/HM/thm/format_policies/mov_format_policy.txt"
+flv_format_policy:"/Volumes/G-SPEED Q/Titan-HD/HM/thm/format_policies/flv_format_policy.txt"
+mpeg_format_policy:"/Volumes/G-SPEED Q/Titan-HD/HM/thm/format_policies/mpeg_format_policy.txt"
+mp4_format_policy:"/Volumes/G-SPEED Q/Titan-HD/HM/thm/format_policies/mp4_format_policy.txt"
 
 [fileDestinations]
 sunnas: /Volumes/ProxyHolding

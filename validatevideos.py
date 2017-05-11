@@ -8,7 +8,7 @@ from difflib import ndiff
 
 def generateFilePolicy(startObj):
 	filePolicyFile = startObj + ".mediainfo.txt" #init full path to mediainfo txt file
-	filePolicyFileObj = open(filePolicyFile,"w") #init file obj for that path
+	filePolicyFileObj = open(filePolicyFile,"w+") #init file obj for that path
 	process = subprocess.Popen(["mediainfo",startObj],stdout=subprocess.PIPE,stderr=subprocess.PIPE) #grip mediainfo output
 	output,err = process.communicate() #convert to string
 	filePolicyFileObj.write(output) #write mediainfo output to text file
