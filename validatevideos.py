@@ -17,7 +17,7 @@ def generateFilePolicy(startObj):
 	return filePolicyFile #return xml file path to main()
 	
 
-def verifyFormatPolicy(startObj,startObjPolicyFile,formatPolicyFile):
+def verifyFormatPolicy(startObj,startObjPolicyFile,formatPolicyFile,accessionName):
 	fops = {} #format policy
 	fips = {} #file policy
 	ns = "{http://www.pbcore.org/PBCore/PBCoreNamespace.html}" #placeholder for namespace string, could be implemented as dict
@@ -66,7 +66,7 @@ def verifyFormatPolicy(startObj,startObjPolicyFile,formatPolicyFile):
 		#print fops[f]
 		#print fips[f]
 		if fops[f] != fips[f]:
-			print canonicalName + " failed at " + f
+			print accessionName + " failed at " + f
 			foo = raw_input("Eh")
 	
 def main():
@@ -83,6 +83,7 @@ def main():
 	startObj = args.so
 	startDir = os.path.dirname(startObj)
 	accessionName,ext = os.path.splitext(startObj)
+	accessionaName = os.path.basename(accessionName)
 	#set formatPolicy to match extension of startObj
 	if ext == '.mov':
 		formatPolicy = movFP.strip('"').strip("'")
@@ -98,6 +99,6 @@ def main():
 	#makes a mediainfo.txt file, returns full path to said txt file
 	filePolicyXMLFile = generateFilePolicy(startObj)
 	#verifies that everything in mediainfo.txt file matches formatPolicy
-	verifyFormatPolicy(startObj,filePolicyXMLFile,formatPolicy)
+	verifyFormatPolicy(startObj,filePolicyXMLFile,formatPolicy,accessionName)
 	os.remove(filePolicyXMLFile) #remove mediainfo.txt file if match
 main()	
