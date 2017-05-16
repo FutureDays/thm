@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreInstantiationDocument xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://pbcore.org/xsd/pbcore-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+<!-- Generated at 2017-05-16T17:25:47Z by MediaInfoLib - v0.7.78 -->
+	<instantiationIdentifier source="File Name">C:/Users/specpa7/Downloads/01370691.flv</instantiationIdentifier>
+	<instantiationDate dateType="file modification">2017-05-11T19:41:19.700Z</instantiationDate>
+	<instantiationDigital>application/x-shockwave-flash</instantiationDigital>
+	<instantiationLocation>C:/Users/specpa7/Downloads/01370691.flv</instantiationLocation>
+	<instantiationMediaType>Moving Image</instantiationMediaType>
+	<instantiationFileSize unitsOfMeasure="bytes">985642</instantiationFileSize>
+	<instantiationTimeStart>00:00:00.000</instantiationTimeStart>
+	<instantiationDuration>00:00:10.026</instantiationDuration>
+	<instantiationDataRate unitsOfMeasure="bits/second">786469</instantiationDataRate>
+	<instantiationTracks>2</instantiationTracks>
+	<instantiationEssenceTrack>
+		<essenceTrackType>Video</essenceTrackType>
+		<essenceTrackIdentifier source="StreamKindID (Mediainfo)">0</essenceTrackIdentifier>
+		<essenceTrackEncoding source="codecid" ref="7" annotation="profile:High@L2">AVC</essenceTrackEncoding>
+		<essenceTrackDataRate unitsOfMeasure="bits/second">700000</essenceTrackDataRate>
+		<essenceTrackFrameRate annotation="CFR">29.970</essenceTrackFrameRate>
+		<essenceTrackBitDepth>8</essenceTrackBitDepth>
+		<essenceTrackFrameSize>320x180</essenceTrackFrameSize>
+		<essenceTrackAspectRatio>1.778</essenceTrackAspectRatio>
+		<essenceTrackDuration>00:00:09.476</essenceTrackDuration>
+		<essenceTrackAnnotation annotationType="Format_Settings">CABAC / 4 Ref Frames</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Format_Settings_CABAC">Yes</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Format_Settings_RefFrames">4</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Stored_Height">192</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Sampled_Width">320</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Sampled_Height">180</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="PixelAspectRatio">1.000</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="FrameRate_Mode_Original">VFR</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="FrameCount">284</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="ColorSpace">YUV</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="ChromaSubsampling">4:2:0</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="ScanType">Progressive</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Interlacement">PPF</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Delay">0</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Delay_Source">Container</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="StreamSize">829150</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Encoded_Library_Name">x264</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Encoded_Library_Version">core 148 r2721 72d53ab</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Encoded_Library_Settings">cabac=1 / ref=2 / deblock=1:0:0 / analyse=0x3:0x113 / me=hex / subme=6 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=16 / chroma_me=1 / trellis=1 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=3 / b_pyramid=2 / b_adapt=1 / b_bias=0 / direct=1 / weightb=1 / open_gop=0 / weightp=1 / keyint=250 / keyint_min=25 / scenecut=40 / intra_refresh=0 / rc_lookahead=30 / rc=abr / mbtree=1 / bitrate=700 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / ip_ratio=1.40 / aq=1:1.00</essenceTrackAnnotation>
+	</instantiationEssenceTrack>
+	<instantiationEssenceTrack>
+		<essenceTrackType>Audio</essenceTrackType>
+		<essenceTrackIdentifier source="StreamKindID (Mediainfo)">0</essenceTrackIdentifier>
+		<essenceTrackEncoding source="codecid" ref="10" annotation="profile:LC">AAC</essenceTrackEncoding>
+		<essenceTrackDataRate unitsOfMeasure="bits/second">125000</essenceTrackDataRate>
+		<essenceTrackSamplingRate unitsOfMeasure="Hz">48000</essenceTrackSamplingRate>
+		<essenceTrackDuration>00:00:10.026</essenceTrackDuration>
+		<essenceTrackAnnotation annotationType="Format_Settings_SBR">No (Explicit)</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Channel(s)">2</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="ChannelLayout">L R</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="SamplingCount">481248</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Compression_Mode">Lossy</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Delay">0</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Delay_Source">Container</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Video_Delay">0</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="Video0_Delay">0</essenceTrackAnnotation>
+		<essenceTrackAnnotation annotationType="StreamSize">156656</essenceTrackAnnotation>
+	</instantiationEssenceTrack>
+	<instantiationAnnotation annotationType="Format">Flash Video</instantiationAnnotation>
+	<instantiationAnnotation annotationType="FrameRate">29.970</instantiationAnnotation>
+	<instantiationAnnotation annotationType="FrameCount">284</instantiationAnnotation>
+	<instantiationAnnotation annotationType="File_Created_Date">UTC 2017-05-11 19:41:17.658</instantiationAnnotation>
+	<instantiationAnnotation annotationType="File_Created_Date_Local">2017-05-11 12:41:17.658</instantiationAnnotation>
+	<instantiationAnnotation annotationType="Encoded_Application">Lavf57.57.100</instantiationAnnotation>
+	<instantiationAnnotation annotationType="timecode">00:00:00:00</instantiationAnnotation>
+</pbcoreInstantiationDocument>
+

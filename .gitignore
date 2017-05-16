@@ -3,4 +3,5 @@ fm-stuff.py
 send-email.py
 processing.pid
 thm-test-backups/
+video-post-process-config.txt
 .DS_Store
