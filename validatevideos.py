@@ -4,44 +4,70 @@ import argparse
 import ConfigParser
 import os
 import sys
+import xml.etree.ElementTree as ET
 from difflib import ndiff
 
 def generateFilePolicy(startObj):
-	filePolicyFile = startObj + ".mediainfo.txt" #init full path to mediainfo txt file
+	filePolicyFile = startObj + ".mediainfo.xml" #init full path to mediainfo xml file
 	filePolicyFileObj = open(filePolicyFile,"w+") #init file obj for that path
-	process = subprocess.Popen(["mediainfo",startObj],stdout=subprocess.PIPE,stderr=subprocess.PIPE) #grip mediainfo output
+	process = subprocess.Popen(["mediainfo","--Output=PBCore2",startObj],stdout=subprocess.PIPE,stderr=subprocess.PIPE) #grip mediainfo output
 	output,err = process.communicate() #convert to string
 	filePolicyFileObj.write(output) #write mediainfo output to text file
-	filePolicyFileObj.close() #close txt file (good housekeeping)	
-	return filePolicyFile #return txt file path to main()
+	filePolicyFileObj.close() #close xml file (good housekeeping)	
+	return filePolicyFile #return xml file path to main()
 	
 
-def verifyFormatPolicy(startObj,filePolicyFile,formatPolicyFile):
-	#make list of tags that we don't check because they change from file to file, e.g. duration, stream size percentage
-	reservedKeyList = [
-		"Completename",
-		"Filesize",
-		"Duration",
-		"Stream size"
-	]
-	formatPolicyFileObj = open(formatPolicyFile,"r") #init full path to format policy txt file
-	formatPolicyList = formatPolicyFileObj.read().splitlines() #read that file into a list, separating list elements by newline
-	formatPolicyListDeSpaced = [] #init list for same as above but without spaces
-	for f in formatPolicyList:
-		formatPolicyListDeSpaced.append(f.replace(" ","")) #remove every space from the list
-	filePolicyFileObj = open(filePolicyFile,"r")
-	filePolicyList = filePolicyFileObj.read().splitlines()
-	filePolicyListDeSpaced = []
-	for f in filePolicyList:
-		filePolicyListDeSpaced.append(f.replace(" ",""))
-	for index,f in enumerate(filePolicyListDeSpaced): #loop through the index and value at index (f) of the despaced list of the file
-		match = ''
-		match = [rk for rk in reservedKeyList if rk in f] #checks that the reserved key isn't in f
-		if not match:
-			if not f == formatPolicyListDeSpaced[index]: #if the value of the file isn't the same value as the format policy
-				print "file " + startObj + " failed on policy attribute " + filePolicyListDeSpaced[index]
-				print "file policy attribute should be " + formatPolicyListDeSpaced[index]
-				sys.exit(1) #exit with rtncode 1
+def verifyFormatPolicy(startObj,startObjPolicyFile,formatPolicyFile):
+	fops = {} #format policy
+	fips = {} #file policy
+	ns = "{http://www.pbcore.org/PBCore/PBCoreNamespace.html}" #placeholder for namespace string, could be implemented as dict
+	fop = ET.parse(formatPolicyFile).getroot() #get xml root from formatPolicy xml doc
+	fip = ET.parse(startObjPolicyFile).getroot() #get policy of file at hand
+	audioStreamNum = 0
+	#fill dictionary with policy specs
+	for itrack in fop.findall(ns+'instantiationTracks'):
+		fops['instantiation_tracks'] = itrack.text
+	for ietrack in fop.findall(ns+'instantiationEssenceTrack'):
+		if ietrack.find(ns+'essenceTrackType').text == "Video":
+			fops['video_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
+			fops['video_framerate'] = ietrack.find(ns+'essenceTrackFrameRate').text
+			fops['video_bitdepth'] = ietrack.find(ns+'essenceTrackBitDepth').text
+			fops['video_framesize'] = ietrack.find(ns+'essenceTrackFrameSize').text
+		elif ietrack.find(ns+'essenceTrackType').text == "Audio":
+			audioStream = "audio_stream" + str(audioStreamNum)
+			fops[audioStream + '_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
+			fops[audioStream + '_datarate'] = ietrack.find(ns+'essenceTrackDataRate').text
+			for eta in ietrack.findall(ns+'essenceTrackAnnotation'):
+				if eta.get('annotationType') == "Channel(s)":
+					fops[audioStream + '_channels'] = eta.text
+			audioStreamNum = audioStreamNum + 1		
+	#fill dicitonary with file specs
+	audioStreamNum = 0
+	for itrack in fip.findall(ns+'instantiationTracks'):
+		fips['instantiation_tracks'] = itrack.text
+	for ietrack in fip.findall(ns+'instantiationEssenceTrack'):
+		if ietrack.find(ns+'essenceTrackType').text == "Video":
+			fips['video_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
+			fips['video_framerate'] = ietrack.find(ns+'essenceTrackFrameRate').text
+			fips['video_bitdepth'] = ietrack.find(ns+'essenceTrackBitDepth').text
+			fips['video_framesize'] = ietrack.find(ns+'essenceTrackFrameSize').text
+		elif ietrack.find(ns+'essenceTrackType').text == "Audio":
+			audioStream = "audio_stream" + str(audioStreamNum)
+			fips[audioStream + '_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
+			fips[audioStream + '_datarate'] = ietrack.find(ns+'essenceTrackDataRate').text
+			for eta in ietrack.findall(ns+'essenceTrackAnnotation'):
+				if eta.get('annotationType') == "Channel(s)":
+					fips[audioStream + '_channels'] = eta.text
+			audioStreamNum = audioStreamNum + 1			
+	#print fops
+	#print fips
+	#compare the two
+	for f in fops:
+		#print fops[f]
+		#print fips[f]
+		if fops[f] != fips[f]:
+			print canonicalName + " failed at " + f
+			foo = raw_input("Eh")
 	
 def main():
 	parser = argparse.ArgumentParser(description="verifies a file against its format policy")
@@ -59,19 +85,19 @@ def main():
 	accessionName,ext = os.path.splitext(startObj)
 	#set formatPolicy to match extension of startObj
 	if ext == '.mov':
-		formatPolicy = movFP.strip('"')
+		formatPolicy = movFP.strip('"').strip("'")
 	elif ext == '.flv':
-		formatPolicy = flvFP
+		formatPolicy = flvFP.strip('"').strip("'")
 	elif ext == '.mpeg':
-		formatPolicy = mpegFP
+		formatPolicy = mpegFP.strip('"').strip("'")
 	elif ext == '.mp4':
-		formatPolicy = mp4FP
+		formatPolicy = mp4FP.strip('"').strip("'")
 	else:
 		print "this file has no associated policy and cannot be processed"
 		sys.exit(1)
 	#makes a mediainfo.txt file, returns full path to said txt file
-	filePolicyTxtFile = generateFilePolicy(startObj)
+	filePolicyXMLFile = generateFilePolicy(startObj)
 	#verifies that everything in mediainfo.txt file matches formatPolicy
-	verifyFormatPolicy(startObj,filePolicyTxtFile,formatPolicy)
-	os.remove(filePolicyTxtFile) #remove mediainfo.txt file if match
+	verifyFormatPolicy(startObj,filePolicyXMLFile,formatPolicy)
+	os.remove(filePolicyXMLFile) #remove mediainfo.txt file if match
 main()	
