@@ -1,73 +1,10 @@
-import xml.etree.ElementTree as ET
+#!//usr/bin/env python
 import subprocess
 import argparse
 import ConfigParser
 import os
 import sys
-import xml.etree.ElementTree as ET
-from difflib import ndiff
 
-def generateFilePolicy(startObj):
-	filePolicyFile = startObj + ".mediainfo.xml" #init full path to mediainfo xml file
-	filePolicyFileObj = open(filePolicyFile,"w+") #init file obj for that path
-	process = subprocess.Popen(["mediainfo","--Output=PBCore2",startObj],stdout=subprocess.PIPE,stderr=subprocess.PIPE) #grip mediainfo output
-	output,err = process.communicate() #convert to string
-	filePolicyFileObj.write(output) #write mediainfo output to text file
-	filePolicyFileObj.close() #close xml file (good housekeeping)	
-	return filePolicyFile #return xml file path to main()
-	
-
-def verifyFormatPolicy(startObj,startObjPolicyFile,formatPolicyFile,accessionName):
-	fops = {} #format policy
-	fips = {} #file policy
-	ns = "{http://www.pbcore.org/PBCore/PBCoreNamespace.html}" #placeholder for namespace string, could be implemented as dict
-	fop = ET.parse(formatPolicyFile).getroot() #get xml root from formatPolicy xml doc
-	fip = ET.parse(startObjPolicyFile).getroot() #get policy of file at hand
-	audioStreamNum = 0
-	#fill dictionary with policy specs
-	for itrack in fop.findall(ns+'instantiationTracks'):
-		fops['instantiation_tracks'] = itrack.text
-	for ietrack in fop.findall(ns+'instantiationEssenceTrack'):
-		if ietrack.find(ns+'essenceTrackType').text == "Video":
-			fops['video_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
-			fops['video_framerate'] = ietrack.find(ns+'essenceTrackFrameRate').text
-			fops['video_bitdepth'] = ietrack.find(ns+'essenceTrackBitDepth').text
-			fops['video_framesize'] = ietrack.find(ns+'essenceTrackFrameSize').text
-		elif ietrack.find(ns+'essenceTrackType').text == "Audio":
-			audioStream = "audio_stream" + str(audioStreamNum)
-			fops[audioStream + '_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
-			fops[audioStream + '_datarate'] = ietrack.find(ns+'essenceTrackDataRate').text
-			for eta in ietrack.findall(ns+'essenceTrackAnnotation'):
-				if eta.get('annotationType') == "Channel(s)":
-					fops[audioStream + '_channels'] = eta.text
-			audioStreamNum = audioStreamNum + 1		
-	#fill dicitonary with file specs
-	audioStreamNum = 0
-	for itrack in fip.findall(ns+'instantiationTracks'):
-		fips['instantiation_tracks'] = itrack.text
-	for ietrack in fip.findall(ns+'instantiationEssenceTrack'):
-		if ietrack.find(ns+'essenceTrackType').text == "Video":
-			fips['video_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
-			fips['video_framerate'] = ietrack.find(ns+'essenceTrackFrameRate').text
-			fips['video_bitdepth'] = ietrack.find(ns+'essenceTrackBitDepth').text
-			fips['video_framesize'] = ietrack.find(ns+'essenceTrackFrameSize').text
-		elif ietrack.find(ns+'essenceTrackType').text == "Audio":
-			audioStream = "audio_stream" + str(audioStreamNum)
-			fips[audioStream + '_encoding'] = ietrack.find(ns+'essenceTrackEncoding').text
-			fips[audioStream + '_datarate'] = ietrack.find(ns+'essenceTrackDataRate').text
-			for eta in ietrack.findall(ns+'essenceTrackAnnotation'):
-				if eta.get('annotationType') == "Channel(s)":
-					fips[audioStream + '_channels'] = eta.text
-			audioStreamNum = audioStreamNum + 1			
-	#print fops
-	#print fips
-	#compare the two
-	for f in fops:
-		#print fops[f]
-		#print fips[f]
-		if fops[f] != fips[f]:
-			print accessionName + " failed at " + f
-			foo = raw_input("Eh")
 	
 def main():
 	parser = argparse.ArgumentParser(description="verifies a file against its format policy")
@@ -96,11 +33,7 @@ def main():
 	else:
 		print "this file has no associated policy and cannot be processed"
 		sys.exit(1)
-	#makes a mediainfo.txt file, returns full path to said txt file
-	#filePolicyXMLFile = generateFilePolicy(startObj)
-	#verifies that everything in mediainfo.txt file matches formatPolicy
-	#verifyFormatPolicy(startObj,filePolicyXMLFile,formatPolicy,accessionName)
-	#os.remove(filePolicyXMLFile) #remove mediainfo.txt file if match
+
 	output = subprocess.check_output(["mediaconch","-mc",startObj,"-p",formatPolicy])
 	print output
 main()	
