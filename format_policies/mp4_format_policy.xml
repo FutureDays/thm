@@ -1,91 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pbcoreInstantiationDocument xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://pbcore.org/xsd/pbcore-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
-<!-- Generated at 2017-05-16T17:26:20Z by MediaInfoLib - v0.7.78 -->
-	<instantiationIdentifier source="File Name">C:/Users/specpa7/Downloads/01370691.mp4</instantiationIdentifier>
-	<instantiationDate dateType="file modification">2017-05-11T19:48:49.569Z</instantiationDate>
-	<instantiationDigital>video/mp4</instantiationDigital>
-	<instantiationLocation>C:/Users/specpa7/Downloads/01370691.mp4</instantiationLocation>
-	<instantiationMediaType>Moving Image</instantiationMediaType>
-	<instantiationFileSize unitsOfMeasure="bytes">857117</instantiationFileSize>
-	<instantiationTimeStart>04:00:00.333</instantiationTimeStart>
-	<instantiationDuration>00:00:10.111</instantiationDuration>
-	<instantiationDataRate unitsOfMeasure="bits/second">678166</instantiationDataRate>
-	<instantiationTracks>2</instantiationTracks>
-	<instantiationEssenceTrack>
-		<essenceTrackType>Video</essenceTrackType>
-		<essenceTrackIdentifier source="ID (Mediainfo)">1</essenceTrackIdentifier>
-		<essenceTrackIdentifier source="StreamKindID (Mediainfo)">0</essenceTrackIdentifier>
-		<essenceTrackIdentifier source="StreamOrder (Mediainfo)">0</essenceTrackIdentifier>
-		<essenceTrackEncoding source="codecid" ref="20" annotation="profile:Simple@L1">MPEG-4 Visual</essenceTrackEncoding>
-		<essenceTrackDataRate unitsOfMeasure="bits/second" annotation="CBR">543268</essenceTrackDataRate>
-		<essenceTrackFrameRate annotation="CFR">29.970</essenceTrackFrameRate>
-		<essenceTrackBitDepth>8</essenceTrackBitDepth>
-		<essenceTrackFrameSize>420x270</essenceTrackFrameSize>
-		<essenceTrackAspectRatio>1.778</essenceTrackAspectRatio>
-		<essenceTrackDuration>00:00:10.111</essenceTrackDuration>
-		<essenceTrackLanguage>eng</essenceTrackLanguage>
-		<essenceTrackAnnotation annotationType="Format_Settings_BVOP">No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Format_Settings_QPel">No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Format_Settings_GMC">0</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Format_Settings_Matrix">Default (H.263)</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Codec_Settings_PacketBitStream">No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Codec_Settings_BVOP">No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Codec_Settings_QPel">No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Codec_Settings_GMC">0</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Codec_Settings_Matrix">Default (H.263)</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Sampled_Width">420</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Sampled_Height">270</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="PixelAspectRatio">1.143</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Rotation">0.000</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="FrameCount">303</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="ColorSpace">YUV</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="ChromaSubsampling">4:2:0</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="ScanType">Progressive</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Interlacement">PPF</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Compression_Mode">Lossy</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Delay">14400333</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Delay_Settings">DropFrame=No / 24HourMax=No / IsVisual=No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Delay_DropFrame">No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Delay_Source">Container</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="StreamSize">686563</essenceTrackAnnotation>
-	</instantiationEssenceTrack>
-	<instantiationEssenceTrack>
-		<essenceTrackType>Audio</essenceTrackType>
-		<essenceTrackIdentifier source="ID (Mediainfo)">2</essenceTrackIdentifier>
-		<essenceTrackIdentifier source="StreamKindID (Mediainfo)">0</essenceTrackIdentifier>
-		<essenceTrackIdentifier source="StreamOrder (Mediainfo)">1</essenceTrackIdentifier>
-		<essenceTrackEncoding source="codecid" ref="40" annotation="profile:LC">AAC</essenceTrackEncoding>
-		<essenceTrackDataRate unitsOfMeasure="bits/second" annotation="CBR">127805</essenceTrackDataRate>
-		<essenceTrackSamplingRate unitsOfMeasure="Hz">44100</essenceTrackSamplingRate>
-		<essenceTrackDuration>00:00:10.024</essenceTrackDuration>
-		<essenceTrackAnnotation annotationType="Format_Settings_SBR">No (Explicit)</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Duration_LastFrame">-8</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Channel(s)">2</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="ChannelLayout">L R</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="SamplingCount">442058</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="FrameCount">432</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Compression_Mode">Lossy</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Delay">14400333</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Delay_DropFrame">No</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Delay_Source">Container</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Video_Delay">0</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="Video0_Delay">0</essenceTrackAnnotation>
-		<essenceTrackAnnotation annotationType="StreamSize">160128</essenceTrackAnnotation>
-	</instantiationEssenceTrack>
-	<instantiationAnnotation annotationType="OtherCount">1</instantiationAnnotation>
-	<instantiationAnnotation annotationType="Other_Format_List">QuickTime TC</instantiationAnnotation>
-	<instantiationAnnotation annotationType="Other_Format_WithHint_List">QuickTime TC</instantiationAnnotation>
-	<instantiationAnnotation annotationType="Other_Language_List">English</instantiationAnnotation>
-	<instantiationAnnotation annotationType="Format">MPEG-4</instantiationAnnotation>
-	<instantiationAnnotation annotationType="Format_Profile">Base Media</instantiationAnnotation>
-	<instantiationAnnotation annotationType="FrameRate">29.970</instantiationAnnotation>
-	<instantiationAnnotation annotationType="FrameCount">303</instantiationAnnotation>
-	<instantiationAnnotation annotationType="HeaderSize">36</instantiationAnnotation>
-	<instantiationAnnotation annotationType="DataSize">846703</instantiationAnnotation>
-	<instantiationAnnotation annotationType="FooterSize">10378</instantiationAnnotation>
-	<instantiationAnnotation annotationType="IsStreamable">No</instantiationAnnotation>
-	<instantiationAnnotation annotationType="File_Created_Date">UTC 2017-05-11 19:48:47.265</instantiationAnnotation>
-	<instantiationAnnotation annotationType="File_Created_Date_Local">2017-05-11 12:48:47.265</instantiationAnnotation>
-	<instantiationAnnotation annotationType="Encoded_Application">Lavf57.57.100</instantiationAnnotation>
-</pbcoreInstantiationDocument>
-
+<?xml version="1.0"?>
+<policy type="and" name="mp4_format_policy">
+  <rule name="General/VideoCount is 1" value="VideoCount" tracktype="General" occurrence="*" operator="=">1</rule>
+  <rule name="General/AudioCount is 1" value="AudioCount" tracktype="General" occurrence="*" operator="=">1</rule>
+  <rule name="General/OtherCount is 1" value="OtherCount" tracktype="General" occurrence="*" operator="=">1</rule>
+  <rule name="General/FileExtension is mp4" value="FileExtension" tracktype="General" occurrence="*" operator="=">mp4</rule>
+  <rule name="General/Format is MPEG-4" value="Format" tracktype="General" occurrence="*" operator="=">MPEG-4</rule>
+  <rule name="General/Format_Profile is Base Media" value="Format_Profile" tracktype="General" occurrence="*" operator="=">Base Media</rule>
+  <rule name="General/CodecID is isom" value="CodecID" tracktype="General" occurrence="*" operator="=">isom</rule>
+  <rule name="General/FrameRate is 29.970" value="FrameRate" tracktype="General" occurrence="*" operator="=">29.970</rule>
+  <rule name="General/HeaderSize is 36" value="HeaderSize" tracktype="General" occurrence="*" operator="=">36</rule>
+  <rule name="General/DataSize is 846703" value="DataSize" tracktype="General" occurrence="*" operator="=">846703</rule>
+  <rule name="General/FooterSize is 10378" value="FooterSize" tracktype="General" occurrence="*" operator="=">10378</rule>
+  <rule name="General/IsStreamable is No" value="IsStreamable" tracktype="General" occurrence="*" operator="=">No</rule>
+  <rule name="Video/StreamOrder is 0" value="StreamOrder" tracktype="Video" occurrence="*" operator="=">0</rule>
+  <rule name="Video/ID is 1" value="ID" tracktype="Video" occurrence="*" operator="=">1</rule>
+  <rule name="Video/Format is MPEG-4 Visual" value="Format" tracktype="Video" occurrence="*" operator="=">MPEG-4 Visual</rule>
+  <rule name="Video/Format_Profile is Simple" value="Format_Profile" tracktype="Video" occurrence="*" operator="=">Simple</rule>
+  <rule name="Video/Format_Level is 1" value="Format_Level" tracktype="Video" occurrence="*" operator="=">1</rule>
+  <rule name="Video/Format_Settings_BVOP is No" value="Format_Settings_BVOP" tracktype="Video" occurrence="*" operator="=">No</rule>
+  <rule name="Video/Format_Settings_QPel is No" value="Format_Settings_QPel" tracktype="Video" occurrence="*" operator="=">No</rule>
+  <rule name="Video/Format_Settings_GMC is 0" value="Format_Settings_GMC" tracktype="Video" occurrence="*" operator="=">0</rule>
+  <rule name="Video/Format_Settings_Matrix is Default (H.263)" value="Format_Settings_Matrix" tracktype="Video" occurrence="*" operator="=">Default (H.263)</rule>
+  <rule name="Video/CodecID is 20" value="CodecID" tracktype="Video" occurrence="*" operator="=">20</rule>
+  <rule name="Video/BitRate_Mode is CBR" value="BitRate_Mode" tracktype="Video" occurrence="*" operator="=">CBR</rule>
+  <rule name="Video/Width is 420" value="Width" tracktype="Video" occurrence="*" operator="=">420</rule>
+  <rule name="Video/Height is 270" value="Height" tracktype="Video" occurrence="*" operator="=">270</rule>
+  <rule name="Video/Sampled_Width is 420" value="Sampled_Width" tracktype="Video" occurrence="*" operator="=">420</rule>
+  <rule name="Video/Sampled_Height is 270" value="Sampled_Height" tracktype="Video" occurrence="*" operator="=">270</rule>
+  <rule name="Video/PixelAspectRatio is 1.143" value="PixelAspectRatio" tracktype="Video" occurrence="*" operator="=">1.143</rule>
+  <rule name="Video/DisplayAspectRatio is 1.778" value="DisplayAspectRatio" tracktype="Video" occurrence="*" operator="=">1.778</rule>
+  <rule name="Video/Rotation is 0.000" value="Rotation" tracktype="Video" occurrence="*" operator="=">0.000</rule>
+  <rule name="Video/FrameRate_Mode is CFR" value="FrameRate_Mode" tracktype="Video" occurrence="*" operator="=">CFR</rule>
+  <rule name="Video/FrameRate is 29.970" value="FrameRate" tracktype="Video" occurrence="*" operator="=">29.970</rule>
+  <rule name="Video/ColorSpace is YUV" value="ColorSpace" tracktype="Video" occurrence="*" operator="=">YUV</rule>
+  <rule name="Video/ChromaSubsampling is 4:2:0" value="ChromaSubsampling" tracktype="Video" occurrence="*" operator="=">4:2:0</rule>
+  <rule name="Video/BitDepth is 8" value="BitDepth" tracktype="Video" occurrence="*" operator="=">8</rule>
+  <rule name="Video/ScanType is Progressive" value="ScanType" tracktype="Video" occurrence="*" operator="=">Progressive</rule>
+  <rule name="Video/Compression_Mode is Lossy" value="Compression_Mode" tracktype="Video" occurrence="*" operator="=">Lossy</rule>
+  <rule name="Video/Encoded_Library is Lavc57.66.101" value="Encoded_Library" tracktype="Video" occurrence="*" operator="=">Lavc57.66.101</rule>
+  <rule name="Video/Language is en" value="Language" tracktype="Video" occurrence="*" operator="=">en</rule>
+  <rule name="Audio/StreamOrder is 1" value="StreamOrder" tracktype="Audio" occurrence="*" operator="=">1</rule>
+  <rule name="Audio/ID is 2" value="ID" tracktype="Audio" occurrence="*" operator="=">2</rule>
+  <rule name="Audio/Format is AAC" value="Format" tracktype="Audio" occurrence="*" operator="=">AAC</rule>
+  <rule name="Audio/Format_Profile is LC" value="Format_Profile" tracktype="Audio" occurrence="*" operator="=">LC</rule>
+  <rule name="Audio/Format_Settings_SBR is No (Explicit)" value="Format_Settings_SBR" tracktype="Audio" occurrence="*" operator="=">No (Explicit)</rule>
+  <rule name="Audio/CodecID is 40" value="CodecID" tracktype="Audio" occurrence="*" operator="=">40</rule>
+  <rule name="Audio/Duration_LastFrame is -0.008" value="Duration_LastFrame" tracktype="Audio" occurrence="*" operator="=">-0.008</rule>
+  <rule name="Audio/BitRate_Mode is CBR" value="BitRate_Mode" tracktype="Audio" occurrence="*" operator="=">CBR</rule>
+  <rule name="Audio/Channels is 2" value="Channels" tracktype="Audio" occurrence="*" operator="=">2</rule>
+  <rule name="Audio/ChannelPositions is Front: L R" value="ChannelPositions" tracktype="Audio" occurrence="*" operator="=">Front: L R</rule>
+  <rule name="Audio/ChannelLayout is L R" value="ChannelLayout" tracktype="Audio" occurrence="*" operator="=">L R</rule>
+  <rule name="Audio/SamplesPerFrame is 1024" value="SamplesPerFrame" tracktype="Audio" occurrence="*" operator="=">1024</rule>
+  <rule name="Audio/SamplingRate is 44100" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">44100</rule>
+  <rule name="Audio/SamplingCount is 442058" value="SamplingCount" tracktype="Audio" occurrence="*" operator="=">442058</rule>
+  <rule name="Audio/FrameRate is 43.066" value="FrameRate" tracktype="Audio" occurrence="*" operator="=">43.066</rule>
+  <rule name="Audio/Compression_Mode is Lossy" value="Compression_Mode" tracktype="Audio" occurrence="*" operator="=">Lossy</rule>
+  <rule name="Audio/Delay_DropFrame is No" value="Delay_DropFrame" tracktype="Audio" occurrence="*" operator="=">No</rule>
+  <rule name="Audio/Delay_Source is Container" value="Delay_Source" tracktype="Audio" occurrence="*" operator="=">Container</rule>
+  <rule name="Audio/StreamSize_Proportion is 0.18682" value="StreamSize_Proportion" tracktype="Audio" occurrence="*" operator="=">0.18682</rule>
+  <rule name="Audio/Default is Yes" value="Default" tracktype="Audio" occurrence="*" operator="=">Yes</rule>
+  <rule name="Audio/AlternateGroup is 1" value="AlternateGroup" tracktype="Audio" occurrence="*" operator="=">1</rule>
+  <rule name="Other/StreamOrder is 2" value="StreamOrder" tracktype="Other" occurrence="*" operator="=">2</rule>
+  <rule name="Other/ID is 3" value="ID" tracktype="Other" occurrence="*" operator="=">3</rule>
+  <rule name="Other/Type is Time code" value="Type" tracktype="Other" occurrence="*" operator="=">Time code</rule>
+  <rule name="Other/Format is QuickTime TC" value="Format" tracktype="Other" occurrence="*" operator="=">QuickTime TC</rule>
+  <rule name="Other/TimeCode_FirstFrame is 04:00:00:10" value="TimeCode_FirstFrame" tracktype="Other" occurrence="*" operator="=">04:00:00:10</rule>
+  <rule name="Other/TimeCode_Striped is Yes" value="TimeCode_Striped" tracktype="Other" occurrence="*" operator="=">Yes</rule>
+  <rule name="Other/Language is en" value="Language" tracktype="Other" occurrence="*" operator="=">en</rule>
+  <rule name="Other/Default is No" value="Default" tracktype="Other" occurrence="*" operator="=">No</rule>
+</policy>
