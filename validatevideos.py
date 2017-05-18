@@ -97,8 +97,10 @@ def main():
 		print "this file has no associated policy and cannot be processed"
 		sys.exit(1)
 	#makes a mediainfo.txt file, returns full path to said txt file
-	filePolicyXMLFile = generateFilePolicy(startObj)
+	#filePolicyXMLFile = generateFilePolicy(startObj)
 	#verifies that everything in mediainfo.txt file matches formatPolicy
-	verifyFormatPolicy(startObj,filePolicyXMLFile,formatPolicy,accessionName)
-	os.remove(filePolicyXMLFile) #remove mediainfo.txt file if match
+	#verifyFormatPolicy(startObj,filePolicyXMLFile,formatPolicy,accessionName)
+	#os.remove(filePolicyXMLFile) #remove mediainfo.txt file if match
+	output = subprocess.check_output(["mediaconch","-mc",startObj,"-p",formatPolicy])
+	print output
 main()	

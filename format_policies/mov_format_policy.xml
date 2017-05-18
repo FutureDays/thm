@@ -9,9 +9,6 @@
   <rule name="General/Format_Profile is QuickTime" value="Format_Profile" tracktype="General" occurrence="*" operator="=">QuickTime</rule>
   <rule name="General/CodecID is qt  " value="CodecID" tracktype="General" occurrence="*" operator="=">qt  </rule>
   <rule name="General/FrameRate is 29.970" value="FrameRate" tracktype="General" occurrence="*" operator="=">29.970</rule>
-  <rule name="General/HeaderSize is 28" value="HeaderSize" tracktype="General" occurrence="*" operator="=">28</rule>
-  <rule name="General/DataSize is 62707259" value="DataSize" tracktype="General" occurrence="*" operator="=">62707259</rule>
-  <rule name="General/FooterSize is 11228" value="FooterSize" tracktype="General" occurrence="*" operator="=">11228</rule>
   <rule name="General/IsStreamable is No" value="IsStreamable" tracktype="General" occurrence="*" operator="=">No</rule>
   <rule name="Video/StreamOrder is 0" value="StreamOrder" tracktype="Video" occurrence="*" operator="=">0</rule>
   <rule name="Video/ID is 1" value="ID" tracktype="Video" occurrence="*" operator="=">1</rule>
@@ -21,7 +18,6 @@
   <rule name="Video/Format_Profile is 4:2:2" value="Format_Profile" tracktype="Video" occurrence="*" operator="=">4:2:2</rule>
   <rule name="Video/Format_Level is High" value="Format_Level" tracktype="Video" occurrence="*" operator="=">High</rule>
   <rule name="Video/Format_Settings_BVOP is Yes" value="Format_Settings_BVOP" tracktype="Video" occurrence="*" operator="=">Yes</rule>
-  <rule name="Video/Format_Settings_Matrix is Default" value="Format_Settings_Matrix" tracktype="Video" occurrence="*" operator="=">Default</rule>
   <rule name="Video/Format_Settings_PictureStructure is Frame" value="Format_Settings_PictureStructure" tracktype="Video" occurrence="*" operator="=">Frame</rule>
   <rule name="Video/CodecID is xd5b" value="CodecID" tracktype="Video" occurrence="*" operator="=">xd5b</rule>
   <rule name="Video/BitRate_Mode is CBR" value="BitRate_Mode" tracktype="Video" occurrence="*" operator="=">CBR</rule>
@@ -55,11 +51,9 @@
   <rule name="Audio/BitRate_Mode is CBR" value="BitRate_Mode" tracktype="Audio" occurrence="*" operator="=">CBR</rule>
   <rule name="Audio/Channels is 1" value="Channels" tracktype="Audio" occurrence="*" operator="=">1</rule>
   <rule name="Audio/SamplingRate is 48000" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">48000</rule>
-  <rule name="Audio/SamplingCount is 480000" value="SamplingCount" tracktype="Audio" occurrence="*" operator="=">480000</rule>
   <rule name="Audio/BitDepth is 24" value="BitDepth" tracktype="Audio" occurrence="*" operator="=">24</rule>
   <rule name="Audio/Delay_DropFrame is No" value="Delay_DropFrame" tracktype="Audio" occurrence="*" operator="=">No</rule>
   <rule name="Audio/Delay_Source is Container" value="Delay_Source" tracktype="Audio" occurrence="*" operator="=">Container</rule>
-  <rule name="Audio/StreamSize_Proportion is 0.02296" value="StreamSize_Proportion" tracktype="Audio" occurrence="*" operator="=">0.02296</rule>
   <rule name="Audio/Language is en" value="Language" tracktype="Audio" occurrence="*" operator="=">en</rule>
   <rule name="Audio/Default is Yes" value="Default" tracktype="Audio" occurrence="*" operator="=">Yes</rule>
   <rule name="Audio/AlternateGroup is 1" value="AlternateGroup" tracktype="Audio" occurrence="*" operator="=">1</rule>
@@ -72,11 +66,9 @@
   <rule name="Audio/BitRate_Mode is CBR" value="BitRate_Mode" tracktype="Audio" occurrence="*" operator="=">CBR</rule>
   <rule name="Audio/Channels is 1" value="Channels" tracktype="Audio" occurrence="*" operator="=">1</rule>
   <rule name="Audio/SamplingRate is 48000" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">48000</rule>
-  <rule name="Audio/SamplingCount is 480000" value="SamplingCount" tracktype="Audio" occurrence="*" operator="=">480000</rule>
   <rule name="Audio/BitDepth is 24" value="BitDepth" tracktype="Audio" occurrence="*" operator="=">24</rule>
   <rule name="Audio/Delay_DropFrame is No" value="Delay_DropFrame" tracktype="Audio" occurrence="*" operator="=">No</rule>
   <rule name="Audio/Delay_Source is Container" value="Delay_Source" tracktype="Audio" occurrence="*" operator="=">Container</rule>
-  <rule name="Audio/StreamSize_Proportion is 0.02296" value="StreamSize_Proportion" tracktype="Audio" occurrence="*" operator="=">0.02296</rule>
   <rule name="Audio/Language is en" value="Language" tracktype="Audio" occurrence="*" operator="=">en</rule>
   <rule name="Audio/Default is Yes" value="Default" tracktype="Audio" occurrence="*" operator="=">Yes</rule>
   <rule name="Audio/AlternateGroup is 2" value="AlternateGroup" tracktype="Audio" occurrence="*" operator="=">2</rule>
