@@ -178,36 +178,46 @@ def compare(fs, fsagain):
 	return True
 
 def validateInputVideos(fflist,scriptRepo,logfile):
+	accInvalidList = []
 	for acc in fflist:
 		with cd(acc):
 			for rawmov in fflist[acc]:
-				try:
-					output = subprocess.check_output(["python",os.path.join(scriptRepo,"validatevideos.py"),"-so",rawmov],stdout=open(logfile,"a+"),stderr=open(logfile,"a+"),shell=True)
-					returncode = 0
-				except Subprocess.CalledProcessError,e:
-					output = e.output
-					returncode = e.returncode
-				if returncode > 0:
-					#send email to staff
-					msg = 'The validation of  ' + acc + ' was unsuccessful\n'
-					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
-					log(logfile,msg)
-					sys.exit() #quit now because if we can't validate the vids we can't process them	
-				else if output.startswith("fail"):
+				passFail, output = validateVideo(os.path.join(acc,rawmov),scriptRepo,logfile)
+				if not passFail:
 					msg = "The file " + os.path.join(acc,rawmov) + " is not a valid input for makevideos, this accession skipped\n"
 					msg = msg + str(output)
 					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
 					log(logfile,msg)
-					fflist.pop(acc, None) #remove from the list of files to process
-				else if output.startswith("pass"):
-					log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos"
+					accInvalidList.append(acc)
 				else:
-					msg = 'The validation of  ' + acc + ' was unsuccessful\n'
-					msg = msg + output
-					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
-					log(logfile,msg)
-					sys.exit() #quit now because something weird happened
-	
+					log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos")	
+	for acc in accInvalidList:
+		fflist.pop(acc, None) #remove from the list of files to process
+	return fflist					
+
+def validateVideo(fullPath,scriptRepo,logfile):
+	try:
+		output = subprocess.check_output(["python",os.path.join(scriptRepo,"validatevideos.py"),"-so",fullPath],stderr=open(logfile,"a+"))
+		returncode = 0
+	except subprocess.CalledProcessError,e:
+		output = e.output
+		returncode = e.returncode
+	if returncode > 0:
+		#send email to staff
+		msg = 'The validation of  ' + fullPath + ' was unsuccessful\n'
+		subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+		log(logfile,msg)
+		sys.exit() #quit now because if we can't validate the vids we can't process them	
+	elif output.startswith("fail"):
+		return False, output
+	elif output.startswith("pass"):
+		return True, output
+	else:
+		msg = 'The validation of  ' + fullPath + ' was unsuccessful\n'
+		msg = msg + output
+		subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+		log(logfile,msg)
+		sys.exit() #quit now because something weird happened		
 	
 def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 	#concatenate startfiles into endfile.mov
@@ -505,14 +515,15 @@ def main():
 	xcluster = xcluster.strip('"')
 	
 	try:
-		startup(logfile,rawCaptures,watermark,fontfile,sunnas,sunnascopyto,xendata,xendatacopyto)
+		#startup(logfile,rawCaptures,watermark,fontfile,sunnas,sunnascopyto,xendata,xendatacopyto)
 		
 		#makes a list of files for ffmpeg to transcode
 		fflist = makefflist(rawCaptures,logfile)
 		print sorted(fflist)
 		
 		fflist = validateInputVideos(fflist,scriptRepo,logfile)
-		
+		print fflist
+		foo = raw_input("eh")
 		for acc in sorted(fflist):
 			validateInputVideos(acc,fflist,scriptRepo,logfile)
 			
