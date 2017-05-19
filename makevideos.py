@@ -182,8 +182,8 @@ def validateInputVideos(fflist,scriptRepo,logfile):
 	for acc in fflist:
 		with cd(acc):
 			for rawmov in fflist[acc]:
-				passFail, output = validateVideo(os.path.join(acc,rawmov),scriptRepo,logfile)
-				if not passFail:
+				_pass, output = validateVideo(os.path.join(acc,rawmov),scriptRepo,logfile)
+				if not _pass:
 					msg = "The file " + os.path.join(acc,rawmov) + " is not a valid input for makevideos, this accession skipped\n"
 					msg = msg + str(output)
 					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
@@ -194,6 +194,19 @@ def validateInputVideos(fflist,scriptRepo,logfile):
 	for acc in accInvalidList:
 		fflist.pop(acc, None) #remove from the list of files to process
 	return fflist					
+
+def validateOutputVideo(acc,scriptRepo,logfile):
+	for video in os.path.listdir(acc):
+		_pass, output = validateVideo(os.path.join(acc,video),scriptRepo,logfile)
+		if not _pass:
+			msg = "The file " + os.path.join(acc,video) + " is not a valid output, this accession not moved from IncomingQT\n"
+			msg = msg + str(output)
+			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+			log(logfile,msg)
+			return False
+		else:
+			log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos")
+			return True
 
 def validateVideo(fullPath,scriptRepo,logfile):
 	try:
@@ -488,7 +501,13 @@ def verifyFM(hashlist,scriptRepo,logfile):
 	else:
 		moveyn = True
 	return moveyn
-	
+
+def lowercase(rawCaptures):
+	for dirs, subdirs,files in os.walk(rawCaptures):
+		for f in files:
+			flower = f.lower()
+			os.rename(os.path.join(dirs, f), os.path.join(dirs,flower))
+			
 def log(logfile,msg):
 	with open(logfile,"ab") as txtfile:
 		txtfile.write(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
@@ -517,27 +536,36 @@ def main():
 	try:
 		#startup(logfile,rawCaptures,watermark,fontfile,sunnas,sunnascopyto,xendata,xendatacopyto)
 		
+		#lowercases the MOV that comes off the xdcam
+		lowercase(rawCaptures)
+		 
 		#makes a list of files for ffmpeg to transcode
 		fflist = makefflist(rawCaptures,logfile)
 		print sorted(fflist)
 		
 		fflist = validateInputVideos(fflist,scriptRepo,logfile)
-		print fflist
-		foo = raw_input("eh")
+
 		for acc in sorted(fflist):
 			validateInputVideos(acc,fflist,scriptRepo,logfile)
 			
 			#actually transcode the files
 			ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile)
 			
-			#hashmove
-			movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile)
+			_pass = validateOutputVideos(acc,scriptRepo,logfile)
 			
-			#notify that it worked for single accession
-			msg = "makevideos processed accession " + str(acc) + " successfully"
-			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt', msg])
-			log(logfile,msg)
-		
+			if _pass:
+				print "here"
+				foo = raw_input("eh")
+				#hashmove
+				movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile)
+			
+				#notify that it worked for single accession
+				msg = "makevideos processed accession " + str(acc) + " successfully"
+				subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt', msg])
+				log(logfile,msg)
+			else:
+				continue
+				
 		msg = "makevideos completed successfully"
 
 		subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt', msg,'-att',logfile])

@@ -177,6 +177,42 @@ def compare(fs, fsagain):
 			return False
 	return True
 
+def validateOutputVideo(acc,scriptRepo,logfile):
+	for video in os.path.listdir(acc):
+		_pass, output = validateVideo(os.path.join(acc,video),scriptRepo,logfile)
+		if not _pass:
+			msg = "The file " + os.path.join(acc,video) + " is not a valid output, this accession not moved from IncomingQT\n"
+			msg = msg + str(output)
+			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+			log(logfile,msg)
+			return False
+		else:
+			log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos")
+			return True
+
+def validateVideo(fullPath,scriptRepo,logfile):
+	try:
+		output = subprocess.check_output(["python",os.path.join(scriptRepo,"validatevideos.py"),"-so",fullPath],stderr=open(logfile,"a+"))
+		returncode = 0
+	except subprocess.CalledProcessError,e:
+		output = e.output
+		returncode = e.returncode
+	if returncode > 0:
+		#send email to staff
+		msg = 'The validation of  ' + fullPath + ' was unsuccessful\n'
+		subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+		log(logfile,msg)
+		sys.exit() #quit now because if we can't validate the vids we can't process them	
+	elif output.startswith("fail"):
+		return False, output
+	elif output.startswith("pass"):
+		return True, output
+	else:
+		msg = 'The validation of  ' + fullPath + ' was unsuccessful\n'
+		msg = msg + output
+		subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+		log(logfile,msg)
+		sys.exit() #quit now because something weird happened
 
 def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 	#concatenate startfiles into endfile.mov
@@ -488,14 +524,19 @@ def main():
 		for acc in sorted(fflist):
 			#actually transcode the files
 			ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile)
-
-			#hashmove
-			movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile)
 			
-			#notify that it worked for single accession
-			msg = "makevideos processed accession " + str(acc) + " successfully"
-			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt', msg])
-			log(logfile,msg)
+			_pass = validateOutputVideos(acc,scriptRepo,logfile)
+			
+			if _pass:
+				#hashmove
+				movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile)
+			
+				#notify that it worked for single accession
+				msg = "makevideos processed accession " + str(acc) + " successfully"
+				subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt', msg])
+				log(logfile,msg)
+			else:
+				continue	
 		
 		msg = "makevideos completed successfully"
 

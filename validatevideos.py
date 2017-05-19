@@ -20,6 +20,7 @@ def main():
 	startObj = args.so
 	startDir = os.path.dirname(startObj)
 	accessionName,ext = os.path.splitext(startObj)
+	ext = ext.lower()
 	accessionaName = os.path.basename(accessionName)
 	#set formatPolicy to match extension of startObj
 	if ext == '.mov':
