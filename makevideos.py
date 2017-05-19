@@ -177,7 +177,38 @@ def compare(fs, fsagain):
 			return False
 	return True
 
-
+def validateInputVideos(fflist,scriptRepo,logfile):
+	for acc in fflist:
+		with cd(acc):
+			for rawmov in fflist[acc]:
+				try:
+					output = subprocess.check_output(["python",os.path.join(scriptRepo,"validatevideos.py"),"-so",rawmov],stdout=open(logfile,"a+"),stderr=open(logfile,"a+"),shell=True)
+					returncode = 0
+				except Subprocess.CalledProcessError,e:
+					output = e.output
+					returncode = e.returncode
+				if returncode > 0:
+					#send email to staff
+					msg = 'The validation of  ' + acc + ' was unsuccessful\n'
+					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+					log(logfile,msg)
+					sys.exit() #quit now because if we can't validate the vids we can't process them	
+				else if output.startswith("fail"):
+					msg = "The file " + os.path.join(acc,rawmov) + " is not a valid input for makevideos, this accession skipped\n"
+					msg = msg + str(output)
+					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+					log(logfile,msg)
+					fflist.pop(acc, None) #remove from the list of files to process
+				else if output.startswith("pass"):
+					log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos"
+				else:
+					msg = 'The validation of  ' + acc + ' was unsuccessful\n'
+					msg = msg + output
+					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+					log(logfile,msg)
+					sys.exit() #quit now because something weird happened
+	
+	
 def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 	#concatenate startfiles into endfile.mov
 	with cd(acc): #cd into it
@@ -480,7 +511,11 @@ def main():
 		fflist = makefflist(rawCaptures,logfile)
 		print sorted(fflist)
 		
+		fflist = validateInputVideos(fflist,scriptRepo,logfile)
+		
 		for acc in sorted(fflist):
+			validateInputVideos(acc,fflist,scriptRepo,logfile)
+			
 			#actually transcode the files
 			ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile)
 			
