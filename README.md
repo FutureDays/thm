@@ -11,43 +11,15 @@ this script takes the raw video captures delivered by THM personnel and:
 
 3. embeds timecode and watermarks where appropriate
 
-4. hashmoves (see below) them to their destiantions
+4. hashmoves them to their destiantions
 
 5. triggers script to embed those hashes into a Filemaker db named PBCore_Catalog 
 
 makevideos also checks to make sure that everything is plugged in and that all necessary files (like watermarks) are in their expected locations.
 
-makevideos is triggered every 15minutes, M-F, 7am-9pm local time by cron
+makevideos also uses MediaConch to check the format compliance of every input and output video
 
 makevideos can also be run manually by cd'ing into the repo directory (look for that in the config.txt file) and running "python makevideos.py"
-
-# hashmove
-better file movement
-
-**General Usage**
-
-python hashmove.py [source file or directory full path] [destination parent directory full path] [flags]
-
-**to move a file**
-
-python hashmove.py C:/path/to/file.ext C:/path/to/parent/dir
-
-**to move a directory**
-
-python hashmove.py /home/path/to/dir/a /home/path/to/dir/b
-
-**to copy a file**
-
-python hashmove.py -c C:/path/to/file.ext C:/path/to/parent/dir
-
-**log the transfer**
-
-python hashmove.py -l /home/path/to/dir/a /home/path/to/dir/b
-
-**verify against another hash or set of hashes**
-
-python hashmove.py -v "/home/path to/dir/you question" /home/path/to/dir/with/hashes
-
 
 
 ##ffmpeg strings

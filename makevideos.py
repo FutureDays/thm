@@ -534,7 +534,7 @@ def main():
 	xcluster = xcluster.strip('"')
 	
 	try:
-		#startup(logfile,rawCaptures,watermark,fontfile,sunnas,sunnascopyto,xendata,xendatacopyto)
+		startup(logfile,rawCaptures,watermark,fontfile,sunnas,sunnascopyto,xendata,xendatacopyto)
 		
 		#lowercases the MOV that comes off the xdcam
 		lowercase(rawCaptures)
@@ -546,7 +546,6 @@ def main():
 		fflist = validateInputVideos(fflist,scriptRepo,logfile)
 
 		for acc in sorted(fflist):
-			validateInputVideos(acc,fflist,scriptRepo,logfile)
 			
 			#actually transcode the files
 			ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile)
@@ -554,8 +553,6 @@ def main():
 			_pass = validateOutputVideos(acc,scriptRepo,logfile)
 			
 			if _pass:
-				print "here"
-				foo = raw_input("eh")
 				#hashmove
 				movevids(acc,sunnascopyto,sunnas,xendata,xendatacopyto,xcluster,scriptRepo,logfile)
 			
