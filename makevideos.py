@@ -196,8 +196,8 @@ def validateInputVideos(fflist,scriptRepo,logfile):
 		fflist.pop(acc, None) #remove from the list of files to process
 	return fflist					
 
-def validateOutputVideo(acc,scriptRepo,logfile):
-	for video in os.path.listdir(acc):
+def validateOutputVideos(acc,scriptRepo,logfile):
+	for video in os.listdir(acc):
 		vvstring = "python '" + os.path.join(scriptRepo,"validatevideos.py") + "' -so '" + os.path.join(acc,video) + "'"
 		_pass, output = validateVideo(vvstring,os.path.join(acc,video),scriptRepo,logfile)
 		if not _pass:
