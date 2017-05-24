@@ -9,10 +9,12 @@ import sys
 def main():
 	parser = argparse.ArgumentParser(description="verifies a file against its format policy")
 	parser.add_argument('-so','--startObj',dest='so',help='the full path of the file to be verified')
+	parser.add_argument('-raw',dest='raw',action='store_true',help="use this flag to indicate that the raw mov format policy should be used")
 	args = parser.parse_args() #allows us to access arguments with args.argName
 	config = ConfigParser.ConfigParser()
 	scriptRepo = os.path.dirname(os.path.abspath(__file__)) #grip the path to the directory where ~this~ script is located
 	config.read(os.path.join(scriptRepo,"video-post-process-config.txt")) #grip the txt file with configuration info
+	rawmovFP = config.get('formatPolicy','rawmov_format_policy')
 	movFP = config.get('formatPolicy','mov_format_policy')
 	flvFP = config.get('formatPolicy','flv_format_policy')
 	mpegFP = config.get('formatPolicy','mpeg_format_policy')
@@ -24,7 +26,10 @@ def main():
 	accessionaName = os.path.basename(accessionName)
 	#set formatPolicy to match extension of startObj
 	if ext == '.mov':
-		formatPolicy = movFP.strip('"').strip("'")
+		if not args.raw:
+			formatPolicy = movFP.strip('"').strip("'")
+		else:
+			formatPolicy = rawmovFP.strip('"').strip("'")	
 	elif ext == '.flv':
 		formatPolicy = flvFP.strip('"').strip("'")
 	elif ext == '.mpeg':
