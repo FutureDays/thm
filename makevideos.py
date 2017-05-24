@@ -181,23 +181,25 @@ def validateInputVideos(fflist,scriptRepo,logfile):
 	accInvalidList = []
 	for acc in fflist:
 		with cd(acc):
-			for rawmov in fflist[acc]:
-				_pass, output = validateVideo(os.path.join(acc,rawmov),scriptRepo,logfile)
+			for video in fflist[acc]:
+				vvstring = "python '" + os.path.join(scriptRepo,"validatevideos.py") + "' -raw -so '" + os.path.join(acc,video) + "'"
+				_pass, output = validateVideo(vvstring,os.path.join(acc,video),scriptRepo,logfile)
 				if not _pass:
-					msg = "The file " + os.path.join(acc,rawmov) + " is not a valid input for makevideos, this accession skipped\n"
+					msg = "The file " + os.path.join(acc,video) + " is not a valid input for makevideos, this accession skipped\n"
 					msg = msg + str(output)
 					subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
 					log(logfile,msg)
 					accInvalidList.append(acc)
 				else:
-					log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos")	
+					log(logfile,"the input video " + os.path.join(acc,video) + " is a valid input for makevideos")	
 	for acc in accInvalidList:
 		fflist.pop(acc, None) #remove from the list of files to process
 	return fflist					
 
 def validateOutputVideo(acc,scriptRepo,logfile):
 	for video in os.path.listdir(acc):
-		_pass, output = validateVideo(os.path.join(acc,video),scriptRepo,logfile)
+		vvstring = "python '" + os.path.join(scriptRepo,"validatevideos.py") + "' -so '" + os.path.join(acc,video) + "'"
+		_pass, output = validateVideo(vvstring,os.path.join(acc,video),scriptRepo,logfile)
 		if not _pass:
 			msg = "The file " + os.path.join(acc,video) + " is not a valid output, this accession not moved from IncomingQT\n"
 			msg = msg + str(output)
@@ -205,12 +207,12 @@ def validateOutputVideo(acc,scriptRepo,logfile):
 			log(logfile,msg)
 			return False
 		else:
-			log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos")
+			log(logfile,"the input video " + os.path.join(acc,video) + " is a valid input for makevideos")
 			return True
 
-def validateVideo(fullPath,scriptRepo,logfile):
+def validateVideo(vvstring,fullPath,scriptRepo,logfile):
 	try:
-		output = subprocess.check_output(["python",os.path.join(scriptRepo,"validatevideos.py"),"-so",fullPath],stderr=open(logfile,"a+"))
+		output = subprocess.check_output(vvstring,stderr=open(logfile,"a+"),shell=True)
 		returncode = 0
 	except subprocess.CalledProcessError,e:
 		output = e.output
