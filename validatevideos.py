@@ -34,7 +34,7 @@ def main():
 	else:
 		print "this file has no associated policy and cannot be processed"
 		sys.exit(1)
-
+	
 	output = subprocess.check_output(["mediaconch","-mc",startObj,"-p",formatPolicy])
 	print output
 main()	

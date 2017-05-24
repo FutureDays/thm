@@ -47,12 +47,10 @@
   <rule name="Audio/ChannelLayout is L R" value="ChannelLayout" tracktype="Audio" occurrence="*" operator="=">L R</rule>
   <rule name="Audio/SamplesPerFrame is 1536" value="SamplesPerFrame" tracktype="Audio" occurrence="*" operator="=">1536</rule>
   <rule name="Audio/SamplingRate is 48000" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">48000</rule>
-  <rule name="Audio/SamplingCount is 480768" value="SamplingCount" tracktype="Audio" occurrence="*" operator="=">480768</rule>
   <rule name="Audio/FrameRate is 31.250" value="FrameRate" tracktype="Audio" occurrence="*" operator="=">31.250</rule>
   <rule name="Audio/BitDepth is 16" value="BitDepth" tracktype="Audio" occurrence="*" operator="=">16</rule>
   <rule name="Audio/Compression_Mode is Lossy" value="Compression_Mode" tracktype="Audio" occurrence="*" operator="=">Lossy</rule>
   <rule name="Audio/Delay_Source is Container" value="Delay_Source" tracktype="Audio" occurrence="*" operator="=">Container</rule>
-  <rule name="Audio/StreamSize_Proportion is 0.11057" value="StreamSize_Proportion" tracktype="Audio" occurrence="*" operator="=">0.11057</rule>
   <rule name="Audio/ServiceKind is CM" value="ServiceKind" tracktype="Audio" occurrence="*" operator="=">CM</rule>
   <rule name="Menu/Format is DVD-Video" value="Format" tracktype="Menu" occurrence="*" operator="=">DVD-Video</rule>
 </policy>

@@ -9,8 +9,6 @@
   <rule name="General/CodecID is isom" value="CodecID" tracktype="General" occurrence="*" operator="=">isom</rule>
   <rule name="General/FrameRate is 29.970" value="FrameRate" tracktype="General" occurrence="*" operator="=">29.970</rule>
   <rule name="General/HeaderSize is 36" value="HeaderSize" tracktype="General" occurrence="*" operator="=">36</rule>
-  <rule name="General/DataSize is 846703" value="DataSize" tracktype="General" occurrence="*" operator="=">846703</rule>
-  <rule name="General/FooterSize is 10378" value="FooterSize" tracktype="General" occurrence="*" operator="=">10378</rule>
   <rule name="General/IsStreamable is No" value="IsStreamable" tracktype="General" occurrence="*" operator="=">No</rule>
   <rule name="Video/StreamOrder is 0" value="StreamOrder" tracktype="Video" occurrence="*" operator="=">0</rule>
   <rule name="Video/ID is 1" value="ID" tracktype="Video" occurrence="*" operator="=">1</rule>
@@ -37,7 +35,6 @@
   <rule name="Video/BitDepth is 8" value="BitDepth" tracktype="Video" occurrence="*" operator="=">8</rule>
   <rule name="Video/ScanType is Progressive" value="ScanType" tracktype="Video" occurrence="*" operator="=">Progressive</rule>
   <rule name="Video/Compression_Mode is Lossy" value="Compression_Mode" tracktype="Video" occurrence="*" operator="=">Lossy</rule>
-  <rule name="Video/Encoded_Library is Lavc57.66.101" value="Encoded_Library" tracktype="Video" occurrence="*" operator="=">Lavc57.66.101</rule>
   <rule name="Video/Language is en" value="Language" tracktype="Video" occurrence="*" operator="=">en</rule>
   <rule name="Audio/StreamOrder is 1" value="StreamOrder" tracktype="Audio" occurrence="*" operator="=">1</rule>
   <rule name="Audio/ID is 2" value="ID" tracktype="Audio" occurrence="*" operator="=">2</rule>
@@ -45,26 +42,22 @@
   <rule name="Audio/Format_Profile is LC" value="Format_Profile" tracktype="Audio" occurrence="*" operator="=">LC</rule>
   <rule name="Audio/Format_Settings_SBR is No (Explicit)" value="Format_Settings_SBR" tracktype="Audio" occurrence="*" operator="=">No (Explicit)</rule>
   <rule name="Audio/CodecID is 40" value="CodecID" tracktype="Audio" occurrence="*" operator="=">40</rule>
-  <rule name="Audio/Duration_LastFrame is -0.008" value="Duration_LastFrame" tracktype="Audio" occurrence="*" operator="=">-0.008</rule>
   <rule name="Audio/BitRate_Mode is CBR" value="BitRate_Mode" tracktype="Audio" occurrence="*" operator="=">CBR</rule>
   <rule name="Audio/Channels is 2" value="Channels" tracktype="Audio" occurrence="*" operator="=">2</rule>
   <rule name="Audio/ChannelPositions is Front: L R" value="ChannelPositions" tracktype="Audio" occurrence="*" operator="=">Front: L R</rule>
   <rule name="Audio/ChannelLayout is L R" value="ChannelLayout" tracktype="Audio" occurrence="*" operator="=">L R</rule>
   <rule name="Audio/SamplesPerFrame is 1024" value="SamplesPerFrame" tracktype="Audio" occurrence="*" operator="=">1024</rule>
   <rule name="Audio/SamplingRate is 44100" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">44100</rule>
-  <rule name="Audio/SamplingCount is 442058" value="SamplingCount" tracktype="Audio" occurrence="*" operator="=">442058</rule>
   <rule name="Audio/FrameRate is 43.066" value="FrameRate" tracktype="Audio" occurrence="*" operator="=">43.066</rule>
   <rule name="Audio/Compression_Mode is Lossy" value="Compression_Mode" tracktype="Audio" occurrence="*" operator="=">Lossy</rule>
   <rule name="Audio/Delay_DropFrame is No" value="Delay_DropFrame" tracktype="Audio" occurrence="*" operator="=">No</rule>
   <rule name="Audio/Delay_Source is Container" value="Delay_Source" tracktype="Audio" occurrence="*" operator="=">Container</rule>
-  <rule name="Audio/StreamSize_Proportion is 0.18682" value="StreamSize_Proportion" tracktype="Audio" occurrence="*" operator="=">0.18682</rule>
   <rule name="Audio/Default is Yes" value="Default" tracktype="Audio" occurrence="*" operator="=">Yes</rule>
   <rule name="Audio/AlternateGroup is 1" value="AlternateGroup" tracktype="Audio" occurrence="*" operator="=">1</rule>
   <rule name="Other/StreamOrder is 2" value="StreamOrder" tracktype="Other" occurrence="*" operator="=">2</rule>
   <rule name="Other/ID is 3" value="ID" tracktype="Other" occurrence="*" operator="=">3</rule>
   <rule name="Other/Type is Time code" value="Type" tracktype="Other" occurrence="*" operator="=">Time code</rule>
   <rule name="Other/Format is QuickTime TC" value="Format" tracktype="Other" occurrence="*" operator="=">QuickTime TC</rule>
-  <rule name="Other/TimeCode_FirstFrame is 04:00:00:10" value="TimeCode_FirstFrame" tracktype="Other" occurrence="*" operator="=">04:00:00:10</rule>
   <rule name="Other/TimeCode_Striped is Yes" value="TimeCode_Striped" tracktype="Other" occurrence="*" operator="=">Yes</rule>
   <rule name="Other/Language is en" value="Language" tracktype="Other" occurrence="*" operator="=">en</rule>
   <rule name="Other/Default is No" value="Default" tracktype="Other" occurrence="*" operator="=">No</rule>

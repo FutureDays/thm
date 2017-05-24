@@ -25,10 +25,7 @@
   <rule name="Video/ChromaSubsampling is 4:2:0" value="ChromaSubsampling" tracktype="Video" occurrence="*" operator="=">4:2:0</rule>
   <rule name="Video/BitDepth is 8" value="BitDepth" tracktype="Video" occurrence="*" operator="=">8</rule>
   <rule name="Video/ScanType is Progressive" value="ScanType" tracktype="Video" occurrence="*" operator="=">Progressive</rule>
-  <rule name="Video/Encoded_Library is x264 - core 148 r2721 72d53ab" value="Encoded_Library" tracktype="Video" occurrence="*" operator="=">x264 - core 148 r2721 72d53ab</rule>
   <rule name="Video/Encoded_Library_Name is x264" value="Encoded_Library_Name" tracktype="Video" occurrence="*" operator="=">x264</rule>
-  <rule name="Video/Encoded_Library_Version is core 148 r2721 72d53ab" value="Encoded_Library_Version" tracktype="Video" occurrence="*" operator="=">core 148 r2721 72d53ab</rule>
-  <rule name="Video/Encoded_Library_Settings is cabac=1 / ref=2 / deblock=1:0:0 / analyse=0x3:0x113 / me=hex / subme=6 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=16 / chroma_me=1 / trellis=1 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=3 / b_pyramid=2 / b_adapt=1 / b_bias=0 / direct=1 / weightb=1 / open_gop=0 / weightp=1 / keyint=250 / keyint_min=25 / scenecut=40 / intra_refresh=0 / rc_lookahead=30 / rc=abr / mbtree=1 / bitrate=700 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / ip_ratio=1.40 / aq=1:1.00" value="Encoded_Library_Settings" tracktype="Video" occurrence="*" operator="=">cabac=1 / ref=2 / deblock=1:0:0 / analyse=0x3:0x113 / me=hex / subme=6 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=16 / chroma_me=1 / trellis=1 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=3 / b_pyramid=2 / b_adapt=1 / b_bias=0 / direct=1 / weightb=1 / open_gop=0 / weightp=1 / keyint=250 / keyint_min=25 / scenecut=40 / intra_refresh=0 / rc_lookahead=30 / rc=abr / mbtree=1 / bitrate=700 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / ip_ratio=1.40 / aq=1:1.00</rule>
   <rule name="Audio/Format is AAC" value="Format" tracktype="Audio" occurrence="*" operator="=">AAC</rule>
   <rule name="Audio/Format_Profile is LC" value="Format_Profile" tracktype="Audio" occurrence="*" operator="=">LC</rule>
   <rule name="Audio/Format_Settings_SBR is No (Explicit)" value="Format_Settings_SBR" tracktype="Audio" occurrence="*" operator="=">No (Explicit)</rule>
@@ -38,9 +35,7 @@
   <rule name="Audio/ChannelLayout is L R" value="ChannelLayout" tracktype="Audio" occurrence="*" operator="=">L R</rule>
   <rule name="Audio/SamplesPerFrame is 1024" value="SamplesPerFrame" tracktype="Audio" occurrence="*" operator="=">1024</rule>
   <rule name="Audio/SamplingRate is 48000" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">48000</rule>
-  <rule name="Audio/SamplingCount is 481248" value="SamplingCount" tracktype="Audio" occurrence="*" operator="=">481248</rule>
   <rule name="Audio/FrameRate is 46.875" value="FrameRate" tracktype="Audio" occurrence="*" operator="=">46.875</rule>
   <rule name="Audio/Compression_Mode is Lossy" value="Compression_Mode" tracktype="Audio" occurrence="*" operator="=">Lossy</rule>
   <rule name="Audio/Delay_Source is Container" value="Delay_Source" tracktype="Audio" occurrence="*" operator="=">Container</rule>
-  <rule name="Audio/StreamSize_Proportion is 0.15894" value="StreamSize_Proportion" tracktype="Audio" occurrence="*" operator="=">0.15894</rule>
 </policy>
