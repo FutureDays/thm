@@ -60,6 +60,6 @@ then make an audio file and wrap it in a mov
 
 ffmpeg -f lavfi -i "sine=frequency=1000:sample_rate=48000:duration=10" -c:a pcm_s24be [aout].mov
 
-then warp the video file with the audio file mapped to two different streams, with timecode track
+then wrap the video file with the audio file mapped to two different streams, with timecode track
 
-ffmpeg -i [vout].mov -i [aout].mov -c:v copy -c:a pcm_s24be -map 0:v:0 -map 1:a:0 -map 2:a:0 -timecode 00:00:00:00 [out].mov
+ffmpeg -i [vout].mov -i [aout].mov -c:v copy -c:a pcm_s24be -map 0:v:0 -map 0:a:0 -map 1:a:0 -timecode 00:00:00:00 [out].mov
