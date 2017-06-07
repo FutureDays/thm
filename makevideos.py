@@ -248,7 +248,7 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 		mp4 = canonicalname + ".mp4" #filename for mp4
 		mov = canonicalname + ".mov"
 			
-		concatstr = 'ffmpeg -f concat -i concat.txt -map 0:v -map 0:a -c:v copy -c:a copy -timecode ' + segment[-2:] + ':00:00:00 rawconcat.mov'
+		concatstr = 'ffmpeg -f concat -i concat.txt -map 0:v -map 0:a -c:v copy -c:a copy rawconcat.mov'
 		try:
 			output = subprocess.check_output(concatstr,stderr=open(logfile,"a+"),shell=True) #concatenate them
 			returncode = 0
@@ -286,7 +286,7 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 			sys.exit() #quit now because this concat is really important
 		
 		#re-wrap in another mov
-		stream2audioin = 'ffmpeg -i rawconcat.mov -i rawconcat-as2.mov -map 0:v -map 0:a:0 -map 1:a:0 -map 0:d -c copy concat.mov'
+		stream2audioin = 'ffmpeg -i rawconcat.mov -i rawconcat-as2.mov -map 0:v -map 0:a:0 -map 1:a:0 -map 0:d -c copy -timecode ' + segment[-2:] + ':00:00:00 concat.mov'
 		try:
 			output = subprocess.check_output(stream2audioin,stderr=open(logfile,"a+"),shell=True) #concatenate them
 			returncode = 0
