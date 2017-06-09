@@ -223,74 +223,7 @@ def ffprocess(acc,fflist,watermark,fontfile,scriptRepo,logfile):
 		mpeg = canonicalname + ".mpeg" #filename for mpeg
 		mp4 = canonicalname + ".mp4" #filename for mp4
 		mov = canonicalname + ".mov"
-		
-		#concatenate if we need to
-		concatlist = []
-		for f in os.listdir(os.getcwd()):
-			if f.endswith("MOV") or f.endswith("mov"):
-				concatlist.append(f)
-		if len(concatlist) > 1:
-			txtfile = open("concat.txt","w")
-			for f in concatlist:
-				txtfile.write("file '" + f + "'\n")
-			ffconcatstring = 'ffmpeg -f concat -safe 0 -i concat.txt -c copy -ignore_unknown -map 0 rawconcat.mov'
-			txtfile.close()			
-			try:
-				output = subprocess.check_output(ffconcatstring,stderr=open(logfile,"a+"),shell=True) #concatenate them
-				returncode = 0
-				log(logfile, "concatenation of raw MOVs successful")
-			except subprocess.CalledProcessError,e:
-				output = e.output
-				returncode = e.returncode
-			if returncode > 0:
-				#send email to staff
-				msg = 'The concatenation of  ' + canonicalname + ' was unsuccessful\n'
-				subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
-				log(logfile,msg)
-				sys.exit() #quit now because this concat is really important
-			for rawmov in concatlist: #for each raw file name in the list of concats that are the raw captures
-				os.remove(rawmov) #delete them (they've been concatted into 1 big ol file successfully)
-				if os.path.exists(rawmov + ".md5"): #if they have any associated files get rid of them
-					os.remove(rawmov + ".md5")
-				if os.path.exists("concat.txt"):
-					os.remove("concat.txt")
-			
-			#streamcopy audio stream 2 to a new mov
-			stream2audioout	= 'ffmpeg -i rawconcat.mov -map 0:a:1 -map -0:d -map -0:v -c:a copy rawconcat-as2.mov'
-			try:
-				output = subprocess.check_output(stream2audioout,stderr=open(logfile,"a+"),shell=True) #concatenate them
-				returncode = 0
-				log(logfile, "concatenation of raw MOVs successful")
-			except subprocess.CalledProcessError,e:
-				output = e.output
-				returncode = e.returncode
-			if returncode > 0:
-				#send email to staff
-				msg = 'The streamcopy of audio stream 2 of ' + canonicalname + ' was unsuccessful\n'
-				subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
-				log(logfile,msg)
-				sys.exit() #quit now because this concat is really important
-		
-			#re-wrap in another mov
-			stream2audioin = 'ffmpeg -i rawconcat.mov -i rawconcat-as2.mov -map 0:v -map 0:a:0 -map 1:a:0 -map 0:d -c copy concat.mov'
-			try:
-				output = subprocess.check_output(stream2audioin,stderr=open(logfile,"a+"),shell=True) #concatenate them
-				returncode = 0
-				log(logfile, "re-wrap of audio stream 2 successful")
-			except subprocess.CalledProcessError,e:
-				output = e.output
-				returncode = e.returncode
-			if returncode > 0:
-				#send email to staff
-				msg = 'The re-wrap of audio stream 2 of  ' + canonicalname + ' was unsuccessful\n'
-				subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
-				log(logfile,msg)
-				sys.exit() #quit now because this concat is really important
-		
-			#delete intermediate files
-			os.remove("rawconcat.mov")
-			os.remove("rawconcat-as2.mov")
-			os.rename("concat.mov",os.path.join(acc,mov))					
+							
 			
 		#transcode endfiles
 		#endfile.flv + HistoryMakers watermark
