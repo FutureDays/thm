@@ -4,4 +4,5 @@ send-email.py
 processing.pid
 thm-test-backups/
 video-post-process-config.txt
+video-post-process-config-sc.txt
 .DS_Store
