@@ -179,16 +179,17 @@ def compare(fs, fsagain):
 
 def validateOutputVideo(acc,scriptRepo,logfile):
 	for video in os.path.listdir(acc):
-		_pass, output = validateVideo(os.path.join(acc,video),scriptRepo,logfile)
-		if not _pass:
-			msg = "The file " + os.path.join(acc,video) + " is not a valid output, this accession not moved from IncomingQT\n"
-			msg = msg + str(output)
-			subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
-			log(logfile,msg)
-			return False
-		else:
-			log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos")
-			return True
+		if not video.endswith(".mov"):
+			_pass, output = validateVideo(os.path.join(acc,video),scriptRepo,logfile)
+			if not _pass:
+				msg = "The file " + os.path.join(acc,video) + " is not a valid output, this accession not moved from IncomingQT\n"
+				msg = msg + str(output)
+				subprocess.call(['python',os.path.join(scriptRepo,"send-email.py"),'-txt',msg,'-att',logfile])
+				log(logfile,msg)
+				return False
+			else:
+				log(logfile,"the input video " + os.path.join(acc,rawmov) + " is a valid input for makevideos")
+				return True
 
 def validateVideo(fullPath,scriptRepo,logfile):
 	try:
